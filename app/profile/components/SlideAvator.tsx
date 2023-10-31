@@ -5,7 +5,7 @@ import Image from 'next/image'
 export default function SlideAvatar() {
     return (
         <div className={`${styles.slide} ${styles.slide1}`}>
-            <div>
+            <div className={styles.content}>
                 <h2>Hello, I&#39;m Yu Cai</h2>
                 <h3>I&#39;m | Front-end developer</h3>
             </div>
