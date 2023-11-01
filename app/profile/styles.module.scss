@@ -11,8 +11,7 @@
   }
 
   .slide1 {
-    background: $lime9;
-    opacity: 0.8;
+    background: $grey5;
 
     .content {
     }
@@ -60,7 +59,7 @@
   .slide_skills {
     background: $grey3;
     height: auto;
-    justify-content: flex-start;
+    justify-content: space-between;
 
     .img {
       margin-left: 100px;
@@ -69,9 +68,19 @@
     .imageShadow {
       height: 800px;
       width: 450px;
-      background: $lime9;
+      background: $grey9;
       position: absolute;
-      opacity: 0.3;
+      opacity: 0.5;
+    }
+
+    .content {
+      margin-right: 100px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .skills {
+      margin-right: 100px
     }
   }
 }
