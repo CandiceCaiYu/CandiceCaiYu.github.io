@@ -1,68 +1,31 @@
 'use client'
 import styles from "@/app/profile/styles.module.scss";
-import skillsImg from "@/public/yello-cat.png";
+import skillsImg from "@/public/green-cat.png";
 import Image from 'next/image'
-import {Bar, Pie} from "@ant-design/plots";
+import {Pie} from "@ant-design/plots";
+import {Rate} from "antd";
 
 export default function SlideSkills() {
     const data = [
-        {
-            year: '1951 年',
-            value: 38,
-        },
-        {
-            year: '1952 年',
-            value: 52,
-        },
-        {
-            year: '1956 年',
-            value: 61,
-        },
-        {
-            year: '1957 年',
-            value: 145,
-        },
-        {
-            year: '1958 年',
-            value: 48,
-        },
+        {name: 'React', value: 38},
+        {name: 'Vue', value: 52},
+        {name: 'Angular', value: 61},
+        {name: 'Javascript / ES5 / ES6', value: 45},
+        {name: 'HTML / HTML5', value: 45},
+        {name: 'TypeScript', value: 48},
+        {name: 'CSS/CSS3/Scss/Less', value: 48},
+        {name: 'Echarts', value: 48},
+        {name: 'Jest/Test library', value: 48},
+        {name: 'Axios', value: 48},
+        {name: 'Git', value: 48},
+        {name: 'Webpack/Vite', value: 48},
     ];
-    const barConfig = {
-        data: data,
-        xField: 'value',
-        yField: 'year',
-        seriesField: 'year',
-        width: 500,
-        legend: {
-            position: 'top-left',
-        },
-    }
 
     const pieData = [
-        {
-            type: '分类一',
-            value: 27,
-        },
-        {
-            type: '分类二',
-            value: 25,
-        },
-        {
-            type: '分类三',
-            value: 18,
-        },
-        {
-            type: '分类四',
-            value: 15,
-        },
-        {
-            type: '分类五',
-            value: 10,
-        },
-        {
-            type: '其他',
-            value: 5,
-        },
+        {type: 'PC web', value: 60},
+        {type: 'Mobile web', value: 30},
+        {type: 'App', value: 5},
+        {type: 'Mini program', value: 5},
     ];
     const pieConfig = {
         appendPadding: 10,
@@ -89,19 +52,21 @@ export default function SlideSkills() {
     };
     return (
         <div className={`${styles.slide} ${styles.slide_skills}`}>
-            <div>
-                {/*<div className={styles.imageShadow}></div>*/}
-                <Image src={skillsImg} width={460} height={600} className={styles.img} alt={'avatar'}/>
-            </div>
+            <Image src={skillsImg} width={560} height={700} className={styles.img} alt={'avatar'}/>
             <div className={styles.content}>
                 <div className={styles.skills}>
                     <h2>My skills</h2>
                     <div>
-                        <Bar {...barConfig}/>
+                        {data.map(item => (
+                            <div key={item.name} className={styles.rate_item}>
+                                <span className={styles.rate_name}>{item.name}:</span>
+                                <Rate value={item.value}/>
+                            </div>
+                        ))}
                     </div>
                 </div>
                 <div>
-                    <h2>My project type</h2>
+                    <h2>My project types</h2>
                     <Pie {...pieConfig}/>
                 </div>
             </div>

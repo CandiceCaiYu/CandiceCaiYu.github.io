@@ -28,6 +28,7 @@
 
     .img_container {
       position: relative;
+      align-self: flex-end;
     }
 
     .img {
@@ -68,8 +69,8 @@
   .slide_skills {
     background: $grey3;
     height: auto;
-    justify-content: space-between;
-    padding: 100px 0;
+    justify-content: flex-end;
+    //padding: 48px 0;
 
     .img {
       margin-left: 100px;
@@ -84,13 +85,41 @@
     }
 
     .content {
-      margin-right: 100px;
+      padding-right: 100px;
+      padding-left: 48px;
       display: flex;
       justify-content: space-between;
+      background: #f369585c;
+      height: 700px;
+      align-self: flex-end;
+      margin-left: 100px;
+      align-items: center;
+
+      h2 {
+        font-size: 24px;
+        //margin-top: 80px;
+        margin-bottom: 32px;
+        border-left: 6px solid #ff8b2b;
+        padding-left: 10px;
+        height: 20px;
+        line-height: 20px;
+      }
     }
 
     .skills {
-      margin-right: 200px
+      margin-right: 150px;
+      min-width: 320px;
+    }
+
+    .rate_item {
+      margin-bottom: 12px;
+      display: flex;
+      justify-content: flex-end;
+
+
+      .rate_name {
+        margin-right: 18px;
+      }
     }
   }
 }
