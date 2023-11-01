@@ -1,6 +1,6 @@
 'use client'
 import styles from "@/app/profile/styles.module.scss";
-import skillsImg from "@/public/skill.jpg";
+import skillsImg from "@/public/yello-cat.png";
 import Image from 'next/image'
 import {Bar, Pie} from "@ant-design/plots";
 
@@ -32,7 +32,7 @@ export default function SlideSkills() {
         xField: 'value',
         yField: 'year',
         seriesField: 'year',
-        width: 600,
+        width: 500,
         legend: {
             position: 'top-left',
         },
@@ -71,6 +71,7 @@ export default function SlideSkills() {
         colorField: 'type',
         radius: 0.9,
         width: 400,
+        colors: ['#feb153', '#4b6c6b', '#e9f1df', '#9d9b86'],
         label: {
             type: 'inner',
             offset: '-30%',
@@ -89,8 +90,8 @@ export default function SlideSkills() {
     return (
         <div className={`${styles.slide} ${styles.slide_skills}`}>
             <div>
-                <div className={styles.imageShadow}></div>
-                <Image src={skillsImg} width={460} height={800} className={styles.img} alt={'avatar'}/>
+                {/*<div className={styles.imageShadow}></div>*/}
+                <Image src={skillsImg} width={460} height={600} className={styles.img} alt={'avatar'}/>
             </div>
             <div className={styles.content}>
                 <div className={styles.skills}>
