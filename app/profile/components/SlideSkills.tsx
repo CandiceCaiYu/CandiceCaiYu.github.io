@@ -35,15 +35,6 @@ export default function SlideSkills() {
         radius: 0.9,
         width: 400,
         colors: ['#feb153', '#4b6c6b', '#e9f1df', '#9d9b86'],
-        label: {
-            type: 'inner',
-            offset: '-30%',
-            content: ({percent}) => `${(percent * 100).toFixed(0)}%`,
-            style: {
-                fontSize: 14,
-                textAlign: 'center',
-            },
-        },
         interactions: [
             {
                 type: 'element-active',

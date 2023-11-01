@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import styles from './styles.module.scss'
-import avatar from '../../../../public/avatar.jpg'
+import avatar from '@/public/avatar.png'
 import {useRouter} from "next/navigation";
 
 export default function Header() {
