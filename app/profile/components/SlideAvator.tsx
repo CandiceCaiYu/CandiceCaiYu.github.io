@@ -9,10 +9,7 @@ export default function SlideAvatar() {
                 <h2>Hello, I&#39;m Yu Cai</h2>
                 <h3>I&#39;m | Front-end developer</h3>
             </div>
-            <div className={styles.img_container}>
-                <Image src={avatar} width={860} height={740} className={styles.img} alt={'avatar'}/>
-                {/*<Image src={blueCat} width={220} height={300} className={styles.img_cat} alt={'blueCat'}/>*/}
-            </div>
+            <Image src={avatar} width={900} height={700} className={styles.img} alt={'avatar'}/>
         </div>
     )
 }

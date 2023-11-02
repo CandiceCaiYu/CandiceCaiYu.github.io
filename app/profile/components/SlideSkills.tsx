@@ -40,6 +40,11 @@ export default function SlideSkills() {
                 type: 'element-active',
             },
         ],
+        label: {
+            type: 'inner',
+            content: '{name}',
+        },
+        legend: false
     };
     return (
         <div className={`${styles.slide} ${styles.slide_skills}`}>

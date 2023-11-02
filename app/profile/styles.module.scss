@@ -11,7 +11,7 @@
   }
 
   .slide1 {
-    background: $grey5;
+    background: $grey4;
 
     .content {
     }
@@ -26,13 +26,10 @@
       margin-top: 20px;
     }
 
-    .img_container {
-      position: relative;
-      align-self: flex-end;
-    }
-
     .img {
       border-radius: 20px;
+      align-self: flex-end;
+
     }
 
     .img_cat {
@@ -89,11 +86,12 @@
       padding-left: 48px;
       display: flex;
       justify-content: space-between;
-      background: #f369585c;
+      background: #2829329c;
       height: 700px;
       align-self: flex-end;
       margin-left: 100px;
       align-items: center;
+      box-shadow: 0 0 10px 6px #bdb3b3;
 
       h2 {
         font-size: 24px;
