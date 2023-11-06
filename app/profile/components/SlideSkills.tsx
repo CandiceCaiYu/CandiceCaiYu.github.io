@@ -7,18 +7,18 @@ import {Rate} from "antd";
 
 export default function SlideSkills() {
     const data = [
-        {name: 'React', value: 38},
-        {name: 'Vue', value: 52},
-        {name: 'Angular', value: 61},
-        {name: 'Javascript / ES5 / ES6', value: 45},
-        {name: 'HTML / HTML5', value: 45},
-        {name: 'TypeScript', value: 48},
-        {name: 'CSS/CSS3/Scss/Less', value: 48},
-        {name: 'Echarts', value: 48},
-        {name: 'Jest/Test library', value: 48},
-        {name: 'Axios', value: 48},
-        {name: 'Git', value: 48},
-        {name: 'Webpack/Vite', value: 48},
+        {name: 'React', value: 4},
+        {name: 'Vue', value: 4},
+        {name: 'Angular', value: 3.5},
+        {name: 'Javascript / ES5 / ES6', value: 4},
+        {name: 'HTML / HTML5', value: 4},
+        {name: 'TypeScript', value: 4},
+        {name: 'CSS/CSS3/Scss/Less', value: 4},
+        {name: 'Echarts', value: 4},
+        {name: 'Jest/Test library', value: 3.5},
+        {name: 'Axios', value: 4},
+        {name: 'Git', value: 4},
+        {name: 'Webpack/Vite', value: 3.5},
     ];
 
     const pieData = [
@@ -56,7 +56,7 @@ export default function SlideSkills() {
                         {data.map(item => (
                             <div key={item.name} className={styles.rate_item}>
                                 <span className={styles.rate_name}>{item.name}:</span>
-                                <Rate value={item.value}/>
+                                <Rate allowHalf defaultValue={item.value}/>
                             </div>
                         ))}
                     </div>
