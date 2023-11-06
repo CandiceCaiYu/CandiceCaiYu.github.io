@@ -1,6 +1,6 @@
 'use client'
 import styles from "@/app/profile/styles.module.scss";
-import skillsImg from "@/public/green-cat.png";
+import skillsImg from "@/public/programmer.png";
 import Image from 'next/image'
 import {Pie} from "@ant-design/plots";
 import {Rate} from "antd";
@@ -48,7 +48,7 @@ export default function SlideSkills() {
     };
     return (
         <div className={`${styles.slide} ${styles.slide_skills}`}>
-            <Image src={skillsImg} width={560} height={700} className={styles.img} alt={'avatar'}/>
+            <Image src={skillsImg} width={700} height={660} className={styles.img} alt={'avatar'}/>
             <div className={styles.content}>
                 <div className={styles.skills}>
                     <h2>My skills</h2>
