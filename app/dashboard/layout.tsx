@@ -1,16 +1,18 @@
 import React from "react";
-import Head from "next/head";
 import Header from "@/app/dashboard/components/head/header";
 import style from './styles.module.scss'
+import BlogList from "@/app/dashboard/components/blogList/page";
+import Sidebar from "@/app/dashboard/components/sidebar/page";
 
 export default function DashboardLayout({children}: { children: React.ReactNode }) {
     return (
-    <div className={style.dashboard}>
-        <div className={style.header}><Header/></div>
-        <div className={style.content}>
-            <section>{children}</section>
+        <div className={style.dashboard}>
+            <div className={style.header}><Header/></div>
+            <div className={style.content}>
+                <BlogList/>
+                <Sidebar/>
+            </div>
+            <div className={style.footer}>footer</div>
         </div>
-        <div className={style.footer}>footer</div>
-    </div>
     )
 }
