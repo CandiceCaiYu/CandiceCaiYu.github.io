@@ -60,7 +60,7 @@ export default function SlideSkills() {
                         ))}
                     </div>
                 </div>
-                <div>
+                <div className={styles.pieChart}>
                     <h2>My project types</h2>
                     <Pie {...pieConfig}/>
                 </div>
