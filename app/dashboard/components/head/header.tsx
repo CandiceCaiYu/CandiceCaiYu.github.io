@@ -15,7 +15,7 @@ export default function Header() {
     return (
         <div className={styles.header}>
             <h1>Cai Yu&#39;s Blog</h1>
-            <Image src={avatar} width={50} height={50} className={styles.avatar} title={'contact me'} alt={'contact me'}
+            <Image src={avatar} width={60} height={72} className={styles.avatar} title={'contact me'} alt={'contact me'}
                    onClick={handleChange}/>
         </div>
     )
