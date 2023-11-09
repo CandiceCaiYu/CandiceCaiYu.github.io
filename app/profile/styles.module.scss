@@ -11,7 +11,7 @@
   }
 
   .slide1 {
-    background: $grey4;
+    background: $grey2;
 
     .home {
       position: absolute;
@@ -70,7 +70,7 @@
   }
 
   .slide_skills {
-    background: $grey3;
+    background: $grey1;
     height: auto;
     justify-content: flex-end;
     //padding: 48px 0;
@@ -82,7 +82,7 @@
     .imageShadow {
       height: 800px;
       width: 450px;
-      background: $grey9;
+      background: $grey1;
       position: absolute;
       opacity: 0.5;
     }
@@ -92,12 +92,12 @@
       padding-left: 48px;
       display: flex;
       justify-content: space-between;
-      background: #28293200;
+      background: $grey1;
       height: 700px;
       align-self: flex-end;
       margin-left: 100px;
       align-items: center;
-      box-shadow: 0 0 10px 6px #bdb3b3;
+      //box-shadow: 0 0 10px 6px #bdb3b3;
       margin-right: 10px;
 
       h2 {
