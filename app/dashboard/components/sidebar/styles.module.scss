@@ -21,4 +21,24 @@
     border-radius: 6px;
     border: 1px solid $grey5;
   }
+
+  .category_title {
+    background-color: $lime7;
+    padding: 16px 8px;
+  }
+
+  .category_item {
+    padding: 16px 8px;
+    border: 1px solid $grey4;
+    color: $grey8;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $lime5;
+    }
+  }
+
+  .category_item:not(:last-child) {
+    border-bottom: none;
+  }
 }
