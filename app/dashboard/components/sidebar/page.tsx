@@ -1,7 +1,6 @@
 import {Calendar, Card} from 'antd'
 import styles from './styles.module.scss'
-import React from 'react'
-import {SIDEBAR_CATEGORY} from '@/src/assets/constants'
+import {SIDEBAR_CATEGORY} from "@/src/assets/constants";
 
 export default function Sidebar() {
     return (
