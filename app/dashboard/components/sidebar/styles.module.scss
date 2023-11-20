@@ -8,4 +8,17 @@
   .notice {
     height: 240px;
   }
+
+  .calendar {
+    width: 300px;
+    height: 300px;
+  }
+
+  .wrapperStyle {
+    width: 300px;
+    height: 324px;
+    margin: 24px 0;
+    border-radius: 6px;
+    border: 1px solid $grey5;
+  }
 }

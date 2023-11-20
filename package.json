@@ -12,7 +12,9 @@
     "@ant-design/charts": "^1.4.2",
     "@ant-design/cssinjs": "^1.17.2",
     "antd": "^5.11.1",
+    "babel-plugin-import": "^1.13.8",
     "next": "13.5.4",
+    "rc-util": "^5.38.1",
     "react": "^18",
     "react-dom": "^18",
     "sass": "^1.69.5"
