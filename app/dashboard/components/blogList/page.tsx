@@ -1,4 +1,6 @@
-import styles from './styles.module.scss'
+'use client';
+import styles from './styles.module.scss';
+import {BLOG_LIST} from "@/src/assets/constants";
 
 export default function BlogList() {
     const item = {
@@ -6,15 +8,22 @@ export default function BlogList() {
         title: 'GraphQL',
         content: 'This is content'
     };
+    const goToNextPage = (link: string) => {
+        window.open(link)
+    };
     return (
         <div className={styles.blog_list}>
-            <div className={styles.blog_item}>
-                <div className={styles.blog_item_header}>
-                    <div>{item.date}</div>
-                    <h3>{item.title}</h3>
-                </div>
-                <div>{item.content}</div>
-            </div>
+            <ul>
+                {BLOG_LIST.map(item => (
+                    <li className={styles.blog_item} key={item.content} onClick={() => goToNextPage(item.link)}>
+                        <div className={styles.blog_item_header}>
+                            <div>{item.date}</div>
+                            <h3>{item.title}</h3>
+                        </div>
+                        <div className={styles.blog_item_content}>{item.content}</div>
+                    </li>
+                ))}
+            </ul>
         </div>
     )
 }
