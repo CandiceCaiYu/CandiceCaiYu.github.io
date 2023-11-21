@@ -1,7 +1,40 @@
 @import "@/app/css/colors.module.scss";
 
-.blogList {
+.blog_list {
   flex: 1;
   background: $grey2;
   height: 100%;
+
+  .blog_item {
+    padding: 12px 24px;
+    border: 1px solid $grey4;
+    background: $grey1;
+    border-radius: 4px;
+
+    &:hover {
+      border-color: $lime8;
+    }
+  }
+
+  .blog_item_header {
+    margin: 12px 0;
+    display: flex;
+    align-items: center;
+
+    div {
+      padding: 8px 6px;
+      background: $lime7;
+      color: $grey1;
+      text-align: center;
+      font-size: 16px;
+      line-height: 16px;
+      margin-right: 24px;
+      border-radius: 2px;
+    }
+
+    h3 {
+      font-size: 32px;
+      color: $grey7
+    }
+  }
 }

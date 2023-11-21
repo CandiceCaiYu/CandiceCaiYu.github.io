@@ -4,4 +4,8 @@ export const SIDEBAR_CATEGORY = [
     {name: 'HTML', link: ''},
     {name: 'CSS', link: ''},
     {name: 'Typescript', link: ''},
-]
+];
+
+export const BLOG_LIST = [
+    {date: '', title: '', content: ''},
+];
