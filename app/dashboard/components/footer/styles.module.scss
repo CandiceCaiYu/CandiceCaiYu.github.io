@@ -1,0 +1,31 @@
+@import "app/css/colors.module";
+
+.footer_wrapper {
+  background: $lime7;
+  padding: 54px 48px;
+  display: flex;
+
+  .footer_list {
+    margin-left: 264px;
+    color: $grey3
+  }
+
+  .footer_list_item {
+    margin-bottom: 16px;
+    cursor: pointer;
+    display: block;
+
+    i {
+      margin-right: 12px;
+    }
+  }
+
+  h6 {
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+}
+
+.footer_bottom {
+  text-align: center;
+}
