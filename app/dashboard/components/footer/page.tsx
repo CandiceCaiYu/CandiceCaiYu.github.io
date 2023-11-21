@@ -24,7 +24,7 @@ export default function Footer() {
                     </div>
                 ))}
             </div>
-            <Foot className={styles.footer_bottom}>Copyright © 2023 巫瞅瞅</Foot>
+            <Foot className={styles.footer_bottom}>Copyright © 2023 CandiceCaiYu</Foot>
         </div>
     )
 }
