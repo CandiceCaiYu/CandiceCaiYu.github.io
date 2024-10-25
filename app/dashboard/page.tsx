@@ -1,7 +1,6 @@
-'use client'
+'use client';
 
-// `app/dashboard/page.tsx` is the UI for the `/dashboard` URL
-import {usePathname,useRouter} from "next/navigation";
+// `app/dashboard/CustomSection.tsx` is the UI for the `/dashboard` URL
 
 export default function Page() {
 
