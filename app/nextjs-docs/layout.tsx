@@ -10,7 +10,7 @@ export default function NextJSLayout(prop: {
             <div>
                 <Menu mode="inline"
                       items={nextjsMenu}
-                      defaultSelectedKeys={['11']}
+                    // defaultSelectedKeys={['11']}
                       defaultOpenKeys={['1', '2']}
                       style={{height: '100%'}}
                 />
