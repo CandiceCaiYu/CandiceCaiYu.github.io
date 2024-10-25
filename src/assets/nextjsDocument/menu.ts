@@ -26,7 +26,7 @@ export const nextjsMenu: MenuItem[] = [
                     {key: "215", label: "Error Handling"},
                     {key: "216", label: "Loading UI and Streaming"},
                     {key: "217", label: "Redirecting"},
-                    {key: "217", label: "Route Groups"},
+                    {key: "218", label: "Route Groups"},
                     {key: "219", label: "Project Organization"},
                     {key: "2101", label: "Dynamic Routes"},
                     {key: "2102", label: "Parallel Routes"},
