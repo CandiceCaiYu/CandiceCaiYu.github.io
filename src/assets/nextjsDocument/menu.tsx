@@ -1,16 +1,19 @@
+import Link from "next/link";
+import {ReactNode} from "react";
+
 interface MenuItem {
     key: string;
-    label?: string;
+    label: ReactNode;
     children?: MenuItem[];
 }
 
 export const nextjsMenu: MenuItem[] = [
     {
         key: '1',
-        label: 'Getting Started',
+        label: <Link href={'/nextjs-docs/start'}>Getting Started</Link>,
         children: [
-            {key: "11", label: "Installation"},
-            {key: "12", label: "Project Structure"},
+            {key: "11", label: <Link href={'/nextjs-docs/start/installation'}>Installation</Link>},
+            {key: "12", label: <Link href={'/nextjs-docs/start/project-structure'}>Project Structure</Link>},
         ]
     },
     {
