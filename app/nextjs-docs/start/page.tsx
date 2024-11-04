@@ -25,14 +25,16 @@ import {
     welcome
 } from "@/src/assets/nextjsDocument/introduction";
 import CustomSection from "@/app/nextjs-docs/components/CustomSection";
-import {Table} from "antd";
+import {Divider, Table} from "antd";
 
 export default function Page() {
     return (
         <div style={{padding: '0 40px',}}>
-            <CustomSection header={title} texts={[welcome]} isTopTitle={true}/>
-            <CustomSection header={conceptTitle} texts={[concept1, concept2, concept3]}/>
-            <CustomSection header={mainFeaturesTitle} texts={[mainFeaturesDescription]} isShowDivider={false}>
+            <CustomSection texts={[title, welcome]} isTopTitle={true}/>
+            <Divider/>
+            <CustomSection texts={[conceptTitle, concept1, concept2, concept3]}/>
+            <Divider/>
+            <CustomSection texts={[mainFeaturesTitle, mainFeaturesDescription]}>
                 <Table columns={
                     [
                         {title: '功能', key: 'feature', dataIndex: 'feature'},
@@ -42,11 +44,15 @@ export default function Page() {
                        pagination={false}
                 />
             </CustomSection>
-            <CustomSection header={howToUseDocsTitle} texts={[howToUseDocsLeft, howToUseDocsRight, howToUseDocsEnd]}/>
-            <CustomSection header={routerTitle} texts={[routerSection1, routerSection2, routerSection3]}/>
-            <CustomSection header={preRequireTitle} texts={[preRequireSection1, preRequireSection2]}/>
-            <CustomSection header={accessibilityTitle} texts={[accessibilityContent]}/>
-            <CustomSection header={communityTitle} texts={[communityContent]}/>
+            <CustomSection texts={[howToUseDocsTitle, howToUseDocsLeft, howToUseDocsRight, howToUseDocsEnd]}/>
+            <Divider/>
+            <CustomSection texts={[routerTitle, routerSection1, routerSection2, routerSection3]}/>
+            <Divider/>
+            <CustomSection texts={[preRequireTitle, preRequireSection1, preRequireSection2]}/>
+            <Divider/>
+            <CustomSection texts={[accessibilityTitle, accessibilityContent]}/>
+            <Divider/>
+            <CustomSection texts={[communityTitle, communityContent]}/>
         </div>
     )
 }
