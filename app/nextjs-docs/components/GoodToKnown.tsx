@@ -5,7 +5,8 @@ import {automaticInstallationGoodToKnownTitle} from "@/src/assets/nextjsDocument
 const GoodToKnown = ({text, list}: { text?: string, list?: string[] }) => {
     return (
         <blockquote className={style.goodToKnown}>
-            <h4>{automaticInstallationGoodToKnownTitle} {text && <span>{text}</span>}</h4>
+            <h5>{automaticInstallationGoodToKnownTitle} {text &&
+                <span>{text}</span>}</h5>
             {list && (
                 <CustomList items={list} isSmall/>
             )}

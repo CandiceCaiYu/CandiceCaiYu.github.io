@@ -15,7 +15,7 @@ export default function NextJSLayout(prop: {
                       style={{height: '100%'}}
                 />
             </div>
-            {prop.children}
+            <div className={styles.center}>{prop.children}</div>
             <div className={styles.right}>right</div>
         </section>
     )
