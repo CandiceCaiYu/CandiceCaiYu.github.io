@@ -1,9 +1,10 @@
-export const title = 'Next.js项目结构';
+export const title = '# Next.js项目结构';
 export const projectStructureDescription1 = '这个页面是对Next.js应用程序项目结构的概览。它涵盖了在app 和 pages 目录中的顶层文件和文件夹，配置文件和路由约定。';
 export const projectStructureDescription2 = '点击文件或者文件夹名可以了解更多约定信息。';
 
-export const topLevelFoldersTitle = '顶层文件夹';
+export const topLevelFoldersTitle = '## 顶层文件夹';
 export const topLevelFoldersDescription = '这些文件夹是Next.js应用程序的顶层文件夹。';
+export const topLevelFoldersImage = "![topLevelFolders](/nextjsDoc/projectStructure/top-level-folders.avif)";
 export const topLevelFolders = [
     {
         name: 'app',
@@ -23,7 +24,7 @@ export const topLevelFolders = [
     }
 ];
 
-export const topLevelFilesTitle = '顶层文件';
+export const topLevelFilesTitle = '## 顶层文件';
 export const topLevelFilesDescription = '顶层文件用来配置你的应用程序，管理依赖，跑中间件，集成监控工具和定义环境变量。';
 export const topLevelFiles = [
     {
@@ -80,43 +81,52 @@ export const topLevelFiles = [
     }
 ];
 
-export const appRoutingConventions = "app路由约定";
+export const appRoutingConventions = "## app路由约定";
 export const appRoutingConventionsDescription = "以下文件约定是用来定义路由和处理app路由器元数据的。";
-export const appRoutingConventionsRoutingFilesTitle = '路由文件';
+export const appRoutingConventionsRoutingFilesTitle = '### 路由文件';
 export const appRoutingConventionsRoutingFiles = [
     {
         name: 'layout',
+        extension: '.js .jsx .tsx',
         description: '布局'
     },
     {
         name: 'page',
+        extension: '.js .jsx .tsx',
         description: '页面'
     },
     {
         name: 'loading',
+        extension: '.js .jsx .tsx',
         description: '加载的界面'
     },
     {
         name: 'not-found',
+        extension: '.js .jsx .tsx',
         description: '未找到界面'
     }, {
         name: 'error',
+        extension: '.js .jsx .tsx',
         description: '错误界面'
     }, {
         name: 'global-error',
+        extension: '.js .jsx .tsx',
         description: '全局的错误界面'
     }, {
         name: 'route',
+        extension: '.js .jsx',
         description: 'API端点'
     }, {
         name: 'template',
+        extension: '.js .jsx .tsx',
         description: '重新渲染布局'
     }, {
         name: 'default',
+        extension: '.js .jsx .tsx',
         description: '并行路由回退页面'
     }
 ];
-export const appRoutingConventionsNestedRoutesTitle = '嵌套路由';
+export const appRoutingConventionsNestedRoutesTitle = '### 嵌套路由';
 export const appRoutingConventionsNestedRoutes = [
     {
         name: 'folder',
@@ -127,7 +137,7 @@ export const appRoutingConventionsNestedRoutes = [
         description: ' 嵌套路由段'
     },
 ];
-export const appRoutingConventionsDynamicRoutesTitle = '动态路由';
+export const appRoutingConventionsDynamicRoutesTitle = '### 动态路由';
 export const appRoutingConventionsDynamicRoutes = [
     {
         name: '[folder]',
@@ -142,7 +152,7 @@ export const appRoutingConventionsDynamicRoutes = [
         description: '可选的全部捕获路由段'
     },
 ];
-export const appRoutingConventionsGroupAndPrivateRoutesTitle = "路由组和私有路由";
+export const appRoutingConventionsGroupAndPrivateRoutesTitle = "### 路由组和私有路由";
 export const appRoutingConventionsGroupAndPrivateRoutes = [
     {
         name: '(folder)',
@@ -153,7 +163,7 @@ export const appRoutingConventionsGroupAndPrivateRoutes = [
         description: '选择路由外的所有路由和子路由'
     }
 ];
-export const appRoutingConventionsParallelAndInterceptedRoutesTitle = '并行和拦截路由';
+export const appRoutingConventionsParallelAndInterceptedRoutesTitle = '### 并行和拦截路由';
 export const appRoutingConventionsParallelAndInterceptedRoutes = [
     {
         name: '@folder',
@@ -176,22 +186,84 @@ export const appRoutingConventionsParallelAndInterceptedRoutes = [
         description: '从根路由拦截'
     }
 ];
-export const appRoutingConventionsRouteMetadataTitle = '元数据文件约定';
-export const appRoutingConventionsRouteMetadataAppIconTitle = '应用程序图标';
+export const appRoutingConventionsRouteMetadataTitle = '### 元数据文件约定';
+export const appRoutingConventionsRouteMetadataAppIconTitle = '#### 应用程序图标';
 export const appRoutingConventionsRouteMetadataAppIcon = [
     {
         name: 'favicon',
+        extension: '.ico',
         description: '网站图标'
     },
     {
         name: 'icon',
+        extension: '.ico .jpg .jpeg .png .svg',
         description: '应用程序图标文件'
+    }, {
+        name: 'icon',
+        extension: '.js .ts .tsx',
+        description: '生成应用程序图标文件'
+    },
+    {
+        name: 'apple-icon',
+        extension: '.ico .jpg .jpeg .png .svg',
+        description: 'apple图标'
+    }, {
+        name: 'apple-icon',
+        extension: '.js .ts .tsx',
+        description: '生成apple图标'
+    }
+];
+export const appRoutingConventionsRouteOpenGraphAndTwitterTitle = '#### Open Graph 和 Twitter图片';
+export const appRoutingConventionsRouteOpenGraphAndTwitter = [
+    {
+        name: 'opengraph-image',
+        extension: '.jpg .jpeg .png .gif',
+        description: 'Open Graph图片文件'
+    },
+    {
+        name: 'opengraph-image',
+        extension: '.js .ts .tsx',
+        description: '生成Open Graph图片'
+    },
+    {
+        name: 'Twitter-image',
+        extension: '.jpg .jpeg .png .gif',
+        description: 'Twitter图片文件'
+    },
+    {
+        name: 'Twitter-image',
+        extension: '.js .ts .tsx',
+        description: '生成Twitter图片'
+    }
+];
+export const appRoutingConventionsRouteSEOTitle = '#### SEO';
+export const appRoutingConventionsRouteSEO = [
+    {
+        name: 'sitemap',
+        extension: '.xml',
+        description: 'sitemap文件'
+    },
+    {
+        name: 'sitemap',
+        extension: '.js .ts',
+        description: '生成sitemap文件'
+    },
+    {
+        name: 'robots',
+        extension: '.tet',
+        description: 'Robots图片文件'
+    },
+    {
+        name: 'robots',
+        extension: '.js .ts',
+        description: '生成Robots图片'
     }
 ];
 
-export const pageRoutingConventions = '页面路由约定';
+
+export const pageRoutingConventions = '## 页面路由约定';
 export const pageRoutingConventionsDescription = '以下文件约定是用来定义页面Page路由器的路由的';
-export const pageRoutingConventionsSpecialFileTitle = '特殊文件';
+export const pageRoutingConventionsSpecialFileTitle = '### 特殊文件';
 export const pageRoutingConventionsSpecialFiles = [
     {
         name: '_app',
@@ -214,9 +286,9 @@ export const pageRoutingConventionsSpecialFiles = [
         description: '500组件'
     }
 ];
-export const pageRoutingConventionsRoutesTitle = '路由';
-export const pageRoutingConventionsRoutesFolderConventions = '文件夹约定';
-export const pageRoutingConventionsRoutesFileConventions = '文件约定';
+export const pageRoutingConventionsRoutesTitle = '### 路由';
+export const pageRoutingConventionsRoutesFolderConventions = '#### 文件夹约定';
+export const pageRoutingConventionsRoutesFileConventions = '#### 文件约定';
 export const pageRoutingConventionsRoutesFolders = [
     {
         name: 'index',
@@ -237,7 +309,7 @@ export const pageRoutingConventionsRoutesFiles = [
         description: '嵌套页面'
     },
 ];
-export const pageRoutingConventionsRoutesDynamicTitle = "动态路由";
+export const pageRoutingConventionsRoutesDynamicTitle = "### 动态路由";
 export const pageRoutingConventionsRoutesDynamicFolders = [
     {
         name: '[folder]/index',
