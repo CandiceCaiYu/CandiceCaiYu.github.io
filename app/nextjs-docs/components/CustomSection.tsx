@@ -7,13 +7,15 @@ interface CustomSectionProps {
     children?: ReactNode;
     isTopTitle?: boolean;
     goodToKnown?: ReactNode;
+    image?: { width?: number, height?: number }
 }
 
 const CustomSection = ({
                            texts,
                            children,
                            isTopTitle,
-                           goodToKnown
+                           goodToKnown,
+                           image
                        }: CustomSectionProps) => {
     return (
         <div className={style.section}>
@@ -23,7 +25,7 @@ const CustomSection = ({
                                                  color: '#171717',
                                                  fontSize: isTopTitle ? '16px' : '14px'
                                              }}>
-                <CustomMarkdown text={item}/>
+                <CustomMarkdown text={item} image={image}/>
             </div>)}
             {children}
             {goodToKnown}
