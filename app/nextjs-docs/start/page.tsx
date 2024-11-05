@@ -29,7 +29,7 @@ import {Divider, Table} from "antd";
 
 export default function Page() {
     return (
-        <div style={{padding: '0 40px',}}>
+        <div>
             <CustomSection texts={[title, welcome]} isTopTitle={true}/>
             <Divider/>
             <CustomSection texts={[conceptTitle, concept1, concept2, concept3]}/>
