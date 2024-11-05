@@ -18,7 +18,7 @@ export const nextjsMenu: MenuItem[] = [
     },
     {
         key: '2',
-        label: 'Building Your Application',
+        label: <Link href={'/nextjs-docs/building-your-application'}>Building Your Application</Link>,
         children: [
             {
                 key: "21", label: "Routing", children: [
