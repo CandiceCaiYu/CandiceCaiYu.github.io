@@ -24,7 +24,10 @@ export const nextjsMenu: MenuItem[] = [
                 key: "21",
                 label: <Link href={'/nextjs-docs/building-your-application/routing'}>Routing</Link>,
                 children: [
-                    {key: "211", label: "Defining Routes"},
+                    {key: "211",
+                        label: <Link href={'/nextjs-docs/building-your-application/routing/defining-routes'}>Defining
+                            Routes</Link>
+                    },
                     {key: "212", label: "Pages"},
                     {key: "213", label: "Layouts and Templates"},
                     {key: "214", label: "Linking and Navigating"},
