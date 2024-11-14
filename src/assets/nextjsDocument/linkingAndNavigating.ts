@@ -10,7 +10,7 @@ export const more = '本页将会介绍如何使用这些选项，并深入了�
 
 export const linkComponentTitle = '## <Link>组件';
 export const linkComponentContent1 = '<Link>是一个内置的组件，它扩展HTML<a>标签，包括提供路由间的预取数据和客户端导航。这是Next.js中主要和推荐的路由间导航方式。';
-export const linkComponentContent2 = '通过导入next/link就可以使用Link组件，然后传入href prop到这个component里';
+export const linkComponentContent2 = '通过导入next/link就可以使用Link组件，然后传入href prop到这个component里:';
 export const linkComponentContent2Code = `~~~app/page.tsx
 
 import Link from 'next/link'
@@ -21,7 +21,7 @@ export default function Page() {
 export const linkComponentContent3 = '更多<Link>的其他props可以参看API文档。';
 
 export const useRouterHookTitle = '## useRouter()钩子';
-export const useRouterHookContent1 = 'useRouter钩子以编程方式从客户端组件改变路由';
+export const useRouterHookContent1 = 'useRouter钩子以编程方式从客户端组件改变路由。';
 export const useRouterHookContent1Code = `~~~app/page.js;
 
 'use client';
@@ -38,7 +38,7 @@ export default function Page() {
   )
 }`;
 export const useRouterHookContent3 = '通过API 文档查看全部的useRouter方法。';
-export const useRouterHookContentRecommendTitle = '推荐';
+export const useRouterHookContentRecommendTitle = '推荐:';
 export const useRouterHookContentRecommend = '使用 <Link> 组件在路由之间导航，除非您对使用 useRouter 有特殊要求。';
 
 
@@ -77,9 +77,48 @@ export const nativeHistoryApiContent1 = 'Next.js 允许您使用原生的 window
 export const nativeHistoryApiContent2 = 'pushState 和 replaceState 已经集成到 Next.js 路由器中，允许您与 usePathname 和 useSearchParams 同步。';
 export const nativeHistoryApiContent3 = '### window.history.pushState';
 export const nativeHistoryApiContent4 = '使用它来向浏览器的历史记录堆栈添加新条目。用户可以导航回上一个状态。例如，要对产品列表进行排序：';
+export const nativeHistoryApiContent4Code = `~~~'use client'
+ 
+import { useSearchParams } from 'next/navigation'
+ 
+export default function SortProducts() {
+  const searchParams = useSearchParams()
+ 
+  function updateSorting(sortOrder: string) {
+    const params = new URLSearchParams(searchParams.toString())
+    params.set('sort', sortOrder)
+    window.history.pushState(null, '', \`?\${params.toString()}\`)
+  }
+ 
+  return (
+    <>
+      <button onClick={() => updateSorting('asc')}>Sort Ascending</button>
+      <button onClick={() => updateSorting('desc')}>Sort Descending</button>
+    </>
+  )
+}`;
 export const nativeHistoryApiContent5 = '### window.history.replaceState';
 export const nativeHistoryApiContent6 = '使用它来替换浏览器历史记录堆栈中的当前条目。用户无法导航回之前的状态。例如，要切换应用程序的语言环境：';
-export const nativeHistoryApiContent7 = '';
+export const nativeHistoryApiContent6Code = `~~~'use client'
+ 
+import { usePathname } from 'next/navigation'
+ 
+export function LocaleSwitcher() {
+  const pathname = usePathname()
+ 
+  function switchLocale(locale: string) {
+    // e.g. '/en/about' or '/fr/contact'
+    const newPath = \`$/{locale}$/{pathname}\`
+    window.history.replaceState(null, '', newPath)
+  }
+ 
+  return (
+    <>
+      <button onClick={() => switchLocale('en')}>English</button>
+      <button onClick={() => switchLocale('fr')}>French</button>
+    </>
+  )
+}`;
 
 export const routingAndNavigationWorkTitle = '## 路线和导航的工作原理';
 export const routingAndNavigationWorkContent1 = 'App Router 使用混合方法进行路由和导航。在服务器上，您的应用程序代码会自动按路由段进行代码拆分。而在客户端，Next.js 会预取并缓存路由段。这意味着，当用户导航到新路由时，浏览器不会重新加载页面，只有更改的路由段会重新渲染 - 从而改善导航体验和性能。';
@@ -93,14 +132,15 @@ export const routingAndNavigationWorkContent8 = ['<Link> 组件：当路由在�
 export const routingAndNavigationWorkContent9 = '<Link> 的默认预取行为（即当 prefetch 属性未指定或设置为 null 时）会根据您对 loading.js 的使用情况而有所不同。只有共享布局（沿着渲染的组件“树”向下直到第一个 loading.js 文件）才会被预取并缓存 30 秒。这降低了获取整个动态路由的成本，这意味着您可以显示即时加载状态，以便向用户提供更好的视觉反馈。';
 export const routingAndNavigationWorkContent10 = '您可以通过将 prefetch 属性设置为 false 来禁用预取。或者，您可以通过将 prefetch 属性设置为 true 来预取超出加载边界的整个页面数据。';
 export const routingAndNavigationWorkContent11 = '有关更多信息，请参阅 <Link> API 参考。';
-export const routingAndNavigationWorkContent12 = '预取未在开发中启用，仅在生产中启用。';
+export const routingAndNavigationWorkContent12 = ['预取未在开发中启用，仅在生产中启用。'];
 export const routingAndNavigationWorkContent13 = '### 缓存';
 export const routingAndNavigationWorkContent14 = 'Next.js 有一个内存客户端缓存叫Router Cache。当用户在应用程序中导航时，预取过的路由段和访问过的路由的React Server Component Payload会被存到缓存中。\n';
 export const routingAndNavigationWorkContent15 = '这意味着在导航时，尽可能地重复使用缓存，而不是向服务器发出新请求——通过减少请求和传输的数据数量来提高性能。';
-export const routingAndNavigationWorkContent16 = '了解更多关于Router cache的工作原理和配置';
+export const routingAndNavigationWorkContent16 = '了解更多关于Router cache的工作原理和配置。';
 export const routingAndNavigationWorkContent17 = '### 部分渲染';
 export const routingAndNavigationWorkContent18 = '部分渲染意味着只有在导航时发生变化的路由段才会在客户端重新渲染，并且任何共享的段都会被保留。';
 export const routingAndNavigationWorkContent19 = '例如，当在两个同级路由之间导航时，dashboard/setting和dashboard/analytics， setting页面会被卸载，而analytics页面会基于新的状态挂载，并且共享的dashboard布局将被保留。这种行为同样表现在连个同样的动态路由段上，比如/blog/[slug]/page， 从/blog/first导航到 /blog/second。';
+export const routingAndNavigationWorkContent19Image = "![部分渲染](/nextjsDoc/buildingYourApplication/routing/partial-rendering.avif)";
 export const routingAndNavigationWorkContent20 = '如果没有部分渲染，每次导航将会导致整个页面在客户端重新渲染。只渲染发生改变的可减少传输的数据量和执行时间，从而提升性能。';
 export const routingAndNavigationWorkContent21 = '### 软导航';
 export const routingAndNavigationWorkContent22 = '浏览器在页面之间导航时会执行“硬导航”。Next.js App Router 可在页面之间启用“软导航”，确保仅重新渲染已更改的路由段（部分渲染）。这样可以在导航期间保留客户端 React 状态。';
