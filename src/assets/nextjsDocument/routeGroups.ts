@@ -14,14 +14,23 @@ export const routeGroupsContent5 = "可以通过将文件夹名称括在括号�
 export const routeGroupsContent6 = "## 示例";
 export const routeGroupsContent7 = "### 在不影响 URL 路径的情况下组织路由";
 export const routeGroupsContent8 = "若要在不影响 URL 的情况下组织路线，请创建一个组以将相关路线放在一起。括号中的文件夹将从 URL 中省略（例如 (marketing) 或 (shop)。";
+export const routeGroupsContent8Image = '![route-group-organisation](/nextjsDoc/buildingYourApplication/routing/route-group-organisation.avif)';
 export const routeGroupsContent9 = "尽管 (marketing) 和 (shop) 内的路由共享相同的 URL 层次结构，您也可以通过在其文件夹中添加 layout.js 文件为每个组创建不同的布局。";
+export const routeGroupsContent9Image = '![route-group-multiple-layouts](/nextjsDoc/buildingYourApplication/routing/route-group-multiple-layouts.avif)';
+
 export const routeGroupsContent10 = "### 将特定路段选入布局";
 export const routeGroupsContent11 = "要将特定路线选入布局，请创建一个新的路线组（例如（商店）），并将共享相同布局的路线移入该组（例如帐户和购物车）。组外的路线不会共享布局（例如结帐）。";
+
+export const routeGroupsContent11Image = '![route-group-opt-in-layouts](/nextjsDoc/buildingYourApplication/routing/route-group-opt-in-layouts.avif)';
 export const routeGroupsContent12 = "### 选择在特定路线上加载骨架";
 export const routeGroupsContent13 = "要通过 loading.js 文件将加载骨架应用于特定路线，请创建一个新的路线组（例如 /(overview)），然后将您的 loading.tsx 移动到该路线组内。";
+export const routeGroupsContent13Image = '![route-group-loading](/nextjsDoc/buildingYourApplication/routing/route-group-loading.avif)';
+
 export const routeGroupsContent14 = "现在，loading.tsx 文件将仅适用于您的仪表板→概览页面，而不是所有仪表板页面，而不会影响 URL 路径结构。";
-export const routeGroupsContent15 = "创建多个根布局";
+export const routeGroupsContent15 = "### 创建多个根布局";
 export const routeGroupsContent16 = "要创建多个根布局，请删除顶层 layout.js 文件，并在每个路由组内添加一个 layout.js 文件。这对于将应用程序划分为具有完全不同 UI 或体验的部分非常有用。需要将 <html> 和 <body> 标签添加到每个根布局。";
+export const routeGroupsContent16Image = '![route-group-multiple-root-layouts](/nextjsDoc/buildingYourApplication/routing/route-group-multiple-root-layouts.avif)';
+
 export const routeGroupsContent17 = "在上面的例子中，(marketing) 和 (shop) 都有自己的根布局。";
 export const routeGroupsContentTips = [
     "路由组的命名除了组织之外没有其他特殊意义。它们不会影响 URL 路径。",

@@ -54,8 +54,13 @@ export const nextjsMenu: MenuItem[] = [
                             UI and Streaming</Link>
                     },
                     {key: "217", label: "Redirecting"},
-                    {key: "218", label: "Route Groups"},
-                    {key: "219",
+                    {
+                        key: "218",
+                        label: <Link href={'/nextjs-docs/building-your-application/routing/route-groups'}>Route
+                            Groups</Link>
+                    },
+                    {
+                        key: "219",
                         label: <Link href={'/nextjs-docs/building-your-application/routing/dynamic-routes'}>Dynamic
                             Routes</Link>
                     },
