@@ -53,7 +53,11 @@ export const nextjsMenu: MenuItem[] = [
                         label: <Link href={'/nextjs-docs/building-your-application/routing/loading-ui-and-streaming'}>Loading
                             UI and Streaming</Link>
                     },
-                    {key: "217", label: "Redirecting"},
+                    {
+                        key: "217",
+                        label: <Link
+                            href={'/nextjs-docs/building-your-application/routing/redirecting'}>Redirecting</Link>
+                    },
                     {
                         key: "218",
                         label: <Link href={'/nextjs-docs/building-your-application/routing/route-groups'}>Route

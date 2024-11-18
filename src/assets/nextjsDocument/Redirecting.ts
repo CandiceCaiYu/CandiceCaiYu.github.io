@@ -49,7 +49,7 @@ export async function createPost(id: string) {
   }
  
   revalidatePath('/posts') // Update cached posts
-  redirect(\`/post/${id}\`) // Navigate to the new post page
+  redirect(\`/post/\${id}\`) // Navigate to the new post page
 }`;
 export const redirectingContent2Tips = [
     "默认情况下，redirect 返回 307（临时重定向）状态代码。在服务器操作中使用时，它会返回 303（参见其他），这通常用于在 POST 请求后重定向到成功页面。",
@@ -59,7 +59,7 @@ export const redirectingContent2Tips = [
     "如果您想在渲染过程之前重定向，请使用 next.config.js 或中间件。"
 ];
 export const redirectingContentMore = '有关详细信息，请参阅redirect API 参考。';
-export const permanentRedirectTitle = 'permanentRedirect 函数';
+export const permanentRedirectTitle = '## permanentRedirect 函数';
 export const permanentRedirectContent1 = 'permanentRedirect 函数允许您将用户永久重定向到另一个 URL。您可以在服务器组件、路由处理程序和服务器操作中调用 permanentRedirect。';
 export const permanentRedirectContent2 = 'permanentRedirect 通常在实体的规范 URL 发生变更或事件后使用，例如在用户更改用户名后更新其个人资料 URL。';
 export const permanentRedirectContent2Code = `~~~app/actions.tsx
@@ -77,7 +77,7 @@ export async function updateUsername(username: string, formData: FormData) {
   }
  
   revalidateTag('username') // Update all references to the username
-  permanentRedirect(\`/profile/${username}\`) // Navigate to the new user profile
+  permanentRedirect(\`/profile/\${username}\`) // Navigate to the new user profile
 }`;
 export const permanentRedirectContent2Tips = [
     "permanentRedirect 默认返回 308（永久重定向）状态代码。",
@@ -244,7 +244,7 @@ export async function middleware(request: NextRequest) {
   if (bloomFilter.has(pathname)) {
     // Forward the pathname to the Route Handler
     const api = new URL(
-      \`/api/redirects?pathname=${encodeURIComponent(request.nextUrl.pathname)}\`,
+      \`/api/redirects?pathname=\${encodeURIComponent(request.nextUrl.pathname)}\`,
       request.nextUrl.origin
     )
  

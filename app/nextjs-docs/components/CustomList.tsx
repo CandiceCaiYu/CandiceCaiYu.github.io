@@ -23,7 +23,7 @@ const CustomList = ({items, isSmall, isOrder, image, isSubList}: CustomListProps
                 return (
                     <li key={`index-${item}`}
                         className={`${style.item} ${isSmall && style.small} ${isSubList && style.subList}`}>
-                        {!isImage(item) && <span> {isOrder ? index + 1 : '-'} </span>}
+                        {!isImage(item) && <span> {isOrder ? `${index + 1}.` : '-'} </span>}
                         <CustomMarkdown text={item} image={image}/>
                     </li>
                 )

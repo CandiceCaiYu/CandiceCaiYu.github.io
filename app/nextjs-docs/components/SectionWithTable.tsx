@@ -2,11 +2,12 @@ import CustomSection from "@/app/nextjs-docs/components/CustomSection";
 import {Table} from "antd";
 import {ReactNode} from "react";
 
-const SectionWithTable = ({texts, dataSource, goodToKnown, columns}: {
+const SectionWithTable = ({texts, dataSource, goodToKnown, columns, showHeader}: {
     texts: string[],
     dataSource: Array<Record<string, string>>
     goodToKnown?: ReactNode
     columns?: Array<Record<string, string>>
+    showHeader?: boolean
 }) => {
     return (
         <CustomSection texts={texts} goodToKnown={goodToKnown}>
@@ -19,7 +20,7 @@ const SectionWithTable = ({texts, dataSource, goodToKnown, columns}: {
                     ]}
                 dataSource={dataSource}
                 pagination={false}
-                showHeader={false}
+                showHeader={showHeader}
             />
         </CustomSection>
     )
