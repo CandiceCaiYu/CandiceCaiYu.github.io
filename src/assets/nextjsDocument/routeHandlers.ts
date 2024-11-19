@@ -1,5 +1,6 @@
 export const title = '# 路由handler';
 export const content1 = '路由处理程序允许您使用 Web 请求和响应 API 为给定路由创建自定义请求处理程序。';
+export const content1Image = '![route-special-file](/nextjsDoc/buildingYourApplication/routing/route-special-file.avif)';
 export const content1Tips = "路由处理程序仅在 app 目录中可用。它们相当于 pages 目录中的 API 路由，这意味着您不需要同时使用 API 路由和路由handler。";
 export const content2 = "## 约定";
 export const content3 = "路由处理程序在app目录内的 route.js|ts 文件中定义：";
@@ -259,7 +260,7 @@ export async function POST(request: Request) {
     status: 200,
   })
 }`;
-export const content56 = "值得注意的是，与 Pages Router 的 API 路由不同，您不需要使用 bodyParser 来使用任何其他配置。";
+export const content46 = "值得注意的是，与 Pages Router 的 API 路由不同，您不需要使用 bodyParser 来使用任何其他配置。";
 export const content47 = "### 非 UI 响应";
 export const content48 = "您可以使用路由处理程序返回非 UI 内容。请注意，sitemap.xml、robots.txt、应用图标和开放图形图像均具有内置支持。";
 export const content48Code = `~~~app/rss.xml/route.ts
@@ -294,4 +295,4 @@ export const revalidate = false
 export const fetchCache = 'auto'
 export const runtime = 'nodejs'
 export const preferredRegion = 'auto'`;
-export const content50Tips = "有关更多详细信息，请参阅 API 参考。";
+export const content50More = "有关更多详细信息，请参阅 API 参考。";
