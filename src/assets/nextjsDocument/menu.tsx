@@ -68,7 +68,10 @@ export const nextjsMenu: MenuItem[] = [
                         label: <Link href={'/nextjs-docs/building-your-application/routing/dynamic-routes'}>Dynamic
                             Routes</Link>
                     },
-                    {key: "2101", label: "Parallel Routes"},
+                    {key: "2101",
+                        label: <Link href={'/nextjs-docs/building-your-application/routing/parallel-routes'}>Parallel
+                            Routes</Link>
+                    },
                     {
                         key: "2102", label: <Link
                             href={'/nextjs-docs/building-your-application/routing/intercepting-routes'}>Intercepting
