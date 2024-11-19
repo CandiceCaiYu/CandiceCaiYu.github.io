@@ -3,42 +3,34 @@
 import {Menu} from "antd";
 import {nextjsMenu} from "@/src/assets/nextjsDocument/menu";
 import styles from './styles.module.scss'
-import {usePathname} from "next/navigation";
-import {useState} from "react";
+import {UpCircleFilled} from "@ant-design/icons";
+import {useEffect, useState} from "react";
 
 export default function NextJSLayout(prop: {
     children: React.ReactNode
 }) {
-    const pathname = usePathname();
-    const [selectedKeys, setSelectedKeys] = useState<string[]>([]);
-    for (let i = 0; i < nextjsMenu.length; i++) {
-        const item = nextjsMenu[i];
-        if (!item?.label) return;
-        console.log('pathname...', item.label.props?.href);
-        if (pathname === item.label.props?.href) {
-            setSelectedKeys([item.key]);
-            return;
+    const [backToTopOpacity, setBackToTopOpacity] = useState(0);
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll)
         }
-        if (item.children && item.children?.length > 0) {
-            for (let j = 0; j < item.children.length; j++) {
-                const subItem = item.children[j];
-                console.log('pathname...2', subItem.label.props?.href);
-                if (pathname === subItem.label.props?.href) {
-                    setSelectedKeys([subItem.key]);
-                    return;
-                }
-            }
+    }, []);
+
+    const handleScroll = () => {
+        if (window.scrollY > 100) {
+            setBackToTopOpacity(1)
+        } else {
+            setBackToTopOpacity(0)
         }
-    }
-    console.log('selectedKeys...', selectedKeys);
+    };
     return (
         <section className={styles.layout}>
             <div>
                 <Menu mode="inline"
                       items={nextjsMenu}
-                    // defaultSelectedKeys={["212"]}
+                      defaultSelectedKeys={["212"]}
                     //   defaultSelectedKeys={selectedKeys}
-                      selectedKeys={selectedKeys}
                     // defaultOpenKeys={["2", "21",]}
                       style={{height: '100%'}}
                 />
@@ -46,6 +38,11 @@ export default function NextJSLayout(prop: {
             </div>
             <div className={styles.center}>{prop.children}</div>
             <div className={styles.right}></div>
+            <div className={styles.backToTop} style={{opacity: backToTopOpacity}} onClick={() => {
+                window.scrollTo({top: 0, behavior: 'smooth'});
+            }}>
+                <UpCircleFilled/>
+            </div>
         </section>
     )
 }

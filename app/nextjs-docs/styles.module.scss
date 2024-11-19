@@ -99,4 +99,16 @@
   .right {
     width: 30%;
   }
+
+  .backToTop {
+    position: fixed;
+    bottom: 124px;
+    right: 100px;
+    cursor: pointer;
+
+    svg {
+      font-size: 48px;
+      color: $link;
+    }
+  }
 }
