@@ -69,7 +69,11 @@ export const nextjsMenu: MenuItem[] = [
                             Routes</Link>
                     },
                     {key: "2101", label: "Parallel Routes"},
-                    {key: "2102", label: "Intercepting Routes"},
+                    {
+                        key: "2102", label: <Link
+                            href={'/nextjs-docs/building-your-application/routing/intercepting-routes'}>Intercepting
+                            Routes</Link>
+                    },
                     {
                         key: "2103", label: <Link
                             href={'/nextjs-docs/building-your-application/routing/route-handlers'}>Route Handlers</Link>
