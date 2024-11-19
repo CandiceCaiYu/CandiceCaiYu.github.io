@@ -22,7 +22,7 @@ export const content6 = '## 约定';
 export const content7 = '使用项目根目录中的 middleware.ts（或 .js）文件来定义中间件。例如，与page或app处于同一级别，或者在 src 内（如果适用）。';
 export const content7TipsTitle = '注意';
 export const content7Tips = '虽然每个项目仅支持一个 middleware.ts 文件，但您仍然可以模块化地组织中间件逻辑。将中间件功能分解为单独的 .ts 或 .js 文件，然后将其导入主 middleware.ts 文件。这样可以更清晰地管理路由特定的中间件，这些中间件会汇总在 middleware.ts 中以便进行集中控制。通过强制使用单个中间件文件，可以简化配置、防止潜在冲突并通过避免多个中间件层来优化性能。';
-export const content8 = '##示例';
+export const content8 = '## 示例';
 export const content8Code = `~~~middleware.ts
 
 import { NextResponse } from 'next/server'
@@ -37,7 +37,7 @@ export function middleware(request: NextRequest) {
 export const config = {
   matcher: '/about/:path*',
 }`;
-export const content9 = '匹配路径';
+export const content9 = '## 匹配路径';
 export const content10 =
     '中间件将针对项目中的每个路由进行调用。鉴于此，使用匹配器精确定位或排除特定路由至关重要。以下是执行顺序：';
 export const content10List = [
@@ -199,7 +199,7 @@ export function middleware(request: NextRequest) {
  
   return response
 }`;
-export const content24 = '设置标头';
+export const content24 = '## 设置标头';
 export const content25 = '您可以使用 NextResponse API 设置请求和响应标头（自 Next.js v13.0.0 起可以设置请求标头）。';
 export const content25Code = `~~~middleware.ts
 
@@ -374,7 +374,7 @@ expect(
 ).toEqual(false)
 `;
 export const content40 = '整个中间件功能也可以进行测试。';
-export const content40Code = `
+export const content40Code = `~~~
 import { isRewrite, getRewrittenUrl } from 'next/experimental/testing/server'
 import {expect} from "sucrase/dist/types/parser/traverser/util";
  
