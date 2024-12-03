@@ -44,7 +44,7 @@ import {
     terminologyTitle,
     terminologyTreeImage,
     title
-} from "@/src/assets/nextjsDocument/routing";
+} from "@/src/assets/nextjsDocument/routing/routing";
 import {Divider} from "antd";
 import CustomList from "@/app/nextjs-docs/components/CustomList";
 import GoodToKnown from "@/app/nextjs-docs/components/GoodToKnown";

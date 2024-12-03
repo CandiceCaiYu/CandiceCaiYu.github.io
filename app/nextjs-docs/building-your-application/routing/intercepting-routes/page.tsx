@@ -23,7 +23,7 @@ import {
         content8,
         content9,
         title
-} from "@/src/assets/nextjsDocument/interceptingRoutes";
+} from "@/src/assets/nextjsDocument/routing/interceptingRoutes";
 import CustomList from "@/app/nextjs-docs/components/CustomList";
 import GoodToKnown from "@/app/nextjs-docs/components/GoodToKnown";
 

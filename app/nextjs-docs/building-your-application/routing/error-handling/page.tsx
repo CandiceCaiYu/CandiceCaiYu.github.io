@@ -30,7 +30,7 @@ import {
     handleUncaughtExceptionsContent9,
     handleUncaughtExceptionsTitle,
     title
-} from "@/src/assets/nextjsDocument/errorHandling";
+} from "@/src/assets/nextjsDocument/routing/errorHandling";
 import CustomList from "@/app/nextjs-docs/components/CustomList";
 import GoodToKnown from "@/app/nextjs-docs/components/GoodToKnown";
 

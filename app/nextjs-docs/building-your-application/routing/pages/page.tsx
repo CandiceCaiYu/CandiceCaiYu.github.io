@@ -7,7 +7,7 @@ import {
     pagesContent3,
     pagesContentTips,
     pagesTitle
-} from "@/src/assets/nextjsDocument/pages";
+} from "@/src/assets/nextjsDocument/routing/pages";
 import GoodToKnown from "@/app/nextjs-docs/components/GoodToKnown";
 
 const Page = () => {

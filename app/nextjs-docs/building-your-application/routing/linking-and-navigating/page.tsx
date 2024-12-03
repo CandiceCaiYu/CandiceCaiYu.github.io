@@ -58,7 +58,7 @@ import {
     useRouterHookContentRecommend,
     useRouterHookContentRecommendTitle,
     useRouterHookTitle
-} from "@/src/assets/nextjsDocument/linkingAndNavigating";
+} from "@/src/assets/nextjsDocument/routing/linkingAndNavigating";
 import CustomList from "@/app/nextjs-docs/components/CustomList";
 import {Divider} from "antd";
 import GoodToKnown from "@/app/nextjs-docs/components/GoodToKnown";

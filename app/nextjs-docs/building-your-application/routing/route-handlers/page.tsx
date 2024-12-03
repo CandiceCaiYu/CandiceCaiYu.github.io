@@ -80,7 +80,7 @@ import {
     content8,
     content9,
     title
-} from "@/src/assets/nextjsDocument/routeHandlers";
+} from "@/src/assets/nextjsDocument/routing/routeHandlers";
 import GoodToKnown from "@/app/nextjs-docs/components/GoodToKnown";
 import CustomList from "@/app/nextjs-docs/components/CustomList";
 import SectionWithTable from "@/app/nextjs-docs/components/SectionWithTable";

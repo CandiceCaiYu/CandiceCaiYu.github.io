@@ -51,7 +51,7 @@ import {
     systemRequirementsContent1,
     systemRequirementsContent2,
     title
-} from "@/src/assets/nextjsDocument/installation";
+} from "@/src/assets/nextjsDocument/routing/installation";
 import CustomList from "@/app/nextjs-docs/components/CustomList";
 import GoodToKnown from "@/app/nextjs-docs/components/GoodToKnown";
 import {Divider} from "antd";

@@ -43,7 +43,7 @@ import {
     streamingWithSuspenseTips,
     streamingWithSuspenseTitle,
     title
-} from "@/src/assets/nextjsDocument/loadingUIAndStreaming";
+} from "@/src/assets/nextjsDocument/routing/loadingUIAndStreaming";
 import GoodToKnown from "@/app/nextjs-docs/components/GoodToKnown";
 import CustomList from "@/app/nextjs-docs/components/CustomList";
 

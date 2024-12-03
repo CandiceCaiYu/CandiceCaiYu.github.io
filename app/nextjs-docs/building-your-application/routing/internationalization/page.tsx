@@ -29,7 +29,7 @@ import {
         content8,
         content9,
         title
-} from "@/src/assets/nextjsDocument/internationalization";
+} from "@/src/assets/nextjsDocument/routing/internationalization";
 import CustomList from "@/app/nextjs-docs/components/CustomList";
 
 const Page = () => {

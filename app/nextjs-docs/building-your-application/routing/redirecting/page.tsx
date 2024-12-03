@@ -55,7 +55,7 @@ import {
     useRouterContent1More,
     useRouterContent1Tips,
     useRouterTitle
-} from "@/src/assets/nextjsDocument/Redirecting";
+} from "@/src/assets/nextjsDocument/routing/Redirecting";
 import SectionWithTable from "@/app/nextjs-docs/components/SectionWithTable";
 import GoodToKnown from "@/app/nextjs-docs/components/GoodToKnown";
 import CustomList from "@/app/nextjs-docs/components/CustomList";

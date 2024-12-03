@@ -126,7 +126,7 @@ export function NavLinks() {
  
   return (
     <nav>
-      <Link className={\`link \${pathname === '/' ? 'active' : ''}\`} href="/">
+      <Link className={\`link \${pathname === '/' ? 'active' : ''}\`} href="/public">
         Home
       </Link>
  

@@ -41,7 +41,7 @@ import {
     topLevelFoldersDescription,
     topLevelFoldersImage,
     topLevelFoldersTitle
-} from "@/src/assets/nextjsDocument/projectStructure";
+} from "@/src/assets/nextjsDocument/routing/projectStructure";
 import {Divider} from "antd";
 import SectionWithTable from "@/app/nextjs-docs/components/SectionWithTable";
 

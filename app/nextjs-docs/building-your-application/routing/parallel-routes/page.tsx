@@ -69,7 +69,7 @@ import {
     slotContent3Tips,
     slotTitle,
     title
-} from "@/src/assets/nextjsDocument/parallelRoutes";
+} from "@/src/assets/nextjsDocument/routing/parallelRoutes";
 import GoodToKnown from "@/app/nextjs-docs/components/GoodToKnown";
 import CustomList from "@/app/nextjs-docs/components/CustomList";
 

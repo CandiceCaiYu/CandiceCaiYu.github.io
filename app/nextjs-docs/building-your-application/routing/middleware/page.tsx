@@ -78,7 +78,7 @@ import {
     content8Code,
     content9,
     title
-} from "@/src/assets/nextjsDocument/middleware";
+} from "@/src/assets/nextjsDocument/routing/middleware";
 import CustomList from "@/app/nextjs-docs/components/CustomList";
 import GoodToKnown from "@/app/nextjs-docs/components/GoodToKnown";
 import SectionWithTable from "@/app/nextjs-docs/components/SectionWithTable";

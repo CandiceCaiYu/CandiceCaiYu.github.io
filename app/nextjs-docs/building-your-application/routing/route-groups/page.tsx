@@ -26,7 +26,7 @@ import {
     routeGroupsContent9Image,
     routeGroupsContentTips,
     routeGroupsTitle
-} from "@/src/assets/nextjsDocument/routeGroups";
+} from "@/src/assets/nextjsDocument/routing/routeGroups";
 import CustomList from "@/app/nextjs-docs/components/CustomList";
 import GoodToKnown from "@/app/nextjs-docs/components/GoodToKnown";
 

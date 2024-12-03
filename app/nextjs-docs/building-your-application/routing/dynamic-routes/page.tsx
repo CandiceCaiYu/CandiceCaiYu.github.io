@@ -31,7 +31,7 @@ import {
     DynamicRoutesContent8Tips,
     DynamicRoutesContent9,
     DynamicRoutesTitle
-} from "@/src/assets/nextjsDocument/DynamicRoutes";
+} from "@/src/assets/nextjsDocument/routing/DynamicRoutes";
 import SectionWithTable from "@/app/nextjs-docs/components/SectionWithTable";
 import CustomList from "@/app/nextjs-docs/components/CustomList";
 import GoodToKnown from "@/app/nextjs-docs/components/GoodToKnown";

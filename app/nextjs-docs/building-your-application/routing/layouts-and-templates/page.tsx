@@ -41,7 +41,7 @@ import {
     templatesContentExampleMetadataTitle,
     templatesContentExampleTitle,
     templatesTitle
-} from "@/src/assets/nextjsDocument/layoutsAndTemplates";
+} from "@/src/assets/nextjsDocument/routing/layoutsAndTemplates";
 import {Divider} from "antd";
 import GoodToKnown from "@/app/nextjs-docs/components/GoodToKnown";
 import CustomList from "@/app/nextjs-docs/components/CustomList";

@@ -15,7 +15,7 @@ import {
     definingRoutesContent,
     definingRoutesDescription,
     definingRoutesTitle
-} from "@/src/assets/nextjsDocument/definingRoutes";
+} from "@/src/assets/nextjsDocument/routing/definingRoutes";
 import GoodToKnown from "@/app/nextjs-docs/components/GoodToKnown";
 import {Divider} from "antd";
 

@@ -23,7 +23,7 @@ import {
     routerTitle,
     title,
     welcome
-} from "@/src/assets/nextjsDocument/introduction";
+} from "@/src/assets/nextjsDocument/routing/introduction";
 import CustomSection from "@/app/nextjs-docs/components/CustomSection";
 import {Divider, Table} from "antd";
 
