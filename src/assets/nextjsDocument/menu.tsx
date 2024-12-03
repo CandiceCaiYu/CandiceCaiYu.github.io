@@ -95,7 +95,7 @@ export const nextjsMenu: MenuItem[] = [
             },
             {
                 key: "22", label: "Data Fetching", children: [
-                    {key: "221", label: "Data Fetching and Caching"},
+                    {key: "221", label: <Link href={'/nextjs-docs/building-your-application/data-fetching/data-fetching-and-caching'}>Data Fetching and Caching</Link>},
                     {key: "222", label: "Server Actions and Mutations"},
                     {key: "223", label: "Incremental Static Regeneration(ISR)"},
                 ]

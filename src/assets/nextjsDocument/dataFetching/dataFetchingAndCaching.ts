@@ -1,4 +1,5 @@
 export const title = '# 数据获取和缓存';
+export const subTitle = '#### 示例';
 export const content1List = [
     "Next.js Commerce",
     "On-Demand ISR",
@@ -128,7 +129,7 @@ interface Post {
 }
  
 async function getPost(id: string) {
-  let res = await fetch(\`https://api.vercel.app/blog/${id}\`, {
+  let res = await fetch(\`https://api.vercel.app/blog/\${id}\`, {
     cache: 'force-cache',
   })
   let post: Post = await res.json()
@@ -183,7 +184,7 @@ export const exampleContent22 = "了解有关使用增量静态再生重新验�
 export const exampleContent23 = "## 模式";
 export const exampleContent24 = "### 并行和顺序数据获取";
 export const exampleContent25 = "在组件内部获取数据时，您需要了解两种数据获取模式：并行和顺序。";
-export const exampleContent25Img = "";
+export const exampleContent25Img = "![sequential-parallel-data-fetching](/nextjsDoc/buildingYourApplication/dataFetching/sequential-parallel-data-fetching.avif)";
 export const exampleContent25List = [
 "顺序性：组件树中的请求相互依赖。这可能会导致更长的加载时间。",
     "并行：路由中的请求会立即发起，并同时加载数据。这减少了加载数据所需的总时间。"
@@ -231,17 +232,18 @@ export const exampleContent31 = "#### 并行数据获取";
 export const exampleContent32 = "默认情况下，布局和页面片段是并行渲染的。这意味着请求将并行发起。";
 export const exampleContent33 = "但是，由于 async/await 的性质，同一个段或组件内等待的请求将阻止其下方的任何请求。";
 export const exampleContent34 = "要并行获取数据，您可以通过在使用数据的组件之外定义请求来立即发起请求。通过并行发起两个请求可以节省时间，但是，在两个promise请求都resolved之前，用户不会看到渲染结果。";
+export const exampleContent34Text = "在下面的示例中，getArtist 和 getAlbums 函数在 Page 组件外部定义，并在组件内部使用 Promise.all 启动：";
 export const exampleContent34Code = `~~~app/artist/[username]/page.tsx
 
 import Albums from './albums'
  
 async function getArtist(username: string) {
-  const res = await fetch(\`https://api.example.com/artist/${username}\`)
+  const res = await fetch(\`https://api.example.com/artist/\${username}\`)
   return res.json()
 }
  
 async function getAlbums(username: string) {
-  const res = await fetch(\`https://api.example.com/artist/${username}/albums\`)
+  const res = await fetch(\`https://api.example.com/artist/\${username}/albums\`)
   return res.json()
 }
  
@@ -325,7 +327,7 @@ module.exports = {
   },
 }`;
 export const exampleContent47 = "然后将您想要污染的对象或值传递给experimental_taintObjectReference或experimental_taintUniqueValue函数：";
-export const exampleContent47Code1 = `        ~~~app/utils.ts
+export const exampleContent47Code1 = `~~~app/utils.ts
 
 import { queryDataFromDB } from './api'
 import {
