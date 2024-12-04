@@ -32,10 +32,10 @@ import { create } from '@/app/actions'
 export function Button() {
   return <button onClick={() => create()}>Create</button>
 }`;
-export const conventionContent = "### 将操作作为 props 传递";
-export const conventionContent = "您还可以将服务器操作作为 prop 传递给客户端组件：";
-export const conventionContent =    `~~~<ClientComponent updateItemAction={updateItem} />`;
-export const conventionContent = `~~~app/client-component.tsx
+export const conventionContent6 = "### 将操作作为 props 传递";
+export const conventionContent7 = "您还可以将服务器操作作为 prop 传递给客户端组件：";
+export const conventionContent8 =    `~~~<ClientComponent updateItemAction={updateItem} />`;
+export const conventionContent9 = `~~~app/client-component.tsx
 
 'use client'
  
@@ -46,7 +46,7 @@ export default function ClientComponent({
 }) {
   return <form action={updateItemAction}>{/* ... */}</form>
 }`;
-export const conventionContent6 = "通常，Next.js TypeScript 插件会在 client-component.tsx 中标记 updateItemAction，因为它是一个通常无法跨客户端-服务器边界序列化的函数。但是，名为 action 或以 Action 结尾的 props 被假定为接收服务器操作。这只是一种启发式方法，因为 TypeScript 插件实际上并不知道它接收的是服务器操作还是普通函数。运行时类型检查仍将确保您不会意外将函数传递给客户端组件。";
+export const conventionContent10 = "通常，Next.js TypeScript 插件会在 client-component.tsx 中标记 updateItemAction，因为它是一个通常无法跨客户端-服务器边界序列化的函数。但是，名为 action 或以 Action 结尾的 props 被假定为接收服务器操作。这只是一种启发式方法，因为 TypeScript 插件实际上并不知道它接收的是服务器操作还是普通函数。运行时类型检查仍将确保您不会意外将函数传递给客户端组件。";
 export const behaviorTitle = "## 行为";
 export const behaviorContentList = [
     "可以使用 <form> 元素中的 action 属性来调用服务器操作：",
@@ -354,6 +354,7 @@ export default function ViewCount({ initialViews }: { initialViews: number }) {
 export const exampleContent32 = "记住考虑 useEffect 的行为和注意事项。";
 export const exampleContent33 = "### 错误处理";
 export const exampleContent34 = "当错误被抛出时，它将被客户端上最近的 error.js 或 <Suspense> 边界捕获。我们建议使用 try/catch 返回错误以供您的 UI 处理。";
+export const exampleContent34Text = "例如，你的服务器操作可能会通过返回一条消息来处理创建新项目时的错误："
 export const exampleContent34Code = `~~~app/actions.ts
 
 'use server'
@@ -418,7 +419,7 @@ export async function createPost(id: string) {
   }
  
   revalidateTag('posts') // Update cached posts
-  redirect(\`/post/${id}\`) // Navigate to the new post page
+  redirect(\`/post/\${id}\`) // Navigate to the new post page
 }`;
 export const exampleContent40 = "### Cookies";
 export const exampleContent41 = "您可以使用 cookies API 在服务器操作中get、set和delete cookie：";
