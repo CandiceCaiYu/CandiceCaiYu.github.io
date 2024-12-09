@@ -80,6 +80,9 @@
     border: 1px solid $grey4;
     border-radius: 4px;
     padding: 12px;
+    .description {
+      margin: 12px 0;
+    }
 
     span {
       font-weight: 400;
