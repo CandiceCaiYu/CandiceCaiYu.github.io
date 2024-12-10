@@ -106,7 +106,7 @@ export const nextjsMenu: MenuItem[] = [
                     {key: "232", label: <Link href={'/nextjs-docs/building-your-application/rendering/client-components'}>Client Components</Link>},
                     {key: "233", label: <Link href={'/nextjs-docs/building-your-application/rendering/composition-patterns'}>Composition Patterns</Link>},
                     {key: "234", label: <Link href={'/nextjs-docs/building-your-application/rendering/partial-prerendering'}>Partial Prerendering</Link>},
-                    {key: "235", label: <Link href={'/nextjs-docs/building-your-application/rendering/runtime'}>Runtime</Link>},
+                    {key: "235", label: <Link href={'/nextjs-docs/building-your-application/rendering/runtimes'}>Runtimes</Link>},
                 ]
             },
             {key: "24", label: "Caching"},
