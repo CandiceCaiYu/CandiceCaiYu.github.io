@@ -375,7 +375,7 @@ export const apisContent37 = '有关更多选项，请参阅路由段配置文�
 export const apisContent38 = '### generateStaticParams';
 export const apisContent39 = '对于动态段（例如 app/blog/[slug]/page.js），generateStaticParams 提供的路径会在构建时缓存在完整路由缓存中。在请求时，Next.js 还会缓存首次访问时构建时未知的路径。';
 export const apisContent40 = '要在构建时静态呈现所有路径，请向 generateStaticParams 提供完整的路径列表：';
-export const apisContent40Code = `~~~app/blog/[slug]/page.js
+export const apisContent40Code = `~~~app/blog/[slug]/page.js~~~
 
 
 export async function generateStaticParams() {
@@ -386,7 +386,7 @@ export async function generateStaticParams() {
   }))
 }`;
 export const apisContent41 = '要在构建时静态渲染路径子集，并在运行时第一次访问其余路径时，返回部分路径列表：';
-export const apisContent41Code = `~~~app/blog/[slug]/page.js
+export const apisContent41Code = `~~~app/blog/[slug]/page.js~~~
 
 
 export async function generateStaticParams() {
@@ -399,7 +399,7 @@ export async function generateStaticParams() {
 }`;
 export const apisContent42 = '若要在第一次访问时静态渲染所有路径，请返回一个空数组（构建时不会渲染任何路径）或利用';
 export const apisContent43 = "export const dynamic = 'force-static':";
-export const apisContent43Code = `~~~app/blog/[slug]/page.js
+export const apisContent43Code = `~~~app/blog/[slug]/page.js~~~
 
 export async function generateStaticParams() {
   return []
@@ -410,7 +410,7 @@ export const apisContent46 = '要在请求时禁用缓存，请在路由段中�
 export const apisContent47 = '### React 缓存功能';
 export const apisContent48 = 'React 缓存功能可以让你记住一个函数的返回值，这样你就可以多次调用同一个函数但只执行一次。';
 export const apisContent49 = '由于 fetch 请求会自动记忆，因此您无需将其包装在 React cache中。但是，当 fetch API 不适合时，您可以使用cache手动记忆数据请求。例如，某些数据库客户端、CMS 客户端或 GraphQL 客户端。';
-export const apisContent49Code = `~~~utils/get-item.ts
+export const apisContent49Code = `~~~utils/get-item.ts~~~
 
 import { cache } from 'react'
 import db from '@/lib/db'

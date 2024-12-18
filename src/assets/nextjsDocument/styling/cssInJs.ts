@@ -36,10 +36,9 @@ export const content6List = [
 ];
 export const content7 = '### styled-jsx';
 export const content8 = '在客户端组件中使用 styled-jsx 需要使用 v5.1.0。首先，创建一个新的注册表：';
-export const content8Code = `~~~app/registry.tsx
-
+export const content8Code = `~~~app/registry.tsx~~~
 'use client'
- 
+
 import React, { useState } from 'react'
 import { useServerInsertedHTML } from 'next/navigation'
 import { StyleRegistry, createStyleRegistry } from 'styled-jsx'
@@ -62,7 +61,7 @@ export default function StyledJsxRegistry({
   return <StyleRegistry registry={jsxStyleRegistry}>{children}</StyleRegistry>
 }`;
 export const content9 = '然后，用注册表包装你的根布局：';
-export const content9Code = `~~~app/layout.tsx
+export const content9Code = `~~~app/layout.tsx~~~
 
 import StyledJsxRegistry from './registry'
  
@@ -83,7 +82,7 @@ export const content10 = '在此处查看示例。';
 export const content11 = '### Styled Components';
 export const content12 = '下面是如何配置 styled-components@6 或更新版本的示例：';
 export const content13 = '首先，在 next.config.js 中启用 styled-components。';
-export const content13Code = `~~~next.config.js
+export const content13Code = `~~~next.config.js~~~
 
 module.exports = {
   compiler: {
@@ -91,7 +90,7 @@ module.exports = {
   },
 }`;
 export const content14 = '然后，使用 styled-components API 创建一个全局注册表组件来收集渲染期间生成的所有 CSS 样式规则，并创建一个函数来返回这些规则。然后使用 useServerInsertedHTML 钩子将注册表中收集的样式注入到根布局中的 <head> HTML 标记中。';
-export const content14Code = `~~~lib/registry.tsx
+export const content14Code = `~~~lib/registry.tsx~~~
 
 'use client'
  

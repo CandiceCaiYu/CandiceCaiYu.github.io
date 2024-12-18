@@ -5,7 +5,7 @@ export const conventionTitle = "## 约定";
 export const conventionContent1 = "可以使用 React “use server” 指令定义服务器操作。您可以将该指令放在异步函数的顶部，以将该函数标记为服务器操作，或放在单独文件的顶部，以将该文件的所有导出标记为服务器操作。";
 export const conventionContent2 = "### 服务器组件";
 export const conventionContent3 = "服务器组件可以使用内联函数级别或模块级别的'use server'指令。要内联服务器操作，请将'use server'添加到函数主体的顶部：";
-export const conventionContent3Code = `~~~app/page.tsx
+export const conventionContent3Code = `~~~app/page.tsx~~~
 
 export default function Page() {
   // Server Action
@@ -18,14 +18,14 @@ export default function Page() {
 }`;
 export const conventionContent4 = "### 客户端组件";
 export const conventionContent5 = "要在客户端组件中调用服务器操作，请创建一个新文件并在其顶部添加'use server'指令。文件内的所有导出函数都将被标记为可在客户端和服务器组件中重复使用的服务器操作：";
-export const conventionContent5Code1 = `~~~app/actions.ts
+export const conventionContent5Code1 = `~~~app/actions.ts~~~
 
 'use server'
  
 export async function create() {}`;
-export const conventionContent5Code2 = `~~~app/page.tsx
+export const conventionContent5Code2 = `~~~app/page.tsx;~~~
 
-'use client'
+'use client';
  
 import { create } from '@/app/actions'
  
@@ -34,10 +34,10 @@ export function Button() {
 }`;
 export const conventionContent6 = "### 将操作作为 props 传递";
 export const conventionContent7 = "您还可以将服务器操作作为 prop 传递给客户端组件：";
-export const conventionContent8 =    `~~~<ClientComponent updateItemAction={updateItem} />`;
-export const conventionContent9 = `~~~app/client-component.tsx
+export const conventionContent8 = `~~~<ClientComponent updateItemAction={updateItem} />`;
+export const conventionContent9 = `~~~app/client-component.tsx;~~~
 
-'use client'
+'use client';
  
 export default function ClientComponent({
   updateItemAction,
@@ -64,13 +64,13 @@ export const behaviorContentList = [
 ];
 export const exampleTitle = "## 示例";
 export const exampleContent1 = "### 表单";
-export const exampleContent2 =  "React 扩展了 HTML <form> 元素，以允许使用 action prop 调用服务器操作。";
+export const exampleContent2 = "React 扩展了 HTML <form> 元素，以允许使用 action prop 调用服务器操作。";
 export const exampleContent3 = "在表单中调用时，该操作会自动接收 FormData 对象。您不需要使用 React useState 来管理字段，而是可以使用原生 FormData 方法提取数据：";
-export const exampleContent4 = `~~~app/invoices/page.tsx
+export const exampleContent4 = `~~~app/invoices/page.tsx;~~~;
 
 export default function Page() {
   async function createInvoice(formData: FormData) {
-    'use server'
+    'use server';
  
     const rawFormData = {
       customerId: formData.get('customerId'),
@@ -85,20 +85,20 @@ export default function Page() {
   return <form action={createInvoice}>...</form>
 }`;
 export const exampleContent4Tips = [
-    "示例：带有加载和错误状态的表单" ,
-    "处理包含许多字段的表单时，您可能需要考虑使用带有 JavaScript 的 Object.fromEntries() 的 entities() 方法。例如：const rawFormData = Object.fromEntries(formData)。需要注意的一点是 formData 将包含额外的 $ACTION_ 属性。" ,
+    "示例：带有加载和错误状态的表单",
+    "处理包含许多字段的表单时，您可能需要考虑使用带有 JavaScript 的 Object.fromEntries() 的 entities() 方法。例如：const rawFormData = Object.fromEntries(formData)。需要注意的一点是 formData 将包含额外的 $ACTION_ 属性。",
     "请参阅 React <form> 文档以了解更多信息。"
 ];
 export const exampleContent5 = "### 传递附加参数";
 export const exampleContent6 = "您可以使用 JavaScript 绑定方法将其他参数传递给服务器操作。";
-export const exampleContent6Code = `~~~app/client-component.tsx
+export const exampleContent6Code = `~~~app/client-component.tsx;~~~
 
-'use client'
+'use client';
  
 import { updateUser } from './actions'
  
 export function UserProfile({ userId }: { userId: string }) {
-  const updateUserWithId = updateUser.bind(null, userId)
+  const updateUserWithId = updateUser.bind(null, userId);
  
   return (
     <form action={updateUserWithId}>
@@ -108,7 +108,7 @@ export function UserProfile({ userId }: { userId: string }) {
   )
 }`;
 export const exampleContent7 = "除了表单数据之外，服务器操作还将接收 userId 参数：";
-export const exampleContent7Code = `~~~app/actions.ts
+export const exampleContent7Code = `~~~app/actions.ts~~~
 
 'use server'
  
@@ -118,13 +118,13 @@ export const exampleContent7Tips = [
     '.bind 适用于服务器和客户端组件。它还支持渐进式增强。'
 ];
 export const exampleContent8 = "### 嵌套表单元素";
-export const exampleContent9 =  '您还可以在嵌套在 <form> 中的元素（例如 <button>、<input type="submit"> 和 <input type="image">）中调用服务器操作。这些元素接受 formAction 属性或事件处理程序。';
+export const exampleContent9 = '您还可以在嵌套在 <form> 中的元素（例如 <button>、<input type="submit"> 和 <input type="image">）中调用服务器操作。这些元素接受 formAction 属性或事件处理程序。';
 export const exampleContent10 = "如果您想要在表单中调用多个服务器操作，这非常有用。例如，除了发布帖子草稿外，您还可以创建一个特定的 <button> 元素来保存帖子草稿。有关更多信息，请参阅 React <form> 文档。";
 export const exampleContent11 = "### 程序化表单提交";
 export const exampleContent12 = "您可以使用 requestSubmit() 方法以编程方式触发表单提交。例如，当用户使用 ⌘ + Enter 键盘快捷键提交表单时，您可以监听 onKeyDown 事件：";
-export const exampleContent12Code = `~~~app/entry.tsx
+export const exampleContent12Code = `~~~app/entry.tsx;~~~
 
-'use client'
+'use client';
  
 export function Entry() {
   const handleKeyDown = (e: React.KeyboardEvent<HTMLTextAreaElement>) => {
@@ -132,10 +132,10 @@ export function Entry() {
       (e.ctrlKey || e.metaKey) &&
       (e.key === 'Enter' || e.key === 'NumpadEnter')
     ) {
-      e.preventDefault()
+      e.preventDefault();
       e.currentTarget.form?.requestSubmit()
     }
-  }
+  };
  
   return (
     <div>
@@ -147,7 +147,7 @@ export const exampleContent13 = "这将触发最近的 <form> 祖先的提交，
 export const exampleContent14 = "### 服务器端表单验证";
 export const exampleContent15 = "您可以使用 HTML 属性（例如 required 和 type=\"email\"）进行基本的客户端表单验证。";
 export const exampleContent16 = "对于更高级的服务器端验证，您可以使用 zod 这样的库在改变数据之前验证表单字段：";
-export const exampleContent17 = `~~~app/actions.ts
+export const exampleContent17 = `~~~app/actions.ts~~~
 
 'use server'
  
@@ -178,7 +178,7 @@ export const exampleContent18List = [
     "通过将操作传递给 useFormState，操作的函数签名会发生变化，以接收新的 prevState 或 initialState 参数作为其第一个参数。",
     "useFormState 是一个 React 钩子，因此必须在客户端组件中使用。"
 ];
-export const exampleContent18Code = `~~~app/action.ts
+export const exampleContent18Code = `~~~app/action.ts~~~
 
 'use server'
  
@@ -195,19 +195,19 @@ export async function createUser(prevState: any, formData: FormData) {
   redirect('/dashboard')
 }`;
 export const exampleContent19 = "然后，您可以将您的操作传递给 useFormState 钩子并使用返回的状态来显示错误消息。";
-export const exampleContent19Code = `~~~app/ui/signup.tsx
+export const exampleContent19Code = `~~~app/ui/signup.tsx;~~~
 
-'use client'
+'use client';
  
 import { useFormState } from 'react-dom'
 import { createUser } from '@/app/actions'
  
 const initialState = {
   message: '',
-}
+};
  
 export function Signup() {
-  const [state, formAction] = useFormState(createUser, initialState)
+  const [state, formAction] = useFormState(createUser, initialState);
  
   return (
     <form action={formAction}>
@@ -225,14 +225,14 @@ export const exampleContent19Tips = [
 export const exampleContent20 = "### 待定状态";
 export const exampleContent21 = "在改变数据之前，你应该始终确保用户也有权执行该操作。请参阅身份验证和授权。";
 export const exampleContent22 = "useFormStatus 钩子公开一个待定布尔值，可用于在执行操作时显示加载指示器。";
-export const exampleContent22Code = `~~~app/submit-button.tsx
+export const exampleContent22Code = `~~~app/submit-button.tsx;~~~
 
-'use client'
+'use client';
  
 import { useFormStatus } from 'react-dom'
  
 export function SubmitButton() {
-  const { pending } = useFormStatus()
+  const { pending } = useFormStatus();
  
   return (
     <button disabled={pending} type="submit">
@@ -241,12 +241,12 @@ export function SubmitButton() {
   )
 }`;
 export const exampleContent22List = [
-    "在 React 19 中，useFormStatus 在返回的对象上包含其他键，例如数据、方法和操作。如果您未使用 React 19，则只有待处理键可用。" ,
+    "在 React 19 中，useFormStatus 在返回的对象上包含其他键，例如数据、方法和操作。如果您未使用 React 19，则只有待处理键可用。",
     "在 React 19 中，useActionState 在返回的状态上还包含待处理键。"
 ];
 export const exampleContent23 = "### 乐观的更新";
 export const exampleContent24 = "您可以使用 React useOptimistic 钩子在服务器操作完成执行之前乐观地更新 UI，而不是等待响应：";
-export const exampleContent24Code = `~~~app/page.tsx
+export const exampleContent24Code = `~~~app/page.tsx~~~
 
 'use client'
  
@@ -283,7 +283,7 @@ export function Thread({ messages }: { messages: Message[] }) {
 }`;
 export const exampleContent25 = "### 事件处理程序";
 export const exampleContent26 = "虽然在 <form> 元素中使用服务器操作很常见，但也可以使用 onClick 等事件处理程序来调用它们。例如，要增加点赞计数：";
-export const exampleContent26Code = `~~~app/like-button.tsx
+export const exampleContent26Code = `~~~app/like-button.tsx~~~
 
 'use client'
  
@@ -308,9 +308,9 @@ export default function LikeButton({ initialLikes }: { initialLikes: number }) {
   )
 }`;
 export const exampleContent27 = "您还可以向表单元素添加事件处理程序，例如，在 onChange 时保存表单字段：";
-export const exampleContent27Code = `~~~app/ui/edit-post.tsx
+export const exampleContent27Code = `~~~app/ui/edit-post.tsx;~~~
 
-'use client'
+'use client';
  
 import { publishPost, saveDraft } from './actions'
  
@@ -330,7 +330,7 @@ export default function EditPost() {
 export const exampleContent28 = "对于这种可能快速连续触发多个事件的情况，我们建议进行去抖动以防止不必要的服务器操作调用。";
 export const exampleContent29 = "### useEffect";
 export const exampleContent30 = "您可以使用 React useEffect 钩子在组件挂载或依赖项发生更改时调用服务器操作。这对于依赖于全局事件或需要自动触发的突变非常有用。例如，应用快捷方式的 onKeyDown、无限滚动的交叉观察器钩子，或者在组件挂载时更新视图计数：";
-export const exampleContent31 = `~~~app/view-count.tsx
+export const exampleContent31 = `~~~app/view-count.tsx~~~
 
 'use client'
  
@@ -354,8 +354,8 @@ export default function ViewCount({ initialViews }: { initialViews: number }) {
 export const exampleContent32 = "记住考虑 useEffect 的行为和注意事项。";
 export const exampleContent33 = "### 错误处理";
 export const exampleContent34 = "当错误被抛出时，它将被客户端上最近的 error.js 或 <Suspense> 边界捕获。我们建议使用 try/catch 返回错误以供您的 UI 处理。";
-export const exampleContent34Text = "例如，你的服务器操作可能会通过返回一条消息来处理创建新项目时的错误："
-export const exampleContent34Code = `~~~app/actions.ts
+export const exampleContent34Text = "例如，你的服务器操作可能会通过返回一条消息来处理创建新项目时的错误：";
+export const exampleContent34Code = `~~~app/actions.ts~~~
 
 'use server'
  
@@ -371,7 +371,7 @@ export const exampleContentTips = [
 ];
 export const exampleContent35 = "### 重新验证数据";
 export const exampleContent36 = "您可以使用 revalidatePath API 重新验证服务器操作中的 Next.js 缓存：";
-export const exampleContent36Code = `~~~app/actions.ts
+export const exampleContent36Code = `~~~app/actions.ts~~~
 
 'use server'
  
@@ -387,7 +387,7 @@ export async function createPost() {
   revalidatePath('/posts')
 }`;
 export const exampleContent37 = "或者使用 revalidateTag 使带有缓存标签的特定数据提取无效：";
-export const exampleContent37Code = `~~~app/actions.ts
+export const exampleContent37Code = `~~~app/actions.ts~~~
 
 'use server'
  
@@ -404,7 +404,7 @@ export async function createPost() {
 }`;
 export const exampleContent38 = "### 重定向";
 export const exampleContent39 = "如果您希望在服务器操作完成后将用户重定向到其他路由，则可以使用重定向 API。重定向需要在 try/catch 块之外调用：";
-export const exampleContent39Code = `~~~app/actions.ts
+export const exampleContent39Code = `~~~app/actions.ts~~~
 
 'use server'
  
@@ -423,7 +423,7 @@ export async function createPost(id: string) {
 }`;
 export const exampleContent40 = "### Cookies";
 export const exampleContent41 = "您可以使用 cookies API 在服务器操作中get、set和delete cookie：";
-export const exampleContent41Code = `~~~app/actions.ts
+export const exampleContent41Code = `~~~app/actions.ts~~~
 
 'use server'
  
@@ -465,7 +465,7 @@ export async function updateUserAction(formData) {}
 export async function deleteUserAction(formData) {}`;
 export const securityContent3 = "### 身份验证和授权";
 export const securityContent4 = "您应该确保用户有权执行该操作。例如：";
-export const securityContent4Code = `~~~app/actions.ts
+export const securityContent4Code = `~~~app/actions.ts~~~
 
 'use server'
  
@@ -494,7 +494,7 @@ export const securityContent14 = "由于可以在 <form> 元素中调用服务�
 export const securityContent15 = "在后台，服务器操作使用 POST 方法，并且只允许此 HTTP 方法调用它们。这可以防止现代浏览器中的大多数 CSRF 漏洞，尤其是在 SameSite cookie 为默认设置的情况下。";
 export const securityContent16 = "作为额外的保护，Next.js 中的服务器操作还会将 Origin 标头与 Host 标头（或 X-Forwarded-Host）进行比较。如果它们不匹配，则请求将被中止。换句话说，服务器操作只能在与托管它的页面相同的host上调用。";
 export const securityContent17 = "对于使用反向代理或多层后端架构的大型应用程序（其中服务器 API 与生产域不同），建议使用配置选项 serverActions.allowedOrigins 选项来指定安全来源列表。该选项接受一个字符串数组。";
-export const securityContent17Code = `~~~next.config.js
+export const securityContent17Code = `~~~next.config.js~~~
 
 /** @type {import('next').NextConfig} */
 module.exports = {
@@ -508,8 +508,8 @@ export const securityContent = "了解有关安全和服务器操作的更多信
 export const additionalResourceTitle = "## 其他资源";
 export const additionalResourceTitleContent1 = "有关更多信息，请查看以下 React 文档：";
 export const additionalResourceTitleContent1List = ['Server Actions',
-'"use server"',
-'<form>',
-'useFormStatus',
-'useActionState',
-'useOptimistic']
+    '"use server"',
+    '<form>',
+    'useFormStatus',
+    'useActionState',
+    'useOptimistic'];

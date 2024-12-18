@@ -6,7 +6,7 @@ export const layoutsDescription = "一个layout UI可以在多个路由里共享
 export const layoutsContent1 = "你可以通过默认导出React组件的layout.js 文件定义一个布局。这个组件在渲染的时候可以接收一个children prop, 然后增加子布局（如果存在） 或者一个页面。";
 export const layoutsContent2 = "比如，这个布局（layout.js）将会被共享到/dashboard和/dashboard/setting页面。";
 export const layoutsContent2Image = "![layout example](/nextjsDoc/buildingYourApplication/routing/layout-special-file.avif)";
-export const layoutsContent2Code = `~~~app/dashboard/layout.tsx
+export const layoutsContent2Code = `~~~app/dashboard/layout.tsx~~~
 
 export default function DashboardLayout({
   children, // will be a page or nested layout
@@ -25,7 +25,7 @@ export default function DashboardLayout({
 
 export const rootLayout = "## 根布局（必需）";
 export const rootLayoutContent = "根布局定义在app目录下的顶层，然后应到所有路由。根布局必需包含html和body标签，你可以修改从服务器返回的初始的HTML。";
-export const rootLayoutContentCode = `~~~app/layout.tsx
+export const rootLayoutContentCode = `~~~app/layout.tsx~~~
 
 export default function RootLayout({
   children,
@@ -45,7 +45,7 @@ export const nestedLayoutTitle = "## 嵌套布局";
 export const nestedLayoutContent1 = "默认的，布局在文件夹层次结构里是嵌套的，这意味着它们通过children 属性去包裹子布局。你可以通过在特定的路由段（文件夹）里添加layout.js来嵌套布局。";
 export const nestedLayoutContent2 = "比如，要在/dashboard路由下创建布局，请在dashboard文件夹里添加一个新的layout.js文件。";
 export const nestedLayoutContent2Image = "![nested layout example](/nextjsDoc/buildingYourApplication/routing/nested-layout.avif)";
-export const nestedLayoutContent2Code = `~~~app/dashboard/layout.tsx
+export const nestedLayoutContent2Code = `~~~app/dashboard/layout.tsx~~~
 
 export default function DashboardLayout({
   children,
@@ -80,13 +80,13 @@ export const templatesContent2List = [
 ];
 export const templatesContent3 = "可以通过template.js文件导出默认React组件俩定义模板。该组件应接受children prop";
 export const templatesContent3Image = "![template example](/nextjsDoc/buildingYourApplication/routing/template-special-file.avif)";
-export const templatesContent3Code = `~~~app/template.tsx
+export const templatesContent3Code = `~~~app/template.tsx~~~
 
 export default function Template({ children }: { children: React.ReactNode }) {
   return <div>{children}</div>
 }`;
 export const templatesContent4 = "在嵌套方面，template.js 渲染在布局和其子元素之间。以下是简化的输出：";
-export const templatesContent4Code = `~~~Output
+export const templatesContent4Code = `~~~Output;~~~
 
 <Layout>
   {/* Note that the template is given a unique key. */};
@@ -96,7 +96,7 @@ export const templatesContentExampleTitle = "## 示例";
 export const templatesContentExampleMetadataTitle = "### 元数据";
 export const templatesContentExampleMetadataContent1 = "你可以通过Metadata APIs 修改<head>HTML元素，比如title和Meta.";
 export const templatesContentExampleMetadataContent2 = "通过在layout.js或page.js文件导出metadata对象或者generateMetadata函数来定义元数据";
-export const templatesContentExampleMetadataContent2Code = `~~~app/page.tsx
+export const templatesContentExampleMetadataContent2Code = `~~~app/page.tsx~~~
 
 import type { Metadata } from 'next'
  
@@ -114,7 +114,7 @@ export const templatesContentExampleMetadataContent3 = "在API参考文档中了
 export const activeNavLinkTitle = "### 激活导航链接";
 export const activeNavLinkContent1 = "你可以使用usePathname()钩子来决定是否激活一个导航链接。";
 export const activeNavLinkContent2 = "由于usePathname()是客户端钩子，你需要将导航链接提取到客户端组件， 该组件可以导入到布局或者模板中：";
-export const activeNavLinkContent2Code1 = `~~~app/ui/nav-links.tsx;
+export const activeNavLinkContent2Code1 = `~~~app/ui/nav-links.tsx;~~~
  
  'use client';
  
@@ -139,7 +139,7 @@ export function NavLinks() {
     </nav>
   )
 }`;
-export const activeNavLinkContent2Code2 = `~~~app/layout.tsx
+export const activeNavLinkContent2Code2 = `~~~app/layout.tsx~~~
 
 import { NavLinks } from '@/app/ui/nav-links'
 import Link from "next/link";

@@ -5,7 +5,7 @@ export const DynamicRoutesContent3 = "可以通过将文件夹名称括在方括
 export const DynamicRoutesContent4 = "动态段作为 params 属性传递给布局、页面、路由和 generateMetadata 函数。";
 export const DynamicRoutesContent5 = "## 示例";
 export const DynamicRoutesContent6 = "例如，博客可以包含以下路线 app/blog/[slug]/page.js，其中 [slug] 是博客文章的动态段。";
-export const DynamicRoutesContent6Code = `~~~app/blog/[slug]/page.tsx
+export const DynamicRoutesContent6Code = `~~~app/blog/[slug]/page.tsx~~~
 
 export default async function Page({
   params,
@@ -29,7 +29,7 @@ export const DynamicRoutesContent8Tips = [
 ];
 export const DynamicRoutesContent9 = "## 生成静态参数";
 export const DynamicRoutesContent10 = "generateStaticParams 函数可与动态路由段结合使用，在构建时静态生成路由，而不是在请求时按需生成。";
-export const DynamicRoutesContent10Code = `~~~app/blog/[slug]/page.tsx
+export const DynamicRoutesContent10Code = `~~~app/blog/[slug]/page.tsx~~~
 
 export async function generateStaticParams() {
   const posts = await fetch('https://.../posts').then((res) => res.json())
@@ -58,7 +58,7 @@ export const DynamicRoutesContent19 =
 export const DynamicRoutesContent20 = "catch-all 段和可选的 catch-all 段之间的区别在于，如果是可选的，则不带参数的路由也会被匹配（上例中的 /shop）。";
 export const DynamicRoutesContent21 = '## TypeScript';
 export const DynamicRoutesContent22 = '使用 TypeScript 时，您可以根据配置的路由段添加参数的类型。';
-export const DynamicRoutesContent22Code = `~~~app/blog/[slug]/page.tsx
+export const DynamicRoutesContent22Code = `~~~app/blog/[slug]/page.tsx~~~
 
 export default async function Page({
   params,

@@ -7,7 +7,7 @@ export const slotContent1 =
     '并行路由使用命名插槽创建。插槽使用 @folder 约定定义。例如，以下文件结构定义了两个插槽：@analytics 和 @team：';
 export const slotContent1Image = '![parallel-routes-file-system](/nextjsDoc/buildingYourApplication/routing/parallel-routes-file-system.avif)';
 export const slotContent2 = '插槽作为 props 传递给共享父布局。对于上面的示例，app/layout.js 中的组件现在接受 @analytics 和 @team 插槽 props，并且可以与 children prop 并行渲染它们：';
-export const slotContent2Code = `~~~app/layout.tsx
+export const slotContent2Code = `~~~app/layout.tsx~~~
 
 export default function Layout({
   children,
@@ -44,7 +44,7 @@ export const activeStateAndNavigationContent6 = '刷新时，Next.js 将为 @ana
 export const activeStateAndNavigationContent7 = '此外，由于 children 是隐式插槽，因此当 Next.js 无法恢复父页面的活动状态时，您还需要创建一个 default.js 文件来为子级呈现后备。';
 export const activeStateAndNavigationContent8 = '### useSelectedLayoutSegment(s)';
 export const activeStateAndNavigationContent9 = 'useSelectedLayoutSegment 和 useSelectedLayoutSegments 都接受 parallelRoutesKey 参数，该参数允许您读取插槽内的活动路线段。';
-export const activeStateAndNavigationContent9Code = `~~~app/layout.tsx
+export const activeStateAndNavigationContent9Code = `~~~app/layout.tsx~~~
 
 'use client'
  
@@ -59,7 +59,7 @@ export const activeStateAndNavigationContent11 = '## 示例';
 export const activeStateAndNavigationContent12 = '### 条件路线';
 export const activeStateAndNavigationContent13 = '您可以使用并行路由根据特定条件（例如用户角色）有条件地呈现路由。例如，要为 /admin 或 /user 角色呈现不同的仪表板页面：';
 export const activeStateAndNavigationContent13Image = '![conditional-routes-ui](/nextjsDoc/buildingYourApplication/routing/conditional-routes-ui.avif)';
-export const activeStateAndNavigationContent13Code = `~~~app/dashboard/layout.tsx
+export const activeStateAndNavigationContent13Code = `~~~app/dashboard/layout.tsx~~~
 
 import { checkUserRole } from '@/lib/auth'
  
@@ -78,7 +78,7 @@ export const activeStateAndNavigationContent15 = '您可以在插槽内添加布
 export const activeStateAndNavigationContent16 = '例如，@analytics 插槽有两个子页面：/page-views 和 /visitors。';
 export const activeStateAndNavigationContent16Image = '![parallel-routes-tab-groups](/nextjsDoc/buildingYourApplication/routing/parallel-routes-tab-groups.avif)';
 export const activeStateAndNavigationContent17 = '在@analytics中，创建一个布局文件来在两个页面之间共享标签：';
-export const activeStateAndNavigationContent17Code = `~~~app/@analytics/layout.tsx
+export const activeStateAndNavigationContent17Code = `~~~app/@analytics/layout.tsx~~~
 
 import Link from 'next/link'
  
@@ -104,7 +104,7 @@ export const activeStateAndNavigationContent20 = '考虑以下 UI 模式，用�
 export const activeStateAndNavigationContent20Image = '![parallel-routes-auth-modal](/nextjsDoc/buildingYourApplication/routing/parallel-routes-auth-modal.avif)';
 export const activeStateAndNavigationContent21 = '要实现这种模式，首先要创建一个呈现主登录页面的 /login 路由。';
 export const activeStateAndNavigationContent21Image = '![parallel-routes-modal-login-page](/nextjsDoc/buildingYourApplication/routing/parallel-routes-modal-login-page.avif)';
-export const activeStateAndNavigationContent21Code = `~~~app/login/page.tsx
+export const activeStateAndNavigationContent21Code = `~~~app/login/page.tsx~~~
 
 import { Login } from '@/app/ui/login'
  
@@ -112,13 +112,13 @@ export default function Page() {
   return <Login />
 }`;
 export const activeStateAndNavigationContent22 = '然后，在 @auth 槽内，添加返回 null 的 default.js 文件。这可确保当模式未处于活动状态时不会呈现该模式。';
-export const activeStateAndNavigationContent22Code = `~~~app/@auth/default.tsx
+export const activeStateAndNavigationContent22Code = `~~~app/@auth/default.tsx~~~
 
 export default function Default() {
   return null
 }`;
 export const activeStateAndNavigationContent23 = '在 @auth 插槽中，通过更新 /(.)login 文件夹来拦截 /login 路由。将 <Modal> 组件及其子组件导入到 /(.)login/page.tsx 文件中：';
-export const activeStateAndNavigationContent23Code = `~~~app/@auth/(.)login/page.tsx
+export const activeStateAndNavigationContent23Code = `~~~app/@auth/(.)login/page.tsx~~~
 
 import { Modal } from '@/app/ui/modal'
 import { Login } from '@/app/ui/login'
@@ -137,7 +137,7 @@ export const activeStateAndNavigationContent23Tips = [
 export const activeStateAndNavigationContent24 = '### 打开模态框';
 export const activeStateAndNavigationContent25 = '现在，您可以利用 Next.js 路由器打开和关闭模态框。这可确保在模态框打开时以及向前和向后导航时正确更新 URL。';
 export const activeStateAndNavigationContent26 = '要打开模态框，请将 @auth 插槽作为 prop 传递给父布局，并将其与子 prop 一起渲染。';
-export const activeStateAndNavigationContent26Code = `~~~app/layout.tsx
+export const activeStateAndNavigationContent26Code = `~~~app/layout.tsx~~~
 
 import Link from 'next/link'
  
@@ -161,7 +161,7 @@ export default function Layout({
 export const activeStateAndNavigationContent27 = '当用户点击 <Link> 时，模态框会打开，而不是导航到 /login 页面。但是，在刷新或初始加载时，导航到 /login 会将用户带到主登录页面。';
 export const activeStateAndNavigationContent28 = '### 关闭模态框';
 export const activeStateAndNavigationContent29 = '您可以通过调用 router.back() 或使用 Link 组件来关闭模态框。';
-export const activeStateAndNavigationContent29Code = `~~~app/ui/modal.tsx
+export const activeStateAndNavigationContent29Code = `~~~app/ui/modal.tsx~~~
 
 'use client'
  
@@ -184,7 +184,7 @@ export function Modal({ children }: { children: React.ReactNode }) {
   )
 }`;
 export const activeStateAndNavigationContent30 = '当使用 Link 组件离开不再应呈现 @auth 插槽的页面时，我们需要确保并行路由与返回 null 的组件匹配。例如，当导航回根页面时，我们创建一个 @auth/page.tsx 组件：';
-export const activeStateAndNavigationContent30Code1 = `~~~app/ui/modal.tsx
+export const activeStateAndNavigationContent30Code1 = `~~~app/ui/modal.tsx~~~
 
 import Link from 'next/link'
  
@@ -196,13 +196,13 @@ export function Modal({ children }: { children: React.ReactNode }) {
     </>
   )
 }`;
-export const activeStateAndNavigationContent30Code2 = `~~~app/@auth/page.tsx
+export const activeStateAndNavigationContent30Code2 = `~~~app/@auth/page.tsx~~~
 
 export default function Page() {
   return null
 }`;
 export const activeStateAndNavigationContent31 = '或者如果导航到任何其他页面（例如 /foo、/foo/bar 等），您可以使用一个 catch-all 插槽：';
-export const activeStateAndNavigationContent31Code = `~~~app/@auth/[...catchAll]/page.tsx
+export const activeStateAndNavigationContent31Code = `~~~app/@auth/[...catchAll]/page.tsx~~~
 
 export default function CatchAll() {
   return null

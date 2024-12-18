@@ -5,7 +5,7 @@ export const instantLoadingStateTitle = '## 即时加载状态';
 export const instantLoadingStateContent1 = '即时加载状态是导航后立即显示的UI。您可以预渲染加载指示器（例如骨架和旋转器），或未来屏幕中较小但有意义的部分（例如封面照片、标题等）。这有助于用户了解应用正在响应并提供更好的用户体验。';
 export const instantLoadingStateContent2 = '通过在文件夹中添加 loading.js 文件来创建加载状态。';
 export const instantLoadingStateContent2Image = '![loading-ui](/nextjsDoc/buildingYourApplication/routing/loading-special-file.avif)';
-export const instantLoadingStateContent2Code = `~~~app/dashboard/loading.tsx
+export const instantLoadingStateContent2Code = `~~~app/dashboard/loading.tsx~~~
 
 export default function Loading() {
   // You can add any UI inside Loading, including a Skeleton.
@@ -49,7 +49,7 @@ export const streamingWithSuspenseContent10Image = '![loading-ui](/nextjsDoc/bui
 export const streamingWithSuspenseContent11 = "当您想防止长数据请求阻止页面渲染时，流式传输尤其有用，因为它可以减少首次字节时间 (TTFB) 和首次内容绘制 (FCP)。它还有助于缩短交互时间 (TTI)，尤其是在较慢的设备上。";
 export const streamingWithSuspenseContent12 = "### 示例";
 export const streamingWithSuspenseContent13 = "<Suspense> 的工作原理是包装一个执行异步操作（例如获取数据）的组件，在操作发生时显示loading UI（例如骨架、微调器），然后在操作完成后交换组件。";
-export const streamingWithSuspenseContent13Code = `~~~app/dashboard/page.tsx;
+export const streamingWithSuspenseContent13Code = `~~~app/dashboard/page.tsx;~~~;
 
 import { Suspense } from 'react'
 import { PostFeed, Weather } from './Components'

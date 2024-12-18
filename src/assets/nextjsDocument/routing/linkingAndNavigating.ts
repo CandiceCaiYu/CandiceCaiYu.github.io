@@ -11,7 +11,7 @@ export const more = '本页将会介绍如何使用这些选项，并深入了�
 export const linkComponentTitle = '## <Link>组件';
 export const linkComponentContent1 = '<Link>是一个内置的组件，它扩展HTML<a>标签，包括提供路由间的预取数据和客户端导航。这是Next.js中主要和推荐的路由间导航方式。';
 export const linkComponentContent2 = '通过导入next/link就可以使用Link组件，然后传入href prop到这个component里:';
-export const linkComponentContent2Code = `~~~app/page.tsx
+export const linkComponentContent2Code = `~~~app/page.tsx~~~
 
 import Link from 'next/link'
  
@@ -22,7 +22,7 @@ export const linkComponentContent3 = '更多<Link>的其他props可以参看API�
 
 export const useRouterHookTitle = '## useRouter()钩子';
 export const useRouterHookContent1 = 'useRouter钩子以编程方式从客户端组件改变路由。';
-export const useRouterHookContent1Code = `~~~app/page.js;
+export const useRouterHookContent1Code = `~~~app/page.js;~~~
 
 'use client';
  
@@ -45,7 +45,7 @@ export const useRouterHookContentRecommend = '使用 <Link> 组件在路由之�
 export const redirectFunctionTitle = '## redirect函数';
 export const redirectFunctionContent1 = '如果是服务端组件，请使用redirect函数代替。';
 export const redirectFunctionContent1Code =
-    `~~~app/team/[id]/page.tsxapp/team/[id]/page.tsx
+    `~~~app/team/[id]/page.tsxapp/team/[id]/page.tsx~~~
 
 import { redirect } from 'next/navigation'
  

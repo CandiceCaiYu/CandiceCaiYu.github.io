@@ -23,7 +23,7 @@ export const content7 = '使用项目根目录中的 middleware.ts（或 .js）�
 export const content7TipsTitle = '注意';
 export const content7Tips = '虽然每个项目仅支持一个 middleware.ts 文件，但您仍然可以模块化地组织中间件逻辑。将中间件功能分解为单独的 .ts 或 .js 文件，然后将其导入主 middleware.ts 文件。这样可以更清晰地管理路由特定的中间件，这些中间件会汇总在 middleware.ts 中以便进行集中控制。通过强制使用单个中间件文件，可以简化配置、防止潜在冲突并通过避免多个中间件层来优化性能。';
 export const content8 = '## 示例';
-export const content8Code = `~~~middleware.ts
+export const content8Code = `~~~middleware.ts~~~
 
 import { NextResponse } from 'next/server'
 import type { NextRequest } from 'next/server'
@@ -58,19 +58,19 @@ export const content11List = [
 export const content12 = '### 匹配器';
 export const content13 =
     'matcher 允许您过滤中间件以在特定路径上运行。';
-export const content13Code = `~~~middleware.js
+export const content13Code = `~~~middleware.js~~~
 
 export const config = {
   matcher: '/about/:path*',
 }`;
 export const content14 = '您可以使用数组匹配单个路径或多个路径：';
-export const content14Code = `~~~middleware.js
+export const content14Code = `~~~middleware.js~~~
 
 export const config = {
   matcher: ['/about/:path*', '/dashboard/:path*'],
 }`;
 export const content15 = '匹配器配置允许使用完整正则表达式，因此支持负向前瞻或字符匹配等匹配。此处可以看到一个用于匹配除特定路径之外的所有内容的负向前瞻示例：';
-export const content15Code = `~~~middleware.js
+export const content15Code = `~~~middleware.js~~~
 
 export const config = {
   matcher: [
@@ -85,7 +85,7 @@ export const config = {
   ],
 }`;
 export const content16 = '您还可以使用 missing 或 has 数组，或者两者结合来绕过某些请求的中间件：';
-export const content16Code = `~~~middleware.js
+export const content16Code = `~~~middleware.js~~~
 
 export const config = {
   matcher: [
@@ -133,7 +133,7 @@ export const content17List = [
 export const content17More = '阅读有关 path-to-regexp 文档的更多详细信息。';
 export const content17Tips = '为了向后兼容，Next.js 始终将 /public 视为 /public/index。因此，/public/:path 的匹配器将匹配。';
 export const content18 = '### 条件语句';
-export const content18Code = `~~~middleware.ts
+export const content18Code = `~~~middleware.ts~~~
 
 import { NextResponse } from 'next/server'
 import type { NextRequest } from 'next/server'
@@ -168,7 +168,7 @@ export const content23List = [
     "对于传入请求，cookies 具有以下方法：get、getAll、set 和 delete cookies。您可以使用 has 检查 cookie 是否存在，或使用 clear 删除所有 cookie。",
     "对于传出响应，cookies 具有以下方法 get、getAll、set 和 delete。"
 ];
-export const content23Code = `~~~middleware.ts
+export const content23Code = `~~~middleware.ts~~~
 
 import { NextResponse } from 'next/server'
 import type { NextRequest } from 'next/server'
@@ -201,7 +201,7 @@ export function middleware(request: NextRequest) {
 }`;
 export const content24 = '## 设置标头';
 export const content25 = '您可以使用 NextResponse API 设置请求和响应标头（自 Next.js v13.0.0 起可以设置请求标头）。';
-export const content25Code = `~~~middleware.ts
+export const content25Code = `~~~middleware.ts~~~
 
 import { NextResponse } from 'next/server'
 import type { NextRequest } from 'next/server'
@@ -227,7 +227,7 @@ export const content25Tips = '避免设置较大的标头，因为根据您的�
 export const content26 = '### CORS';
 export const content27 =
     '您可以在中间件中设置 CORS 标头以允许跨源请求，包括简单请求和预检请求。';
-export const content27Code = `~~~middleware.ts
+export const content27Code = `~~~middleware.ts~~~
 
 import { NextRequest, NextResponse } from 'next/server'
  
@@ -275,7 +275,7 @@ export const content27Tips = '您可以在路由处理程序中为各个路由�
 export const content28 = '## 生成响应';
 export const content29 =
     '您可以通过返回 Response 或 NextResponse 实例直接从中间件进行响应。（此功能自 Next.js v13.1.0 起可用）';
-export const content29Code = `~~~middleware.ts
+export const content29Code = `~~~middleware.ts~~~
 
 import type { NextRequest } from 'next/server'
 import { isAuthenticated } from '@lib/auth'
@@ -298,7 +298,7 @@ export function middleware(request: NextRequest) {
 export const content30 = '## waitUntil 和 NextFetchEvent';
 export const content31 = 'NextFetchEvent 对象扩展了本机 FetchEvent 对象，并包含 waitUntil() 方法。';
 export const content32 = 'waitUntil() 方法将promise作为参数，并延长中间件的生命周期，直到promise得以实现。这对于在后台执行工作非常有用。';
-export const content32Code = `~~~middleware.ts
+export const content32Code = `~~~middleware.ts~~~
 
 import { NextResponse } from 'next/server'
 import type { NextFetchEvent, NextRequest } from 'next/server'
@@ -316,12 +316,12 @@ export function middleware(req: NextRequest, event: NextFetchEvent) {
 export const content33 = '## 高级中间件标志';
 export const content34 = '在 Next.js v13.1 中，为中间件引入了两个附加标志 skipMiddlewareUrlNormalize 和 skipTrailingSlashRedirect，用于处理高级用例。';
 export const content35 = 'skipTrailingSlashRedirect 禁用 Next.js 重定向以添加或删除尾部斜杠。这允许在中间件内部进行自定义处理，以保留某些路径的尾部斜杠，但不保留其他路径，这可以使增量迁移更容易。';
-export const content35Code1 = `~~~next.config.js
+export const content35Code1 = `~~~next.config.js~~~
 
 module.exports = {
   skipTrailingSlashRedirect: true,
 }`;
-export const content35Code2 = `~~~middleware.ts
+export const content35Code2 = `~~~middleware.ts~~~
 
 const legacyPrefixes = ['/docs', '/blog']
  
@@ -343,12 +343,12 @@ export default async function middleware(req) {
   }
 }`;
 export const content36 = 'skipMiddlewareUrlNormalize 允许禁用 Next.js 中的 URL 规范化，以使直接访问和客户端转换的处理相同。在某些高级情况下，此选项通过使用原始 URL 提供完全控制。';
-export const content36Code1 = `~~~next.config.js
+export const content36Code1 = `~~~next.config.js~~~
 
 module.exports = {
   skipMiddlewareUrlNormalize: true,
 }`;
-export const content36Code2 = `~~~middleware.ts
+export const content36Code2 = `~~~middleware.ts~~~
 
 export default async function middleware(req) {
   const { pathname } = req.nextUrl

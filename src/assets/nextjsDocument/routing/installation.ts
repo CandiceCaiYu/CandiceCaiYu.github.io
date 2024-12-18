@@ -26,7 +26,7 @@ export const manualInstallation = "## 手动安装";
 export const manualInstallationContent1 = "要手动创建一个新的Next.js应用程序，请安装所需的依赖包：";
 export const manualInstallationContent2 = "~~~npm install next@latest react@latest react-dom@latest";
 export const manualInstallationContent3 = "打开你的package.json文件并添加以下脚本:";
-export const manualInstallationContent4 = `~~~{
+export const manualInstallationContent4 = `~~~package.json~~~{
     "scripts": {
         "dev": "next dev",
         "build": "next build",
@@ -48,7 +48,8 @@ export const createDirectoriesContent3 = "对于新的应用程序，我们推�
 export const createDirectoriesContent4 = "创建一个app/文件夹，然后添加layout.tsx和page.tsx文件。当用户访问这个应用程序根目录（/）时会渲染这些文件.";
 export const createDirectoriesContent4_image = '![app目录结构](/nextjsDoc/installation/app-getting-started-installation.avif)';
 export const createDirectoriesContent5 = "在app/layout.tsx里创建根布局， 并添加所需的<html>和<body>标签:";
-export const createDirectoriesContent5_code = `~~~export default function RootLayout({
+export const createDirectoriesContent5_code = `~~~app/layout.tsx~~~
+export default function RootLayout({
   children,
 }: {
   children: React.ReactNode
@@ -60,7 +61,8 @@ export const createDirectoriesContent5_code = `~~~export default function RootLa
   )
 }`;
 export const createDirectoriesContent6 = "最后，创建一个主页app/CustomSection.tsx，其中包含一些初始内容:";
-export const createDirectoriesContent6_code = `~~~export default function Page() {
+export const createDirectoriesContent6_code = `~~~app/page.tsx~~~
+export default function Page() {
   return <h1>Hello, Next.js!</h1>
 }`;
 export const createDirectoriesContent8 = "如果你忘记创建layout.tsx，当运行next dev，启动开发服务器时 Next.js会自动创建这个文件。 ";

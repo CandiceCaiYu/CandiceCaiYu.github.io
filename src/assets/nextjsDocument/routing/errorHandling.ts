@@ -65,7 +65,7 @@ export const handleUncaughtExceptionsContent2 = ["常见：使用 error.js 处�
 export const handleUncaughtExceptionsContent3 = '### 使用错误边界';
 export const handleUncaughtExceptionsContent4 = 'Next.js 使用错误边界来处理未捕获的异常。错误边界会捕获其子组件中的错误并显示后备 UI，而不是崩溃的组件树。';
 export const handleUncaughtExceptionsContent5 = '通过在路由段内添加 error.tsx 文件并导出 React 组件来创建错误边界：';
-export const handleUncaughtExceptionsContent5Code = `~~~app/dashboard/error.js;
+export const handleUncaughtExceptionsContent5Code = `~~~app/dashboard/error.js;~~~
 
 'use client'; // Error boundaries must be Client Components
  
@@ -103,7 +103,7 @@ export const handleUncaughtExceptionsContent8 = '错误将冒泡到最近的父�
 export const handleUncaughtExceptionsContent8Image = '![nested-error-component-hierarchy](/nextjsDoc/buildingYourApplication/routing/nested-error-component-hierarchy.avif)';
 export const handleUncaughtExceptionsContent9 = '### 处理全局错误';
 export const handleUncaughtExceptionsContent10 = '虽然不太常见，但您可以使用位于根应用目录中的 app/global-error.js 处理根布局中的错误，即使在利用国际化时也是如此。全局错误 UI 必须定义自己的 <html> 和 <body> 标签，因为它在活动时会替换根布局或模板。';
-export const handleUncaughtExceptionsContent10Code = `~~~app/global-error.js;
+export const handleUncaughtExceptionsContent10Code = `~~~app/global-error.js;~~~
 
 'use client'; // Error boundaries must be Client Components
  

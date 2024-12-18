@@ -11,14 +11,14 @@ export const benefitsOfClientRenderingContent1List = [
 export const usingClientComponentsInNextjsTitle = '## 在 Next.js 中使用客户端组件';
 export const usingClientComponentsInNextjsContent1 = '要使用客户端组件，您可以在文件顶部（import上方）添加 React“use client”指令。';
 export const usingClientComponentsInNextjsContent2 = '“use client”用于声明服务器和客户端组件模块之间的边界。这意味着，通过在文件中定义“use client”，导入到其中的所有其他模块（包括子组件）都被视为客户端包的一部分。';
-export const usingClientComponentsInNextjsContent2Code = `~~~app/counter.tsx
+export const usingClientComponentsInNextjsContent2Code = `~~~app/counter.tsx;~~~
 
-'use client'
+'use client';
  
 import { useState } from 'react'
  
 export default function Counter() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
  
   return (
     <div>

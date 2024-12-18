@@ -9,7 +9,7 @@ export const content2TipsList = [
 ];
 export const content3 = '## 自定义 Sass 选项';
 export const content4 = '如果您想配置 Sass 选项，请在 next.config 中使用 sassOptions。';
-export const content4Code = `~~~next.config.js
+export const content4Code = `~~~next.config.js~~~
 
 import type { NextConfig } from 'next'
  
@@ -22,7 +22,7 @@ const nextConfig: NextConfig = {
 export default nextConfig`;
 export const content5 = '### Implementation';
 export const content6 = '您可以使用 implementation 属性指定要使用的 Sass 实现。默认情况下，Next.js 使用 sass 包。';
-export const content6Code = `~~~next.config.js
+export const content6Code = `~~~next.config.js~~~
 
 import type { NextConfig } from 'next'
  
@@ -36,14 +36,14 @@ export default nextConfig`;
 export const content7 = '## Sass 变量';
 export const content8 = 'Next.js 支持从 CSS 模块文件导出的 Sass 变量。';
 export const content9 = '例如，使用导出的 primaryColor Sass 变量：';
-export const content9Code1 = `~~~app/variables.module.scss
+export const content9Code1 = `~~~app/variables.module.scss~~~
 
 $primary-color: #64ff00;
  
 :export {
   primaryColor: $primary-color;
 }`;
-export const content9Code2 = `~~~app/page.js;
+export const content9Code2 = `~~~app/page.js;~~~;
 
 // maps to root \`/\` URL
  

@@ -4,15 +4,15 @@ export const content = '构建 React 应用程序时，您需要考虑应用程�
 export const whenToUseServerAndClientComponentsTitle = '## 何时使用服务器和客户端组件？';
 export const whenToUseServerAndClientComponentsContent = '以下是服务器和客户端组件的不同用例的快速摘要：';
 export const whenToUseServerAndClientComponentsContentTable = [
-    {case: 'fetch 数据', server:'✅', client: '❌'},
-    {case: '访问后端资源（直接）', server:'✅', client: '❌'},
-    {case: '在服务器上保存敏感信息（访问令牌、API 密钥等）', server:'✅', client: '❌'},
-    {case: '保持对服务器的大量依赖/减少客户端 JavaScript', server:'✅', client: '❌'},
-    {case: 'Add interactivity and event listeners (onClick(), onChange(), etc)', server:'❌', client: '✅'},
-    {case: '使用状态和生命周期效果（useState()、useReducer()、useEffect() 等）', server:'❌', client: '✅'},
-    {case: '使用仅限浏览器的 API', server:'❌', client: '✅'},
-    {case: '使用依赖于状态、效果或仅限浏览器的 API 的自定义钩子', server:'❌', client: '✅'},
-    {case: '使用 React Class 组件', server:'❌', client: '✅'},
+    {case: 'fetch 数据', server: '✅', client: '❌'},
+    {case: '访问后端资源（直接）', server: '✅', client: '❌'},
+    {case: '在服务器上保存敏感信息（访问令牌、API 密钥等）', server: '✅', client: '❌'},
+    {case: '保持对服务器的大量依赖/减少客户端 JavaScript', server: '✅', client: '❌'},
+    {case: 'Add interactivity and event listeners (onClick(), onChange(), etc)', server: '❌', client: '✅'},
+    {case: '使用状态和生命周期效果（useState()、useReducer()、useEffect() 等）', server: '❌', client: '✅'},
+    {case: '使用仅限浏览器的 API', server: '❌', client: '✅'},
+    {case: '使用依赖于状态、效果或仅限浏览器的 API 的自定义钩子', server: '❌', client: '✅'},
+    {case: '使用 React Class 组件', server: '❌', client: '✅'},
 ];
 
 export const serverComponentPatternsTitle = '## 服务器组件模式';
@@ -41,7 +41,7 @@ export const serverComponentPatternsContent11 = '由于环境变量 API_KEY 没�
 export const serverComponentPatternsContent12 = '因此，即使 getData() 可以在客户端上导入和执行，它也不会按预期工作。虽然将变量设为公共变量会使该函数在客户端上工作，但您可能不想向客户端公开敏感信息。';
 export const serverComponentPatternsContent13 = '为了防止这种客户端意外使用服务器代码的情况，我们可以使用仅server-only的包，以便其他开发人员在意外将其中一个模块导入客户端组件时收到构建时错误。';
 export const serverComponentPatternsContent14 = '要使用server-only，请首先安装该包：';
-export const serverComponentPatternsContent14Code =  `~~~ npm install server-only`;
+export const serverComponentPatternsContent14Code = `~~~ npm install server-only`;
 export const serverComponentPatternsContent15 = '然后将包导入到任何包含仅限服务器代码的模块中：';
 export const serverComponentPatternsContent15Code = `~~~ lib/data.js
 
@@ -63,15 +63,15 @@ export const serverComponentPatternsContent19 = '由于服务器组件是 React 
 export const serverComponentPatternsContent20 = '目前，npm 软件包中许多使用客户端专用功能的组件尚未包含该指令。这些第三方组件将在客户端组件中按预期工作，因为它们具有“use client”指令，但它们无法在服务器组件中工作。';
 export const serverComponentPatternsContent21 = '例如，假设您安装了acme-carousel 包，其中包含一个 <Carousel /> 组件。此组件使用 useState，但尚未具有“use client”指令。';
 export const serverComponentPatternsContent22 = '如果你在客户端组件中使用 <Carousel />，它将按预期工作：';
-export const serverComponentPatternsContent22Code = `~~~ app/gallery.tsx
+export const serverComponentPatternsContent22Code = `~~~ app/gallery.tsx;
 
-'use client'
+'use client';
  
 import { useState } from 'react'
 import { Carousel } from 'acme-carousel'
  
 export default function Gallery() {
-  const [isOpen, setIsOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(false);
  
   return (
     <div>
@@ -140,7 +140,7 @@ export default function RootLayout({ children }) {
     </html>
   )
 }`;
-export const serverComponentPatternsContent30= '要解决此问题，请创建context并在客户端组件内使用其provider：';
+export const serverComponentPatternsContent30 = '要解决此问题，请创建context并在客户端组件内使用其provider：';
 export const serverComponentPatternsContent30Code = `~~~ app/theme-provider.tsx
 
 'use client'
@@ -174,7 +174,7 @@ export default function RootLayout({
       </body>
     </html>
   )
-}`
+}`;
 export const serverComponentPatternsContent32 = '通过在根目录呈现提供程序，应用程序中的所有其他客户端组件都将能够使用此上下文。';
 export const serverComponentPatternsContent32TipsText = '您应该在树中尽可能深地渲染提供程序 - 请注意 ThemeProvider 仅包装 {children} 而不是整个 <html> 文档。这使 Next.js 更容易优化服务器组件的静态部分。';
 export const serverComponentPatternsContent33 = '#### 给库作者的建议';
@@ -246,7 +246,7 @@ export const interleavingServerAndClientComponentsContent5 = '### 支持的模�
 export const interleavingServerAndClientComponentsContent6 = '支持以下模式。您可以将服务器组件作为 prop 传递给客户端组件。';
 export const interleavingServerAndClientComponentsContent7 = '一种常见的模式是使用 React children prop 在客户端组件中创建一个“slot”。';
 export const interleavingServerAndClientComponentsContent9 = '在下面的例子中， <ClientComponent> 接受一个 children prop：';
-export const interleavingServerAndClientComponentsContent9Code = `~~~ app/client-component.tsx
+export const interleavingServerAndClientComponentsContent9Code = `~~~app/client-component.tsx~~~
 
 'use client'
  
@@ -268,7 +268,7 @@ export default function ClientComponent({
 }`;
 export const interleavingServerAndClientComponentsContent10 = '<ClientComponent> 不知道子组件最终会由服务器组件的结果填充。<ClientComponent> 的唯一责任是决定子组件最终被放置在何处。';
 export const interleavingServerAndClientComponentsContent11 = '在父服务器组件中，您可以同时导入 <ClientComponent> 和 <ServerComponent>，并将 <ServerComponent> 作为 <ClientComponent> 的子组件传递';
-export const interleavingServerAndClientComponentsContent11Code = `~~~ app/page.tsx
+export const interleavingServerAndClientComponentsContent11Code = `~~~app/page.tsx~~~
 
 // This pattern works:
 // You can pass a Server Component as a child or prop of a

@@ -15,7 +15,7 @@ export const backgroundContent3 = '为了避免为每个动态组件创建许多
 export const usePartialPrerenderingTitle = '## 使用部分预渲染';
 export const usePartialPrerenderingContent1 = '### 逐步采用（版本 15）';
 export const usePartialPrerenderingContent2 = '在 Next.js 15 中，你可以通过将 next.config.js 中的 ppr 选项设置为增量，并在文件顶部导出 experiment_ppr 路由配置选项，在布局和页面中逐步采用部分预渲染：';
-export const usePartialPrerenderingContent2Code1 = `~~~next.config.ts
+export const usePartialPrerenderingContent2Code1 = `~~~next.config.ts~~~
 
 import type { NextConfig } from 'next'
  
@@ -26,7 +26,7 @@ const nextConfig: NextConfig = {
 }
  
 export default nextConfig`;
-export const usePartialPrerenderingContent2Code2 = `~~~app/page.tsx
+export const usePartialPrerenderingContent2Code2 = `~~~app/page.tsx~~~
 
 
 import { Suspense } from "react"
@@ -52,7 +52,7 @@ export const usePartialPrerenderingContent2TipsList = [
 export const dynamicComponentsTitle = '## 动态组件';
 export const dynamicComponentsContent1 = '在next build为路由创建预渲染时，Next.js 要求使用 React Suspense 包装动态 API。然后将回退包含在预渲染中。';
 export const dynamicComponentsContent2 = '例如，使用 cookies 或 headers 之类的功能：';
-export const dynamicComponentsContent2Code = `~~~app/user.tsx
+export const dynamicComponentsContent2Code = `~~~app/user.tsx~~~
 
 import { cookies } from 'next/headers'
  
@@ -61,12 +61,12 @@ export async function User() {
   return '...'
 }`;
 export const dynamicComponentsContent3 = '此组件需要查看传入的请求以读取 cookie。要将其与 PPR 一起使用，您应该使用 Suspense 包装该组件：';
-export const dynamicComponentsContent3Code = `~~~app/page.tsx
+export const dynamicComponentsContent3Code = `~~~app/page.tsx;~~~;
 
 import { Suspense } from 'react'
 import { User, AvatarSkeleton } from './user'
  
-export const experimental_ppr = true
+export const experimental_ppr = true;
  
 export default function Page() {
   return (
@@ -80,7 +80,7 @@ export default function Page() {
 }`;
 export const dynamicComponentsContent4 = '仅当访问值时，组件才会选择动态渲染。';
 export const dynamicComponentsContent5 = '例如，如果你正在从页面读取searchParams，则可以将该值作为prop转发到另一个组件：';
-export const dynamicComponentsContent5Code = `~~~app/page.tsx
+export const dynamicComponentsContent5Code = `~~~app/page.tsx~~~
 
 import { Table } from './table'
  
@@ -97,7 +97,7 @@ export default function Page({
   )
 }`;
 export const dynamicComponentsContent6 = '在表组件内部，访问 searchParams 的值将使组件动态运行：';
-export const dynamicComponentsContent6Code = `~~~app/table.tsx
+export const dynamicComponentsContent6Code = `~~~app/table.tsx~~~
 
 export async function Table({
   searchParams,

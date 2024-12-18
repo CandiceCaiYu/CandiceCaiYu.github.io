@@ -4,7 +4,7 @@ export const content1Image = '![route-special-file](/nextjsDoc/buildingYourAppli
 export const content1Tips = "路由处理程序仅在 app 目录中可用。它们相当于 pages 目录中的 API 路由，这意味着您不需要同时使用 API 路由和路由handler。";
 export const content2 = "## 约定";
 export const content3 = "路由处理程序在app目录内的 route.js|ts 文件中定义：";
-export const content3Code = `~~~app/api/route.ts
+export const content3Code = `~~~app/api/route.ts~~~
 
 export async function GET(request: Request) {}`;
 export const content4 = "路由处理程序可以嵌套在应用程序目录中的任何位置，类似于 page.js 和 layout.js。但 page.js 和route.js 不能在同一层级";
@@ -15,7 +15,7 @@ export const content8 = "除了支持原生的 Request 和 Response API 之外�
 export const content9 = "## 行为";
 export const content10 = "### 缓存";
 export const content11 = "默认情况下，路由处理程序不会缓存。但是，您可以选择缓存 GET 方法。其他受支持的 HTTP 方法不会被缓存。要缓存 GET 方法，请在路由处理程序文件中使用route config option，例如 export const dynamic = 'force-static'。";
-export const content11Code = `~~~app/items/route.ts
+export const content11Code = `~~~app/items/route.ts~~~
 
 export const dynamic = 'force-static'
  
@@ -42,7 +42,7 @@ export const content15Table = [
     {page: 'app/[user]/page.js', route: "app/api/route.js", result: 'Valid'},
 ];
 export const content16 = "每个 route.js 或 page.js 文件接管该路由的所有 HTTP 动词。";
-export const content16Code = `~~~app/api/route.ts
+export const content16Code = `~~~app/api/route.ts~~~
 
 export default function Page() {
   return <h1>Hello, Next.js!</h1>
@@ -55,7 +55,7 @@ export const content17 = "## 示例";
 export const content18 = "以下示例展示了如何将路由处理程序与其他 Next.js API 和功能相结合。";
 export const content19 = "### 重新验证缓存数据";
 export const content20 = "您可以使用增量静态再生 (Incremental Static Regeneration - ISR) 重新验证缓存数据：";
-export const content20Code = `~~~app/posts/route.ts
+export const content20Code = `~~~app/posts/route.ts~~~
 
 export const revalidate = 60
  
@@ -68,7 +68,7 @@ export async function GET() {
 export const content21 = "### Cookies";
 export const content22 = "您可以使用 next/headers 中的 cookie 读取或设置 cookie。此服务器函数可以直接在路由处理程序中调用，也可以嵌套在另一个函数中。";
 export const content23 = "或者，您可以使用 Set-Cookie 标头返回新的响应。";
-export const content23Code = `~~~app/api/route.ts
+export const content23Code = `~~~app/api/route.ts~~~
 
 import { cookies } from 'next/headers'
  
@@ -82,7 +82,7 @@ export async function GET(request: Request) {
   })
 }`;
 export const content24 = "您还可以使用底层 Web API 从请求（NextRequest）中读取 Cookie：";
-export const content24Code = `~~~app/api/route.ts
+export const content24Code = `~~~app/api/route.ts~~~
 
 import { type NextRequest } from 'next/server'
  
@@ -92,7 +92,7 @@ export async function GET(request: NextRequest) {
 export const content25 = "### 标头";
 export const content26 = "您可以从 next/headers 读取标头。此服务器函数可以直接在路由处理程序中调用，也可以嵌套在另一个函数中。";
 export const content27 = "此标头实例是只读的。要设置标头，您需要返回一个带有新标头的新响应。";
-export const content27Code = `~~~app/api/route.ts
+export const content27Code = `~~~app/api/route.ts~~~
 
 import { headers } from 'next/headers'
  
@@ -106,7 +106,7 @@ export async function GET(request: Request) {
   })
 }`;
 export const content28 = "您还可以使用底层 Web API 从请求（NextRequest）中读取标头：";
-export const content28Code = `~~~app/api/route.ts
+export const content28Code = `~~~app/api/route.ts~~~
 
 import { type NextRequest } from 'next/server'
  
@@ -114,7 +114,7 @@ export async function GET(request: NextRequest) {
   const requestHeaders = new Headers(request.headers)
 }`;
 export const content29 = "### 重定向";
-export const content29Code = `~~~app/api/route.ts
+export const content29Code = `~~~app/api/route.ts~~~
 
 import { redirect } from 'next/navigation'
  
@@ -124,7 +124,7 @@ export async function GET(request: Request) {
 export const content30 = "### 动态路由段";
 export const content30Tips = "我们建议在继续之前先阅读“定义路由”页面。";
 export const content31 = "路由处理程序可以使用动态段从动态数据创建请求处理程序。";
-export const content31Code = `~~~app/items/[slug]/route.ts
+export const content31Code = `~~~app/items/[slug]/route.ts~~~
 
 export async function GET(
   request: Request,
@@ -139,7 +139,7 @@ export const content31Table = [
 ];
 export const content32 = "### URL 查询参数";
 export const content33 = "传递给路由处理程序的请求对象是 NextRequest 实例，它具有一些额外的便捷方法，包括更轻松地处理查询参数。";
-export const content33Code = `~~~app/api/search/route.ts
+export const content33Code = `~~~app/api/search/route.ts~~~
 
 import { type NextRequest } from 'next/server'
  
@@ -150,7 +150,7 @@ export function GET(request: NextRequest) {
 }`;
 export const content34 = "### 流式传输";
 export const content35 = "流式传输通常与大型语言模型 (LLM)（例如 OpenAI）结合使用，用于 AI 生成的内容。了解有关 AI SDK 的更多信息。";
-export const content35Code = `~~~app/api/chat/route.ts
+export const content35Code = `~~~app/api/chat/route.ts~~~
 
 
 import { openai } from '@ai-sdk/openai'
@@ -166,7 +166,7 @@ export async function POST(req: Request) {
   return new StreamingTextResponse(result.toAIStream())
 }`;
 export const content36 = "这些抽象使用 Web API 来创建流。您也可以直接使用底层 Web API。";
-export const content36Code = `~~~app/api/route.ts
+export const content36Code = `~~~app/api/route.ts~~~
 
 // https://developer.mozilla.org/docs/Web/API/ReadableStream#convert_async_iterator_to_stream
 function iteratorToStream(iterator: any) {
@@ -207,7 +207,7 @@ export async function GET() {
 }`;
 export const content37 = "### 请求正文";
 export const content38 = "您可以使用标准 Web API 方法读取请求正文：";
-export const content38Code = `~~~app/items/route.ts
+export const content38Code = `~~~app/items/route.ts~~~
 
 export async function POST(request: Request) {
   const res = await request.json()
@@ -215,7 +215,7 @@ export async function POST(request: Request) {
 }`;
 export const content39 = "### 请求主体 FormData";
 export const content40 = "您可以使用 request.formData() 函数读取 FormData：";
-export const content40Code = `~~~app/items/route.ts
+export const content40Code = `~~~app/items/route.ts~~~
 
 export async function POST(request: Request) {
   const formData = await request.formData()
@@ -226,7 +226,7 @@ export async function POST(request: Request) {
 export const content41 = "由于 formData 数据都是字符串，您可能需要使用 zod-form-data 来验证请求并以您喜欢的格式（例如数字）检索数据。";
 export const content42 = "### CORS";
 export const content43 = "您可以使用标准 Web API 方法为特定路由处理程序设置 CORS 标头：";
-export const content43Code = `~~~app/api/route.ts
+export const content43Code = `~~~app/api/route.ts~~~
 
 export async function GET(request: Request) {
   return new Response('Hello, Next.js!', {
@@ -244,7 +244,7 @@ export const content43Tips = [
 ];
 export const content44 = "### Webhooks";
 export const content45 = "您可以使用路由处理程序接收来自第三方服务的 webhook：";
-export const content45Code = `~~~app/api/webhook/route.ts
+export const content45Code = `~~~app/api/webhook/route.ts~~~
 
 export async function POST(request: Request) {
   try {
@@ -263,7 +263,7 @@ export async function POST(request: Request) {
 export const content46 = "值得注意的是，与 Pages Router 的 API 路由不同，您不需要使用 bodyParser 来使用任何其他配置。";
 export const content47 = "### 非 UI 响应";
 export const content48 = "您可以使用路由处理程序返回非 UI 内容。请注意，sitemap.xml、robots.txt、应用图标和开放图形图像均具有内置支持。";
-export const content48Code = `~~~app/rss.xml/route.ts
+export const content48Code = `~~~app/rss.xml/route.ts~~~
 
 export async function GET() {
   return new Response(
@@ -287,7 +287,7 @@ export async function GET() {
 export const content49 = "### 段配置选项";
 
 export const content50 = "路由处理程序使用与页面和布局相同的路由段配置。";
-export const content50Code = `~~~app/items/route.ts
+export const content50Code = `~~~app/items/route.ts~~~
 
 export const dynamic = 'auto'
 export const dynamicParams = true
