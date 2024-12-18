@@ -148,11 +148,20 @@ export const nextjsMenu: MenuItem[] = [
             },
             {key: "24", label: <Link href={'/nextjs-docs/building-your-application/caching'}>Caching</Link>},
             {
-                key: "25", label: "Styling", children: [
-                    {key: "251", label: "CSS"},
-                    {key: "252", label: "Tailwind CSS"},
-                    {key: "253", label: "Sass"},
-                    {key: "254", label: "CSS-in-JS"},
+                key: "25",
+                label: <Link href={'/nextjs-docs/building-your-application/styling'}>Styling</Link>,
+                children: [
+                    {key: "251", label: <Link href={'/nextjs-docs/building-your-application/styling'}>CSS</Link>},
+                    {
+                        key: "252",
+                        label: <Link href={'/nextjs-docs/building-your-application/styling/tailwind-css'}>Tailwind
+                            CSS</Link>
+                    },
+                    {key: "253", label: <Link href={'/nextjs-docs/building-your-application/styling/sass'}>Sass</Link>},
+                    {
+                        key: "254",
+                        label: <Link href={'/nextjs-docs/building-your-application/styling/css-in-js'}>CSS-in-JS</Link>
+                    },
                 ]
             },
 
