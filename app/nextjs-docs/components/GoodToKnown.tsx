@@ -2,11 +2,12 @@ import CustomList from "@/app/nextjs-docs/components/CustomList";
 import style from "../styles.module.scss";
 import {automaticInstallationGoodToKnownTitle} from "@/src/assets/nextjsDocument/routing/installation";
 
-const GoodToKnown = ({title = automaticInstallationGoodToKnownTitle, text, list, description}: {
+const GoodToKnown = ({title = automaticInstallationGoodToKnownTitle, text, list, description, more}: {
     title?: string,
     text?: string,
-    list?: string[],
+    list?: (string | string[])[],
     description?: string
+    more?: string
 }) => {
     return (
         <blockquote className={style.goodToKnown}>
@@ -16,6 +17,7 @@ const GoodToKnown = ({title = automaticInstallationGoodToKnownTitle, text, list,
             {list && (
                 <CustomList items={list} isSmall/>
             )}
+            {more && <p className={style.more}>{more}</p>}
         </blockquote>
     )
 };

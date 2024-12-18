@@ -68,7 +68,8 @@ export const nextjsMenu: MenuItem[] = [
                         label: <Link href={'/nextjs-docs/building-your-application/routing/dynamic-routes'}>Dynamic
                             Routes</Link>
                     },
-                    {key: "2101",
+                    {
+                        key: "2101",
                         label: <Link href={'/nextjs-docs/building-your-application/routing/parallel-routes'}>Parallel
                             Routes</Link>
                     },
@@ -95,21 +96,57 @@ export const nextjsMenu: MenuItem[] = [
             },
             {
                 key: "22", label: "Data Fetching", children: [
-                    {key: "221", label: <Link href={'/nextjs-docs/building-your-application/data-fetching/data-fetching-and-caching'}>Data Fetching and Caching</Link>},
-                    {key: "222", label: <Link href={'/nextjs-docs/building-your-application/data-fetching/server-action-and-mutations'}>Server Actions and Mutations</Link>},
-                    {key: "223", label: <Link href={'/nextjs-docs/building-your-application/data-fetching/incremental-static-regeneration'}>Incremental Static Regeneration(ISR)</Link>},
+                    {
+                        key: "221",
+                        label: <Link
+                            href={'/nextjs-docs/building-your-application/data-fetching/data-fetching-and-caching'}>Data
+                            Fetching and Caching</Link>
+                    },
+                    {
+                        key: "222",
+                        label: <Link
+                            href={'/nextjs-docs/building-your-application/data-fetching/server-action-and-mutations'}>Server
+                            Actions and Mutations</Link>
+                    },
+                    {
+                        key: "223",
+                        label: <Link
+                            href={'/nextjs-docs/building-your-application/data-fetching/incremental-static-regeneration'}>Incremental
+                            Static Regeneration(ISR)</Link>
+                    },
                 ]
             },
             {
-                key: "23", label: <Link href={'/nextjs-docs/building-your-application/rendering'}>Rendering</Link>, children: [
-                    {key: "231", label: <Link href={'/nextjs-docs/building-your-application/rendering/server-components'}>Server Components</Link>},
-                    {key: "232", label: <Link href={'/nextjs-docs/building-your-application/rendering/client-components'}>Client Components</Link>},
-                    {key: "233", label: <Link href={'/nextjs-docs/building-your-application/rendering/composition-patterns'}>Composition Patterns</Link>},
-                    {key: "234", label: <Link href={'/nextjs-docs/building-your-application/rendering/partial-prerendering'}>Partial Prerendering</Link>},
-                    {key: "235", label: <Link href={'/nextjs-docs/building-your-application/rendering/runtimes'}>Runtimes</Link>},
+                key: "23",
+                label: <Link href={'/nextjs-docs/building-your-application/rendering'}>Rendering</Link>,
+                children: [
+                    {
+                        key: "231",
+                        label: <Link href={'/nextjs-docs/building-your-application/rendering/server-components'}>Server
+                            Components</Link>
+                    },
+                    {
+                        key: "232",
+                        label: <Link href={'/nextjs-docs/building-your-application/rendering/client-components'}>Client
+                            Components</Link>
+                    },
+                    {
+                        key: "233",
+                        label: <Link href={'/nextjs-docs/building-your-application/rendering/composition-patterns'}>Composition
+                            Patterns</Link>
+                    },
+                    {
+                        key: "234",
+                        label: <Link href={'/nextjs-docs/building-your-application/rendering/partial-prerendering'}>Partial
+                            Prerendering</Link>
+                    },
+                    {
+                        key: "235",
+                        label: <Link href={'/nextjs-docs/building-your-application/rendering/runtimes'}>Runtimes</Link>
+                    },
                 ]
             },
-            {key: "24", label: "Caching"},
+            {key: "24", label: <Link href={'/nextjs-docs/building-your-application/caching'}>Caching</Link>},
             {
                 key: "25", label: "Styling", children: [
                     {key: "251", label: "CSS"},
