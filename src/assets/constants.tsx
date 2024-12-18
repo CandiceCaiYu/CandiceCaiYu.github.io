@@ -17,7 +17,7 @@ export const BLOG_LIST = [
     {
         date: '', title: 'Next.js',
         content: '自己翻译(借助google transfer)的Next.js官方文档，包含了Next.js的基本概念，如何使用Next.js，以及一些高级特性的使用。',
-        link: '/nextjs-docs'
+        link: '/nextjs-docs/start'
     },
 ];
 

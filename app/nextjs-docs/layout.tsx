@@ -39,11 +39,12 @@ export default function NextJSLayout(prop: {
             <div className={styles.center}>
                 <div className={styles.centerHeader}>
                     <h1>Next.js中文文档@v15.0.3</h1>
-                    <Divider />
+                    <Divider/>
                 </div>
                 {prop.children}
             </div>
-            <div className={styles.right}></div>
+            <div className={styles.right}>
+            </div>
             <div className={styles.backToTop} style={{opacity: backToTopOpacity}} onClick={() => {
                 window.scrollTo({top: 0, behavior: 'smooth'});
             }}>
