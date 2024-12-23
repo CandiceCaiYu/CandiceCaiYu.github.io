@@ -166,20 +166,72 @@ export const nextjsMenu: MenuItem[] = [
             },
 
             {
-                key: "26", label: "Optimizing", children: [
-                    {key: "261", label: "Images"},
-                    {key: "262", label: "Videos"},
-                    {key: "263", label: "Fonts"},
-                    {key: "264", label: "Metadata"},
-                    {key: "265", label: "Scripts"},
-                    {key: "266", label: "Package Bundling"},
-                    {key: "267", label: "Lazy Loading"},
-                    {key: "268", label: "Analytics"},
-                    {key: "269", label: "Instrumentation"},
-                    {key: "2601", label: "OpenTelemetry"},
-                    {key: "2602", label: "Static Assets"},
-                    {key: "2603", label: "Third Party Libraries"},
-                    {key: "2604", label: "Memory Usage"},
+                key: "26",
+                label: <Link href={'/nextjs-docs/building-your-application/optimizations'}>Optimizing</Link>,
+                children: [
+                    {
+                        key: "261",
+                        label: <Link href={'/nextjs-docs/building-your-application/optimizations/images'}>Images</Link>
+                    },
+                    {
+                        key: "262",
+                        label: <Link href={'/nextjs-docs/building-your-application/optimizations/videos'}>Videos</Link>
+                    },
+                    {
+                        key: "263",
+                        label: <Link href={'/nextjs-docs/building-your-application/optimizations/fonts'}>Fonts</Link>
+                    },
+                    {
+                        key: "264",
+                        label: <Link
+                            href={'/nextjs-docs/building-your-application/optimizations/metadata'}>Metadata</Link>
+                    },
+                    {
+                        key: "265",
+                        label: <Link
+                            href={'/nextjs-docs/building-your-application/optimizations/scripts'}>Scripts</Link>
+                    },
+                    {
+                        key: "266",
+                        label: <Link href={'/nextjs-docs/building-your-application/optimizations/package-bundling'}>Package
+                            Bundling</Link>
+                    },
+                    {
+                        key: "267",
+                        label: <Link href={'/nextjs-docs/building-your-application/optimizations/lazy-loading'}>Lazy
+                            Loading</Link>
+                    },
+                    {
+                        key: "268",
+                        label: <Link
+                            href={'/nextjs-docs/building-your-application/optimizations/analytics'}>Analytics</Link>
+                    },
+                    {
+                        key: "269",
+                        label: <Link
+                            href={'/nextjs-docs/building-your-application/optimizations/instrumentation'}>Instrumentation</Link>
+                    },
+                    {
+                        key: "2601",
+                        label: <Link
+                            href={'/nextjs-docs/building-your-application/optimizations/openTelemetry'}>OpenTelemetry</Link>
+                    },
+                    {
+                        key: "2602",
+                        label: <Link href={'/nextjs-docs/building-your-application/optimizations/static-assets'}>Static
+                            Assets</Link>
+                    },
+                    {
+                        key: "2603",
+                        label: <Link
+                            href={'/nextjs-docs/building-your-application/optimizations/third-party-libraries'}>Third
+                            Party Libraries</Link>
+                    },
+                    {
+                        key: "2604",
+                        label: <Link href={'/nextjs-docs/building-your-application/optimizations/memory-usage'}>Memory
+                            Usage</Link>
+                    },
                 ]
             },
             {
