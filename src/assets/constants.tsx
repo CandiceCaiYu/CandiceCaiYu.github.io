@@ -19,6 +19,11 @@ export const BLOG_LIST = [
         content: '自己翻译(借助google transfer)的Next.js官方文档，包含了Next.js的基本概念，如何使用Next.js，以及一些高级特性的使用。',
         link: '/nextjs-docs/start'
     },
+    {
+        date: '', title: '阅读进度',
+        content: '记录每本书何时阅读的，当时的阅读情况，总体的阅读进度',
+        link: '/reading-progress'
+    },
 ];
 
 export const FOOTER_INFO = [
