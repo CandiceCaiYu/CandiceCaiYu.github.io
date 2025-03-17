@@ -12,7 +12,7 @@ export default function JavaThinking() {
         },
         xAxis: {
             type: 'category',
-            data: ['3-15', '3-16']
+            data: ['3-15', '3-16','3-17']
         },
         yAxis: {
             type: 'value',
@@ -20,7 +20,7 @@ export default function JavaThinking() {
         },
         series: [
             {
-                data: [20,28],
+                data: [20, 28, 36 ],
                 type: 'line'
             }
         ]
