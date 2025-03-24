@@ -1,5 +1,5 @@
 
-'use client'
+'use client';
 import React from 'react';
 import ReactECharts from 'echarts-for-react';
 import {EChartsOption} from "echarts";
@@ -12,7 +12,7 @@ export default function JavaThinking() {
         },
         xAxis: {
             type: 'category',
-            data: ['3-15', '3-16','3-17']
+            data: ['3-15', '3-16','3-17','3-24']
         },
         yAxis: {
             type: 'value',
@@ -20,7 +20,7 @@ export default function JavaThinking() {
         },
         series: [
             {
-                data: [20, 28, 36 ],
+                data: [20, 28, 36,41 ],
                 type: 'line'
             }
         ]
