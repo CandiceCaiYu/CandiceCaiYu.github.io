@@ -1,4 +1,5 @@
 import {FileTextFilled, GithubFilled, UserOutlined} from "@ant-design/icons";
+import { content } from "./nextjsDocument/caching/caching";
 
 export const SIDEBAR_CATEGORY = [
     {name: 'React', link: ''},
@@ -18,6 +19,11 @@ export const BLOG_LIST = [
         date: '', title: 'Next.js',
         content: '自己翻译(借助google transfer)的Next.js官方文档，包含了Next.js的基本概念，如何使用Next.js，以及一些高级特性的使用。',
         link: '/nextjs-docs/start'
+    },
+    {
+        date: 'Sat, 07 Jun 2025 09:57:07', title: 'Auto',
+        content: '自己翻译(借助google transfer)的Auto官方文档, auto release 简化发布流程，此次翻译目标是将其应用到circleci中，解决semantic-release不能从之前的commit开始发布，必须从最新的commit开始发布',
+        link: '/auto-release/start'
     },
     {
         date: '', title: '阅读进度',
