@@ -24,6 +24,11 @@ export const BLOG_LIST = [
         content: '记录每本书何时阅读的，当时的阅读情况，总体的阅读进度',
         link: '/reading-progress'
     },
+    {
+        date: '', title: '参考资料',
+        content: '提供各种文档，插件，库等高效开发',
+        link: '/reference-material'
+    },
 ];
 
 export const FOOTER_INFO = [
