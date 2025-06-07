@@ -23,7 +23,7 @@ export const BLOG_LIST = [
     {
         date: 'Sat, 07 Jun 2025 09:57:07', title: 'Auto',
         content: '自己翻译(借助google transfer)的Auto官方文档, auto release 简化发布流程，此次翻译目标是将其应用到circleci中，解决semantic-release不能从之前的commit开始发布，必须从最新的commit开始发布',
-        link: '/auto-release/start'
+        link: '/auto-release/home'
     },
     {
         date: '', title: '阅读进度',
