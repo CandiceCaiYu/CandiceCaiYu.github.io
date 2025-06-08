@@ -1,7 +1,9 @@
+'use client';
+
 import styles from './styles.module.scss'
 export default function Page() {
     return (
-        <div className={styles.auto_start}>
+        <div className={styles.auto_home}>
             <div className={styles.page_header}>
                 <h1>Auto</h1>
                 <p>简化您的发布工作流程并不断发布！</p>
@@ -49,7 +51,7 @@ PR 构建预览, 使项目的使用者能够轻松测试更改。</p>
 </div>
 <div className={styles.end}>
             <div className={styles.end_text}>不要再担心您的发布并点击合并按钮！</div>
-            <button>开始</button>
+            <button onClick={() => window.open('/auto-release/start')}>开始</button>
             </div>
         </div>
     )
