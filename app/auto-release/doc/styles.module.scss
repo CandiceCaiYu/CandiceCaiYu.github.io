@@ -1,12 +1,41 @@
+/** @format */
+
+@import "@/app/css/common.module.scss";
 
 .auto_doc {
-    color: #3c383b;
-    font-size: 16px;
-    display: flex;
-    h1 {
-        font-size: 48px;
-    }
-    .auto_children {
-        margin: 24px 48px;
-    } 
+	color: #3c383b;
+	font-size: 16px;
+	display: flex;
+	p {
+		font-size: 16px;
+	}
+	h1 {
+		font-size: 48px;
+	}
+	h2 {
+		font-size: 24px;
+		font-weight: 600;
+		padding-bottom: 12px;
+		border-bottom: 1px solid $grey5;
+		margin: 24px 0;
+	}
+	h4 {
+		font-size: 18px;
+		font-weight: 600;
+		margin: 24px 0 12px 0;
+	}
+
+	.auto_children {
+		margin: 24px 48px;
+	}
+	.introduction {
+		li {
+			list-style-type: disc;
+			margin-left: 24px;
+		}
+		.start_button {
+			text-align: center;
+			width: 160px;
+		}
+	}
 }

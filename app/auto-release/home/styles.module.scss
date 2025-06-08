@@ -1,70 +1,68 @@
-@import "@/app/css/colors.module.scss";
+/** @format */
+
+@import "@/app/css/common.module.scss";
 
 .auto_home {
-   
-    p {
-        font-size: 16px;
-        color: $grey8;
-    }
-    h4 {
-        font-size: 20px;
-        font-weight: 600;
-       
-    }
+	p {
+		font-size: 16px;
+		color: $grey8;
+	}
+	h4 {
+		font-size: 20px;
+		font-weight: 600;
+	}
 
-    h5 {
-        font-size: 14px;
-        font-weight: 600;
-        margin-top: 24px;
-    }
-    
-    i {
-        color: $volcano8;
-        font-weight: 600;
-    }
-    
+	h5 {
+		font-size: 14px;
+		font-weight: 600;
+		margin-top: 24px;
+	}
 
-   
-    .page_header {
-        text-align: center;
-        background-color: #870048;
-        color: $grey1;
-        height: 520px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        h1 {
-            font-size: 256px;
-            margin-bottom: 24px;
-        }
-        p {
-            font-size: 36px;
-             color: $grey1;
-        }
-    }
-    .page_section {
-        margin: 24px 164px;
-    }
-    .end {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-         button {
-            max-width: 300px;
-            color: $volcano6;
-            margin-bottom: 48px;
-            font-size: 18px;
-            text-align: center;
-            border: 1px solid $volcano6;
-            padding: 12px 48px;
-            border-radius: 8px;
-            cursor: pointer;
-        }
-        .end_text {
-            padding: 48px;
-            font-size: 24px;
-            color: $grey9;
-        }
-    }
+	i {
+		color: $volcano8;
+		font-weight: 600;
+	}
+
+	.page_header {
+		text-align: center;
+		background-color: #870048;
+		color: $grey1;
+		height: 520px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		h1 {
+			font-size: 256px;
+			margin-bottom: 24px;
+		}
+		p {
+			font-size: 36px;
+			color: $grey1;
+		}
+	}
+	.page_section {
+		margin: 24px 164px;
+	}
+	.end {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		button {
+			max-width: 300px;
+			color: $volcano6;
+			margin-bottom: 48px;
+			font-size: 18px;
+			text-align: center;
+			border: 1px solid $volcano6;
+			padding: 12px 48px;
+			border-radius: 8px;
+			cursor: pointer;
+		}
+		.end_text {
+			padding: 48px;
+			font-size: 24px;
+			color: $grey9;
+		}
+	}
 }
