@@ -1,9 +1,9 @@
 import Link from "next/link";
-import {ReactNode} from "react";
+import {ReactElement} from "react";
 
 interface MenuItem {
     key: string;
-    label: ReactNode;
+    label: ReactElement;
     children?: MenuItem[];
 }
 

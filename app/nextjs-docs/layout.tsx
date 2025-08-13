@@ -4,18 +4,62 @@ import {Divider, Menu} from "antd";
 import {nextjsMenu} from "@/src/assets/nextjsDocument/menu";
 import styles from './styles.module.scss'
 import {UpCircleFilled} from "@ant-design/icons";
-import {useEffect, useState} from "react";
+import {ReactElement, ReactNode, useEffect, useState} from "react";
+import {useLocation} from "react-use";
+import {find} from "lodash";
 
 export default function NextJSLayout(prop: {
-    children: React.ReactNode
+    children: ReactNode
 }) {
     const [backToTopOpacity, setBackToTopOpacity] = useState(0);
+    const [selectKeys, setSelectKeys] = useState<string[]>([]);
+    const [openKeys, setOpenKeys] = useState<string[]>([]);
+    const {pathname} = useLocation();
     useEffect(() => {
         window.addEventListener('scroll', handleScroll);
         return () => {
             window.removeEventListener('scroll', handleScroll)
         }
     }, []);
+
+    useEffect(() => {
+        const routes = pathname?.split('/').filter(Boolean);
+        if (!routes) {
+            return;
+        }
+        if (routes.length === 2) {
+            const firstLayer = find(nextjsMenu, item => item.label?.props?.href === pathname);
+            if (firstLayer) {
+                setSelectKeys([firstLayer.key]);
+                setOpenKeys([firstLayer.key]);
+                return;
+            }
+        } else if (routes.length === 3) {
+            const firstLayer = find(nextjsMenu, item => item.label?.props?.href === `/${routes[0]}/${routes[1]}`);
+            const secondLayer = find(firstLayer?.children, item => item.label?.props?.href === pathname);
+            if (secondLayer && firstLayer) {
+                setSelectKeys([secondLayer.key]);
+                setOpenKeys([secondLayer.key, firstLayer.key]);
+                return;
+            }
+        } else if (routes.length === 4) {
+            const firstLayer = find(nextjsMenu, item => checkHref(item?.label, `/${routes[0]}/${routes[1]}`));
+            const secondLayer = find(firstLayer?.children, item => item.label?.props?.href === `/${routes[0]}/${routes[1]}/${routes[2]}`);
+            const thirdLayer = find(secondLayer?.children, item => item.label?.props?.href === pathname);
+            if (thirdLayer && secondLayer && firstLayer) {
+                setSelectKeys([thirdLayer.key]);
+                setOpenKeys([secondLayer.key, firstLayer.key]);
+                return;
+            }
+        }
+    }, [pathname]);
+
+    const checkHref = (label: ReactElement, href: String): boolean => {
+        if (!label || !label.props || !label.props.href) {
+            return false;
+        }
+        return label.props.href === href
+    };
 
     const handleScroll = () => {
         if (window.scrollY > 100) {
@@ -29,10 +73,10 @@ export default function NextJSLayout(prop: {
             <div>
                 <Menu mode="inline"
                       items={nextjsMenu}
-                      defaultSelectedKeys={["212"]}
-                    //   defaultSelectedKeys={selectedKeys}
-                    // defaultOpenKeys={["2", "21",]}
+                      selectedKeys={selectKeys}
+                      openKeys={openKeys}
                       style={{height: '100%'}}
+                      multiple={false}
                 />
 
             </div>
