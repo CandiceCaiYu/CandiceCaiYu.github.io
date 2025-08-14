@@ -46,7 +46,8 @@
 
   .center {
     width: 100%;
-    padding: 0 40px;
+    padding: 0 40px 40px;
+    height: fit-content;
   }
 
   .section {
@@ -118,6 +119,36 @@
     svg {
       font-size: 48px;
       color: $link;
+    }
+  }
+
+  .footerNavigator {
+    margin: 48px 0;
+
+    .actionItem {
+      cursor: pointer;
+
+      &:hover {
+        .action, .actionLink, .icon {
+          color: $link;
+        }
+      }
+
+      .icon svg {
+        font-size: 16px;
+      }
+
+      .action {
+        font-size: 13px;
+        color: #666;
+        margin-bottom: 8px;
+      }
+
+      .actionLink {
+        font-size: 16px;
+        color: #171717;
+        font-weight: 500;
+      }
     }
   }
 }

@@ -29,7 +29,7 @@ export const howToUseDocsContentList = [
     "- 指南：有关特定用例的教程，选择与您相关的内容。",
     "- API 参考：每个功能的详细技术参考。"
 ];
-export const howToUseDocsRight = '在屏幕的右边，你可以看到一个目录，它可以让你更容易在这个页面的各个章节之间导航。如果你想要更快的找到一个页面，你可以使用页面顶部的搜索栏，也可以使用搜索快捷键（ctrl + K或者command + K）。';
+export const howToUseDocsRight = '在屏幕的右边，你可以看到一个目录，它可以让你更容易在这个页面的各个章节之间导航。如果你想要更快得找到一个页面，你可以使用页面顶部的搜索栏，也可以使用搜索快捷键（ctrl + K或者command + K）。';
 
 
 export const routerTitle = '## 应用程序路由器(App router) VS 页面路由器(Page router)';
