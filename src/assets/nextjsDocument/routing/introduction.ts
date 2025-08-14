@@ -23,20 +23,40 @@ export const mainFeaturesContents = [
 ];
 
 export const howToUseDocsTitle = '## 如何使用这些文档';
-export const howToUseDocsLeft = '在屏幕的左边，你可以看到文档的导航栏。这些文档页面都是按顺序排列的。从基础到高级，所以你在构建应用的时候，可以跟着文档一步一步的来。当然，你可以从任意顺序阅读它们，也可以直接跳到你想要应用的页面。';
+export const howToUseDocsContent1 = "这个文档分成3个部分"
+export const howToUseDocsContentList = [
+    "- 入门：一步一步的帮助创建一个新的应用和学习nextJS的核心功能",
+    "- 指南：有关特定用例的教程，选择与您相关的内容。",
+    "- API 参考：每个功能的详细技术参考。"
+];
 export const howToUseDocsRight = '在屏幕的右边，你可以看到一个目录，它可以让你更容易在这个页面的各个章节之间导航。如果你想要更快的找到一个页面，你可以使用页面顶部的搜索栏，也可以使用搜索快捷键（ctrl + K或者command + K）。';
-export const howToUseDocsEnd = '开始前，请切换到安装引导页。';
 
 
 export const routerTitle = '## 应用程序路由器(App router) VS 页面路由器(Page router)';
-export const routerSection1 = 'Next.js有两种不同的路由器：应用程序路由器和页面路由器。应用程序路由器是一个较新的路由器。它允许你使用react最新的功能，比如服务器组件和流式传输。页面路由器是Next.js原本的路由器，它允许你构建服务端渲染的react应用程序并且继续支持旧的Next.js应用程序。';
+export const routerSection1 = 'Next.js有两种不同的路由器：'
+export const routerSectionList1 = [
+    '应用程序路由器: 是新的路由器。它支持react最新的功能，比如服务器组件。',
+    '页面路由器: 是原来的路由器，它目前仍然支持使用并正在改进。'];
 export const routerSection2 = '在侧边栏的顶部，你可以看到一个下拉菜单，它可以让你在应用程序路由器和页面路由器的功能之间进行切换。这两个路由器的功能都是独有的，所以跟踪你的选项卡很重要。';
 export const routerSection3 = '页面顶部的面包屑同样会指示你当前正在查看的是应用程序路由器还是页面路由器的文档。';
 
+export const reactVersionHandlingTitle = '## React版本处理';
+export const reactVersionHandlingContent1 = 'App router 与 Page router 处理React版本不同：'
+export const reactVersionHandlingList1 = [
+    'App router: 使用最新的React Canary版本。其中包括所有稳定的 React 19 更改，以及在新 React 版本发布之前在框架中验证的较新功能。',
+    'Page router: 使用项目 package.json 中安装的 React 版本。'
+]
+export const reactVersionHandlingContent2 = '这种方法确保新的 React 功能在 App Router 中可靠运行，同时保持现有 Pages Router 应用程序的向后兼容性。';
 
 export const preRequireTitle = '## 必备知识';
-export const preRequireSection1 = '尽管我们的文档设计的对初学者很友好，但我们需要建立一个基准，这样文档可以更加关注于Next.js的功能。每当我们引入一个新的概念时，我们会提供相关文档的链接。';
-export const preRequireSection2 = '为了充分利用我们的文档，建议你对HTML，CSS， 和React有个基本的了解。如果你想提高你的react技能，请查看react基础原理课程，它可以向你介绍基础原理。然后通过构建一个Dashboard应用程序来学习更多Next.js的知识。';
+export const preRequireSection1 = '我们的文档假设您熟悉 Web 开发。在开始之前，如果您已了解以下内容，将会对您有所帮助：';
+export const preRequireSectionList1 = [
+    'HTML',
+    'CSS',
+    'JavaScript',
+    'React'
+]
+export const preRequireSection2 = '如果您是 React 新手或需要复习，我们建议您从我们的 React Foundations 课程和 Next.js Foundations 课程开始，这些课程可让您在学习的同时构建应用程序。';
 
 
 export const accessibilityTitle = '## 可访问性';
