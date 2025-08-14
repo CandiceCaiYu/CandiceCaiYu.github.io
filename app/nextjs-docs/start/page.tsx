@@ -33,7 +33,6 @@ import {
 import CustomSection from "@/app/nextjs-docs/components/CustomSection";
 import {Divider, Table} from "antd";
 import CustomList from "@/app/nextjs-docs/components/CustomList";
-import FooterNavigator from "@/app/nextjs-docs/components/FooterNavigator";
 
 export default function Page() {
     return (
@@ -71,8 +70,6 @@ export default function Page() {
             <Divider/>
             <CustomSection texts={[communityTitle, communityContent]}/>
             <Divider/>
-            <FooterNavigator previous={{label: "Test", href: '/nextjs-docs/start/installation'}}
-                             next={{label: "Installation", href: '/nextjs-docs/start/installation'}}/>
         </div>
     )
 }

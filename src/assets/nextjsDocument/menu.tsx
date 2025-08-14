@@ -1,7 +1,7 @@
 import Link from "next/link";
 import {ReactElement} from "react";
 
-interface MenuItem {
+export interface MenuItem {
     key: string;
     label: ReactElement;
     children?: MenuItem[];
@@ -95,7 +95,10 @@ export const nextjsMenu: MenuItem[] = [
                 ]
             },
             {
-                key: "22", label: "Data Fetching", children: [
+                key: "22",
+                label: <Link
+                    href={'/nextjs-docs/building-your-application/data-fetching'}>Data Fetching</Link>,
+                children: [
                     {
                         key: "221",
                         label: <Link
