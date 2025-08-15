@@ -18,78 +18,78 @@ export const nextjsMenu: MenuItem[] = [
     },
     {
         key: '2',
-        label: <Link href={'/nextjs-docs/building-your-application'}>Building Your Application</Link>,
+        label: <Link href={'/nextjs-docs/guides'}>Guides</Link>,
         children: [
             {
                 key: "21",
-                label: <Link href={'/nextjs-docs/building-your-application/routing'}>Routing</Link>,
+                label: <Link href={'/nextjs-docs/guides/routing'}>Routing</Link>,
                 children: [
                     {
                         key: "211",
-                        label: <Link href={'/nextjs-docs/building-your-application/routing/defining-routes'}>Defining
+                        label: <Link href={'/nextjs-docs/guides/routing/defining-routes'}>Defining
                             Routes</Link>
                     },
                     {
                         key: "212",
-                        label: <Link href={'/nextjs-docs/building-your-application/routing/pages'}>Pages</Link>
+                        label: <Link href={'/nextjs-docs/guides/routing/pages'}>Pages</Link>
                     },
                     {
                         key: "213",
-                        label: <Link href={'/nextjs-docs/building-your-application/routing/layouts-and-templates'}>Layouts
+                        label: <Link href={'/nextjs-docs/guides/routing/layouts-and-templates'}>Layouts
                             and Templates</Link>
                     },
                     {
                         key: "214",
-                        label: <Link href={'/nextjs-docs/building-your-application/routing/linking-and-navigating'}>Linking
+                        label: <Link href={'/nextjs-docs/guides/routing/linking-and-navigating'}>Linking
                             and Navigating</Link>
                     },
                     {
                         key: "215",
-                        label: <Link href={'/nextjs-docs/building-your-application/routing/error-handling'}>Error
+                        label: <Link href={'/nextjs-docs/guides/routing/error-handling'}>Error
                             Handling</Link>
                     },
                     {
                         key: "216",
-                        label: <Link href={'/nextjs-docs/building-your-application/routing/loading-ui-and-streaming'}>Loading
+                        label: <Link href={'/nextjs-docs/guides/routing/loading-ui-and-streaming'}>Loading
                             UI and Streaming</Link>
                     },
                     {
                         key: "217",
                         label: <Link
-                            href={'/nextjs-docs/building-your-application/routing/redirecting'}>Redirecting</Link>
+                            href={'/nextjs-docs/guides/routing/redirecting'}>Redirecting</Link>
                     },
                     {
                         key: "218",
-                        label: <Link href={'/nextjs-docs/building-your-application/routing/route-groups'}>Route
+                        label: <Link href={'/nextjs-docs/guides/routing/route-groups'}>Route
                             Groups</Link>
                     },
                     {
                         key: "219",
-                        label: <Link href={'/nextjs-docs/building-your-application/routing/dynamic-routes'}>Dynamic
+                        label: <Link href={'/nextjs-docs/guides/routing/dynamic-routes'}>Dynamic
                             Routes</Link>
                     },
                     {
                         key: "2101",
-                        label: <Link href={'/nextjs-docs/building-your-application/routing/parallel-routes'}>Parallel
+                        label: <Link href={'/nextjs-docs/guides/routing/parallel-routes'}>Parallel
                             Routes</Link>
                     },
                     {
                         key: "2102", label: <Link
-                            href={'/nextjs-docs/building-your-application/routing/intercepting-routes'}>Intercepting
+                            href={'/nextjs-docs/guides/routing/intercepting-routes'}>Intercepting
                             Routes</Link>
                     },
                     {
                         key: "2103", label: <Link
-                            href={'/nextjs-docs/building-your-application/routing/route-handlers'}>Route Handlers</Link>
+                            href={'/nextjs-docs/guides/routing/route-handlers'}>Route Handlers</Link>
                     },
                     {
                         key: "2104", label: <Link
-                            href={'/nextjs-docs/building-your-application/routing/middleware'}>Middleware</Link>
+                            href={'/nextjs-docs/guides/routing/middleware'}>Middleware</Link>
                     },
                     {
                         key: "2105",
                         label: <Link
-                            href={'/nextjs-docs/building-your-application/routing/internationalization'}>Internationalization</Link>
+                            href={'/nextjs-docs/guides/routing/internationalization'}>Internationalization</Link>
                     },
 
                 ]
@@ -97,142 +97,142 @@ export const nextjsMenu: MenuItem[] = [
             {
                 key: "22",
                 label: <Link
-                    href={'/nextjs-docs/building-your-application/data-fetching'}>Data Fetching</Link>,
+                    href={'/nextjs-docs/guides/data-fetching'}>Data Fetching</Link>,
                 children: [
                     {
                         key: "221",
                         label: <Link
-                            href={'/nextjs-docs/building-your-application/data-fetching/data-fetching-and-caching'}>Data
+                            href={'/nextjs-docs/guides/data-fetching/data-fetching-and-caching'}>Data
                             Fetching and Caching</Link>
                     },
                     {
                         key: "222",
                         label: <Link
-                            href={'/nextjs-docs/building-your-application/data-fetching/server-action-and-mutations'}>Server
+                            href={'/nextjs-docs/guides/data-fetching/server-action-and-mutations'}>Server
                             Actions and Mutations</Link>
                     },
                     {
                         key: "223",
                         label: <Link
-                            href={'/nextjs-docs/building-your-application/data-fetching/incremental-static-regeneration'}>Incremental
+                            href={'/nextjs-docs/guides/data-fetching/incremental-static-regeneration'}>Incremental
                             Static Regeneration(ISR)</Link>
                     },
                 ]
             },
             {
                 key: "23",
-                label: <Link href={'/nextjs-docs/building-your-application/rendering'}>Rendering</Link>,
+                label: <Link href={'/nextjs-docs/guides/rendering'}>Rendering</Link>,
                 children: [
                     {
                         key: "231",
-                        label: <Link href={'/nextjs-docs/building-your-application/rendering/server-components'}>Server
+                        label: <Link href={'/nextjs-docs/guides/rendering/server-components'}>Server
                             Components</Link>
                     },
                     {
                         key: "232",
-                        label: <Link href={'/nextjs-docs/building-your-application/rendering/client-components'}>Client
+                        label: <Link href={'/nextjs-docs/guides/rendering/client-components'}>Client
                             Components</Link>
                     },
                     {
                         key: "233",
-                        label: <Link href={'/nextjs-docs/building-your-application/rendering/composition-patterns'}>Composition
+                        label: <Link href={'/nextjs-docs/guides/rendering/composition-patterns'}>Composition
                             Patterns</Link>
                     },
                     {
                         key: "234",
-                        label: <Link href={'/nextjs-docs/building-your-application/rendering/partial-prerendering'}>Partial
+                        label: <Link href={'/nextjs-docs/guides/rendering/partial-prerendering'}>Partial
                             Prerendering</Link>
                     },
                     {
                         key: "235",
-                        label: <Link href={'/nextjs-docs/building-your-application/rendering/runtimes'}>Runtimes</Link>
+                        label: <Link href={'/nextjs-docs/guides/rendering/runtimes'}>Runtimes</Link>
                     },
                 ]
             },
-            {key: "24", label: <Link href={'/nextjs-docs/building-your-application/caching'}>Caching</Link>},
+            {key: "24", label: <Link href={'/nextjs-docs/guides/caching'}>Caching</Link>},
             {
                 key: "25",
-                label: <Link href={'/nextjs-docs/building-your-application/styling'}>Styling</Link>,
+                label: <Link href={'/nextjs-docs/guides/styling'}>Styling</Link>,
                 children: [
-                    {key: "251", label: <Link href={'/nextjs-docs/building-your-application/styling'}>CSS</Link>},
+                    {key: "251", label: <Link href={'/nextjs-docs/guides/styling'}>CSS</Link>},
                     {
                         key: "252",
-                        label: <Link href={'/nextjs-docs/building-your-application/styling/tailwind-css'}>Tailwind
+                        label: <Link href={'/nextjs-docs/guides/styling/tailwind-css'}>Tailwind
                             CSS</Link>
                     },
-                    {key: "253", label: <Link href={'/nextjs-docs/building-your-application/styling/sass'}>Sass</Link>},
+                    {key: "253", label: <Link href={'/nextjs-docs/guides/styling/sass'}>Sass</Link>},
                     {
                         key: "254",
-                        label: <Link href={'/nextjs-docs/building-your-application/styling/css-in-js'}>CSS-in-JS</Link>
+                        label: <Link href={'/nextjs-docs/guides/styling/css-in-js'}>CSS-in-JS</Link>
                     },
                 ]
             },
 
             {
                 key: "26",
-                label: <Link href={'/nextjs-docs/building-your-application/optimizations'}>Optimizing</Link>,
+                label: <Link href={'/nextjs-docs/guides/optimizations'}>Optimizing</Link>,
                 children: [
                     {
                         key: "261",
-                        label: <Link href={'/nextjs-docs/building-your-application/optimizations/images'}>Images</Link>
+                        label: <Link href={'/nextjs-docs/guides/optimizations/images'}>Images</Link>
                     },
                     {
                         key: "262",
-                        label: <Link href={'/nextjs-docs/building-your-application/optimizations/videos'}>Videos</Link>
+                        label: <Link href={'/nextjs-docs/guides/optimizations/videos'}>Videos</Link>
                     },
                     {
                         key: "263",
-                        label: <Link href={'/nextjs-docs/building-your-application/optimizations/fonts'}>Fonts</Link>
+                        label: <Link href={'/nextjs-docs/guides/optimizations/fonts'}>Fonts</Link>
                     },
                     {
                         key: "264",
                         label: <Link
-                            href={'/nextjs-docs/building-your-application/optimizations/metadata'}>Metadata</Link>
+                            href={'/nextjs-docs/guides/optimizations/metadata'}>Metadata</Link>
                     },
                     {
                         key: "265",
                         label: <Link
-                            href={'/nextjs-docs/building-your-application/optimizations/scripts'}>Scripts</Link>
+                            href={'/nextjs-docs/guides/optimizations/scripts'}>Scripts</Link>
                     },
                     {
                         key: "266",
-                        label: <Link href={'/nextjs-docs/building-your-application/optimizations/package-bundling'}>Package
+                        label: <Link href={'/nextjs-docs/guides/optimizations/package-bundling'}>Package
                             Bundling</Link>
                     },
                     {
                         key: "267",
-                        label: <Link href={'/nextjs-docs/building-your-application/optimizations/lazy-loading'}>Lazy
+                        label: <Link href={'/nextjs-docs/guides/optimizations/lazy-loading'}>Lazy
                             Loading</Link>
                     },
                     {
                         key: "268",
                         label: <Link
-                            href={'/nextjs-docs/building-your-application/optimizations/analytics'}>Analytics</Link>
+                            href={'/nextjs-docs/guides/optimizations/analytics'}>Analytics</Link>
                     },
                     {
                         key: "269",
                         label: <Link
-                            href={'/nextjs-docs/building-your-application/optimizations/instrumentation'}>Instrumentation</Link>
+                            href={'/nextjs-docs/guides/optimizations/instrumentation'}>Instrumentation</Link>
                     },
                     {
                         key: "2601",
                         label: <Link
-                            href={'/nextjs-docs/building-your-application/optimizations/openTelemetry'}>OpenTelemetry</Link>
+                            href={'/nextjs-docs/guides/optimizations/openTelemetry'}>OpenTelemetry</Link>
                     },
                     {
                         key: "2602",
-                        label: <Link href={'/nextjs-docs/building-your-application/optimizations/static-assets'}>Static
+                        label: <Link href={'/nextjs-docs/guides/optimizations/static-assets'}>Static
                             Assets</Link>
                     },
                     {
                         key: "2603",
                         label: <Link
-                            href={'/nextjs-docs/building-your-application/optimizations/third-party-libraries'}>Third
+                            href={'/nextjs-docs/guides/optimizations/third-party-libraries'}>Third
                             Party Libraries</Link>
                     },
                     {
                         key: "2604",
-                        label: <Link href={'/nextjs-docs/building-your-application/optimizations/memory-usage'}>Memory
+                        label: <Link href={'/nextjs-docs/guides/optimizations/memory-usage'}>Memory
                             Usage</Link>
                     },
                 ]
