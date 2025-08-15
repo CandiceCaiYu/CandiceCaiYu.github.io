@@ -253,11 +253,12 @@ export const nextjsMenu: MenuItem[] = [
                 ]
             },
             {
-                key: "28", label: "Testing", children: [
-                    {key: "281", label: "Vitest"},
-                    {key: "282", label: "Jest"},
-                    {key: "283", label: "Playwright"},
-                    {key: "284", label: "Cypress"},
+                key: "28", label: <Link href={'/nextjs-docs/guides/testing'}>Testing</Link>,
+                children: [
+                    {key: "281", label: <Link href={'/nextjs-docs/guides/testing/vitest'}>Vitest</Link>},
+                    {key: "282", label: <Link href={'/nextjs-docs/guides/testing/jest'}>Jest</Link>},
+                    {key: "283", label: <Link href={'/nextjs-docs/guides/testing/playwright'}>Playwright</Link>},
+                    {key: "284", label: <Link href={'/nextjs-docs/guides/testing/cypress'}>Cypress</Link>},
                 ]
             },
             {key: "29", label: "Authentication"},
