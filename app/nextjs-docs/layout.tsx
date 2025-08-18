@@ -180,10 +180,10 @@ export default function NextJSLayout(prop: {
 
         if (secondLayer?.children && !isNil(thirdLayerIndex) && thirdLayerIndex + 1 < secondLayer.children.length) {
             getNextItem(secondLayer, thirdLayerIndex);
-        } else if (firstLayer?.children && !isNil(secondLayerIndex) && secondLayerIndex + 1 < firstLayer.children.length) {
-            getNextItem(firstLayer, secondLayerIndex);
         } else if (secondLayer?.children && isNil(thirdLayerIndex)) {
             getNextItem(secondLayer, thirdLayerIndex)
+        } else if (firstLayer?.children && !isNil(secondLayerIndex) && secondLayerIndex + 1 < firstLayer.children.length) {
+            getNextItem(firstLayer, secondLayerIndex);
         } else if (firstLayer?.children && isNil(secondLayerIndex)) {
             getNextItem(firstLayer, secondLayerIndex)
         } else if (firstLayerIndex + 1 < nextjsMenu.length) {
