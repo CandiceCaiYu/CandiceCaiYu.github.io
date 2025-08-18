@@ -1,5 +1,4 @@
 import {FileTextFilled, GithubFilled, UserOutlined} from "@ant-design/icons";
-import { content } from "./nextjsDocument/caching/caching";
 
 export const SIDEBAR_CATEGORY = [
     {name: 'React', link: ''},
@@ -10,6 +9,11 @@ export const SIDEBAR_CATEGORY = [
 ];
 
 export const BLOG_LIST = [
+    {
+        date: '', title: '简历',
+        content: '博主的个人简历，包含了个人信息，教育经历，工作经历，技能特长等内容，可以作为参考。',
+        link: '/profile'
+    },
     {
         date: '', title: '博客园',
         content: '博客园中的随笔与博客，包含大量的这些年在工作中遇到的各种坑和解决方案，很多都是收集了大量信息总结出来的解决方案，可以作为参考。',

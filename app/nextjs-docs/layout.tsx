@@ -1,6 +1,6 @@
 'use client';
 
-import {Divider, Menu} from "antd";
+import {Divider, Flex, Menu} from "antd";
 import {MenuItem, nextjsMenu} from "@/src/assets/nextjsDocument/menu";
 import styles from './styles.module.scss'
 import {UpCircleFilled} from "@ant-design/icons";
@@ -8,6 +8,7 @@ import {ReactNode, useEffect, useState} from "react";
 import {useLocation} from "react-use";
 import {find, findIndex, flatMap, isNil} from "lodash";
 import FooterNavigator, {FooterNavigatorLink} from "@/app/nextjs-docs/components/FooterNavigator";
+import HeaderBackToHome from "@/app/dashboard/components/head/headerBackToHome";
 
 
 export default function NextJSLayout(prop: {
@@ -224,8 +225,9 @@ export default function NextJSLayout(prop: {
                 <Divider/>
                 <FooterNavigator previous={previous} next={next}/>
             </div>
-            <div className={styles.right}>
-            </div>
+            <Flex className={styles.right} justify={"flex-end"} align={"flex-start"}>
+                <HeaderBackToHome/>
+            </Flex>
             <div className={styles.backToTop} style={{opacity: backToTopOpacity}} onClick={() => {
                 window.scrollTo({top: 0, behavior: 'smooth'});
             }}>
