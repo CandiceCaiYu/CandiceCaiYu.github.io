@@ -238,18 +238,40 @@ export const nextjsMenu: MenuItem[] = [
                 ]
             },
             {
-                key: "27", label: "Configuring", children: [
-                    {key: "271", label: "TypeScript"},
-                    {key: "272", label: "ESLint"},
-                    {key: "273", label: "Environment Variables"},
-                    {key: "274", label: "Absolute Imports and Module Path Aliases"},
-                    {key: "275", label: "MDX"},
-                    {key: "276", label: "src Directory"},
-                    {key: "277", label: "Custom Server"},
-                    {key: "278", label: "Draft Mode"},
-                    {key: "279", label: "Content Security Policy"},
-                    {key: "2701", label: "Debugging"},
-                    {key: "2702", label: "Progressive Web Applications(PWA)"},
+                key: "27", label: <Link href={'/nextjs-docs/guides/configuring'}>Configuring</Link>, children: [
+                    {key: "271", label: <Link href={'/nextjs-docs/guides/configuring/typescript'}>TypeScript</Link>},
+                    {key: "272", label: <Link href={'/nextjs-docs/guides/configuring/eslint'}>ESLint</Link>},
+                    {
+                        key: "273",
+                        label: <Link href={'/nextjs-docs/guides/configuring/environment-variables'}>Environment
+                            Variables</Link>
+                    },
+                    {
+                        key: "274",
+                        label: <Link href={'/nextjs-docs/guides/configuring/absolute-imports-and-module-path-aliases'}>Absolute
+                            Imports and Module Path Aliases</Link>
+                    },
+                    {key: "275", label: <Link href={'/nextjs-docs/guides/configuring/mdx'}>MDX</Link>},
+                    {
+                        key: "276",
+                        label: <Link href={'/nextjs-docs/guides/configuring/src-directory'}>src Directory</Link>
+                    },
+                    {
+                        key: "277",
+                        label: <Link href={'/nextjs-docs/guides/configuring/custom-server'}>Custom Server</Link>
+                    },
+                    {key: "278", label: <Link href={'/nextjs-docs/guides/configuring/draft-mode'}>Draft Mode</Link>},
+                    {
+                        key: "279",
+                        label: <Link href={'/nextjs-docs/guides/configuring/content-security-policy'}>Content Security
+                            Policy</Link>
+                    },
+                    {key: "2701", label: <Link href={'/nextjs-docs/guides/configuring/debugging'}>Debugging</Link>},
+                    {
+                        key: "2702",
+                        label: <Link href={'/nextjs-docs/guides/configuring/progressive-web-applications'}>Progressive
+                            Web Applications (PWA)</Link>
+                    },
                 ]
             },
             {
@@ -261,170 +283,537 @@ export const nextjsMenu: MenuItem[] = [
                     {key: "284", label: <Link href={'/nextjs-docs/guides/testing/cypress'}>Cypress</Link>},
                 ]
             },
-            {key: "29", label: "Authentication"},
+            {key: "29", label: <Link href={'/nextjs-docs/guides/authentication'}>Authentication</Link>},
             {
-                key: "2901", label: "Deploying", children: [
-                    {key: "29011", label: "Production Checklist"},
-                    {key: "29012", label: "Static Exports"},
-                    {key: "29013", label: "Multi-Zones"},
-                ]
+                key: "2901", label: <Link href={'/nextjs-docs/guides/deploying'}>Deploying</Link>
             },
             {
-                key: "2902", label: "Upgrading", children: [
-                    {key: "29021", label: "Codemods"},
-                    {key: "29022", label: "Version 15"},
-                    {key: "29023", label: "Version 14"},
-                    {key: "29024", label: "App Router Migration"},
-                    {key: "29025", label: "Migrating from Create React App"},
-                    {key: "29026", label: "Migrating from Vite"},
+                key: "2902", label: <Link href={'/nextjs-docs/guides/upgrading'}>Upgrading</Link>, children: [
+                    {key: "29021", label: <Link href={'/nextjs-docs/guides/upgrading/codemods'}>Codemods</Link>},
+                    {key: "29022", label: <Link href={'/nextjs-docs/guides/upgrading/version-15'}>Version 15</Link>},
+                    {key: "29023", label: <Link href={'/nextjs-docs/guides/upgrading/version-14'}>Version 14</Link>},
                 ]
             },
-            {key: "2903", label: "Examples"},
         ]
     },
     {
-        key: '3', label: 'API Reference', children: [
+        key: '3', label: <Link href={'/nextjs-docs/api-reference'}>API Reference</Link>, children: [
             {
-                key: "31", label: "Components", children: [
-                    {key: "311", label: "Font"},
-                    {key: "312", label: "<Form>"},
-                    {key: "313", label: "<Image>"},
-                    {key: "314", label: "<Link>"},
-                    {key: "315", label: "<Script>"},
+                key: "31", label: <Link href={'/nextjs-docs/api-reference/components'}>Components</Link>, children: [
+                    {key: "311", label: <Link href={'/nextjs-docs/api-reference/components/font'}>Font</Link>},
+                    {
+                        key: "312",
+                        label: <Link href={'/nextjs-docs/api-reference/components/form-components'}>Form
+                            Components</Link>
+                    },
+                    {
+                        key: "313",
+                        label: <Link href={'/nextjs-docs/api-reference/components/image-components'}>Image
+                            Components</Link>
+                    },
+                    {
+                        key: "314",
+                        label: <Link href={'/nextjs-docs/api-reference/components/link-components'}>Link
+                            Components</Link>
+                    },
+                    {
+                        key: "315",
+                        label: <Link href={'/nextjs-docs/api-reference/components/script-components'}>Script
+                            Components</Link>
+                    },
                 ]
             },
             {
-                key: "32", label: "File Conventions", children: [
-                    {key: "321", label: "default.js"},
-                    {key: "322", label: "error.js"},
-                    {key: "323", label: "instrumentation.js"},
-                    {key: "324", label: "layout.js"},
-                    {key: "325", label: "loading.js"},
-                    {key: "326", label: "mdx-components.js"},
-                    {key: "327", label: "middleware.js"},
-                    {key: "328", label: "not-found.js"},
-                    {key: "329", label: "page.js"},
-                    {key: "3201", label: "route.js"},
-                    {key: "3202", label: "Route Segment Config"},
-                    {key: "3203", label: "template.js"},
+                key: "32",
+                label: <Link href={'/nextjs-docs/api-reference/file-conventions'}>File Conventions</Link>,
+                children: [
                     {
-                        key: "3204", label: "Metadata Files", children: [
-                            {key: "32041", label: "favicon, icon, and apple-icon"},
-                            {key: "32042", label: "manifest.json"},
-                            {key: "32043", label: "opengraph-image and twitter-image"},
-                            {key: "32044", label: "robots.txt"},
-                            {key: "32045", label: "sitemap.xml"},
+                        key: "321",
+                        label: <Link href={'/nextjs-docs/api-reference/file-conventions/default-js'}>default.js</Link>
+                    },
+                    {
+                        key: "322",
+                        label: <Link href={'/nextjs-docs/api-reference/file-conventions/error-js'}>error.js</Link>
+                    },
+                    {
+                        key: "323",
+                        label: <Link
+                            href={'/nextjs-docs/api-reference/file-conventions/instrumentation-js'}>instrumentation.js</Link>
+                    },
+                    {
+                        key: "324",
+                        label: <Link href={'/nextjs-docs/api-reference/file-conventions/layout-js'}>layout.js</Link>
+                    },
+                    {
+                        key: "325",
+                        label: <Link href={'/nextjs-docs/api-reference/file-conventions/loading-js'}>loading.js</Link>
+                    },
+                    {
+                        key: "326",
+                        label: <Link
+                            href={'/nextjs-docs/api-reference/file-conventions/mdx-components-js'}>mdx-components.js</Link>
+                    },
+                    {
+                        key: "327",
+                        label: <Link
+                            href={'/nextjs-docs/api-reference/file-conventions/middleware-js'}>middleware.js</Link>
+                    },
+                    {
+                        key: "328",
+                        label: <Link
+                            href={'/nextjs-docs/api-reference/file-conventions/not-found-js'}>not-found.js</Link>
+                    },
+                    {
+                        key: "329",
+                        label: <Link href={'/nextjs-docs/api-reference/file-conventions/page-js'}>page.js</Link>
+                    },
+                    {
+                        key: "3201",
+                        label: <Link href={'/nextjs-docs/api-reference/file-conventions/route-js'}>route.js</Link>
+                    },
+                    {
+                        key: "3202",
+                        label: <Link href={'/nextjs-docs/api-reference/file-conventions/route-segment-config'}>Route
+                            Segment Config</Link>
+                    },
+                    {
+                        key: "3203",
+                        label: <Link href={'/nextjs-docs/api-reference/file-conventions/template-js'}>template.js</Link>
+                    },
+                    {
+                        key: "3204",
+                        label: <Link href={'/nextjs-docs/api-reference/file-conventions/metadata-files'}>Metadata
+                            Files</Link>,
+                        children: [
+                            {
+                                key: "32041",
+                                label: <Link
+                                    href={'/nextjs-docs/api-reference/file-conventions/metadata-files/favicon-icon-apple-icon'}>favicon,
+                                    icon, and apple-icon</Link>
+                            },
+                            {
+                                key: "32042",
+                                label: <Link
+                                    href={'/nextjs-docs/api-reference/file-conventions/metadata-files/manifest-json'}>manifest.json</Link>
+                            },
+                            {
+                                key: "32043",
+                                label: <Link
+                                    href={'/nextjs-docs/api-reference/file-conventions/metadata-files/opengraph-image-twitter-image'}>opengraph-image
+                                    and twitter-image</Link>
+                            },
+                            {
+                                key: "32044",
+                                label: <Link
+                                    href={'/nextjs-docs/api-reference/file-conventions/metadata-files/robots-txt'}>robots.txt</Link>
+                            },
+                            {
+                                key: "32045",
+                                label: <Link
+                                    href={'/nextjs-docs/api-reference/file-conventions/metadata-files/sitemap-xml'}>sitemap.xml</Link>
+                            },
                         ]
                     },
-
+                    {
+                        key: "3205",
+                        label: <Link href={'/nextjs-docs/api-reference/file-conventions/dynamic-segments'}>Dynamic
+                            Segments</Link>
+                    },
+                    {
+                        key: "3206",
+                        label: <Link
+                            href={'/nextjs-docs/api-reference/file-conventions/forbidden-js'}>forbidden.js</Link>
+                    },
+                    {
+                        key: "3207",
+                        label: <Link
+                            href={'/nextjs-docs/api-reference/file-conventions/instrumentation-client-js'}>instrumentation-client.js</Link>
+                    },
+                    {
+                        key: "3208",
+                        label: <Link href={'/nextjs-docs/api-reference/file-conventions/intercepting-routes'}>Intercepting
+                            Routes</Link>
+                    },
+                    {
+                        key: "3209",
+                        label: <Link href={'/nextjs-docs/api-reference/file-conventions/parallel-routes'}>Parallel
+                            Routes</Link>
+                    },
+                    {
+                        key: "32001",
+                        label: <Link href={'/nextjs-docs/api-reference/file-conventions/public'}>public</Link>
+                    },
+                    {key: "32002", label: <Link href={'/nextjs-docs/api-reference/file-conventions/src'}>src</Link>},
+                    {
+                        key: "32003",
+                        label: <Link
+                            href={'/nextjs-docs/api-reference/file-conventions/unauthorized-js'}>unauthorized.js</Link>
+                    },
                 ]
             },
             {
-                key: "33", label: "Functions", children: [
-                    {key: "331", label: "connection"},
-                    {key: "332", label: "cookies"},
-                    {key: "333", label: "draftMode"},
-                    {key: "334", label: "fetch"},
-                    {key: "335", label: "generateImageMetadata"},
-                    {key: "336", label: "generateMetadata"},
-                    {key: "337", label: "generateSitemaps"},
-                    {key: "338", label: "generateStaticParams"},
-                    {key: "339", label: "generateViewport"},
-                    {key: "3301", label: "headers"},
-                    {key: "3302", label: "ImageResponse"},
-                    {key: "3303", label: "NextRequest"},
-                    {key: "3304", label: "NextResponse"},
-                    {key: "3305", label: "notFound"},
-                    {key: "3306", label: "permanentRedirect"},
-                    {key: "3307", label: "redirect"},
-                    {key: "3308", label: "revalidatePath"},
-                    {key: "3309", label: "unstable_after"},
-                    {key: "33001", label: "unstable_cache"},
-                    {key: "33002", label: "unstable_notStore"},
-                    {key: "33003", label: "unstable_rethrow"},
-                    {key: "33004", label: "unstable_redirect"},
-                    {key: "33005", label: "useParams"},
-                    {key: "33006", label: "usePathname"},
-                    {key: "33007", label: "useReportWebVitals"},
-                    {key: "33008", label: "useRouter"},
-                    {key: "33009", label: "useSearchParams"},
-                    {key: "330001", label: "useSelectedLayoutSegment"},
-                    {key: "330002", label: "useSelectedLayoutSegments"},
-                    {key: "330003", label: "userAgent"},
+                key: "33", label: <Link href={'/nextjs-docs/api-reference/functions'}>Functions</Link>, children: [
+                    {
+                        key: "331",
+                        label: <Link href={'/nextjs-docs/api-reference/functions/connection'}>connection</Link>
+                    },
+                    {key: "332", label: <Link href={'/nextjs-docs/api-reference/functions/cookies'}>cookies</Link>},
+                    {key: "333", label: <Link href={'/nextjs-docs/api-reference/functions/draftMode'}>draftMode</Link>},
+                    {key: "334", label: <Link href={'/nextjs-docs/api-reference/functions/fetch'}>fetch</Link>},
+                    {
+                        key: "335",
+                        label: <Link
+                            href={'/nextjs-docs/api-reference/functions/generateImageMetadata'}>generateImageMetadata</Link>
+                    },
+                    {
+                        key: "336",
+                        label: <Link
+                            href={'/nextjs-docs/api-reference/functions/generateMetadata'}>generateMetadata</Link>
+                    },
+                    {
+                        key: "337",
+                        label: <Link
+                            href={'/nextjs-docs/api-reference/functions/generateSitemaps'}>generateSitemaps</Link>
+                    },
+                    {
+                        key: "338",
+                        label: <Link
+                            href={'/nextjs-docs/api-reference/functions/generateStaticParams'}>generateStaticParams</Link>
+                    },
+                    {
+                        key: "339",
+                        label: <Link
+                            href={'/nextjs-docs/api-reference/functions/generateViewport'}>generateViewport</Link>
+                    },
+                    {key: "3301", label: <Link href={'/nextjs-docs/api-reference/functions/headers'}>headers</Link>},
+                    {
+                        key: "3302",
+                        label: <Link href={'/nextjs-docs/api-reference/functions/ImageResponse'}>ImageResponse</Link>
+                    },
+                    {
+                        key: "3303",
+                        label: <Link href={'/nextjs-docs/api-reference/functions/NextRequest'}>NextRequest</Link>
+                    },
+                    {
+                        key: "3304",
+                        label: <Link href={'/nextjs-docs/api-reference/functions/NextResponse'}>NextResponse</Link>
+                    },
+                    {key: "3305", label: <Link href={'/nextjs-docs/api-reference/functions/notFound'}>notFound</Link>},
+                    {
+                        key: "3306",
+                        label: <Link
+                            href={'/nextjs-docs/api-reference/functions/permanentRedirect'}>permanentRedirect</Link>
+                    },
+                    {key: "3307", label: <Link href={'/nextjs-docs/api-reference/functions/redirect'}>redirect</Link>},
+                    {
+                        key: "3308",
+                        label: <Link href={'/nextjs-docs/api-reference/functions/revalidatePath'}>revalidatePath</Link>
+                    },
+                    {
+                        key: "3309",
+                        label: <Link href={'/nextjs-docs/api-reference/functions/unstable_after'}>unstable_after</Link>
+                    },
+                    {
+                        key: "33001",
+                        label: <Link href={'/nextjs-docs/api-reference/functions/unstable_cache'}>unstable_cache</Link>
+                    },
+                    {
+                        key: "33002",
+                        label: <Link
+                            href={'/nextjs-docs/api-reference/functions/unstable_notStore'}>unstable_notStore</Link>
+                    },
+                    {
+                        key: "33003",
+                        label: <Link
+                            href={'/nextjs-docs/api-reference/functions/unstable_rethrow'}>unstable_rethrow</Link>
+                    },
+                    {
+                        key: "33004",
+                        label: <Link
+                            href={'/nextjs-docs/api-reference/functions/unstable_redirect'}>unstable_redirect</Link>
+                    },
+                    {
+                        key: "33005",
+                        label: <Link href={'/nextjs-docs/api-reference/functions/useParams'}>useParams</Link>
+                    },
+                    {
+                        key: "33006",
+                        label: <Link href={'/nextjs-docs/api-reference/functions/usePathname'}>usePathname</Link>
+                    },
+                    {
+                        key: "33007",
+                        label: <Link
+                            href={'/nextjs-docs/api-reference/functions/useReportWebVitals'}>useReportWebVitals</Link>
+                    },
+                    {
+                        key: "33008",
+                        label: <Link href={'/nextjs-docs/api-reference/functions/useRouter'}>useRouter</Link>
+                    },
+                    {
+                        key: "33009",
+                        label: <Link
+                            href={'/nextjs-docs/api-reference/functions/useSearchParams'}>useSearchParams</Link>
+                    },
+                    {
+                        key: "330001",
+                        label: <Link
+                            href={'/nextjs-docs/api-reference/functions/useSelectedLayoutSegment'}>useSelectedLayoutSegment</Link>
+                    },
+                    {
+                        key: "330002",
+                        label: <Link
+                            href={'/nextjs-docs/api-reference/functions/useSelectedLayoutSegments'}>useSelectedLayoutSegments</Link>
+                    },
+                    {
+                        key: "330003",
+                        label: <Link href={'/nextjs-docs/api-reference/functions/userAgent'}>userAgent</Link>
+                    },
                 ]
             },
             {
-                key: "34", label: "next.config.js Options", children: [
-                    {key: "341", label: "appDir"},
-                    {key: "342", label: "assetPrefix"},
-                    {key: "343", label: "basePath"},
-                    {key: "344", label: "compress"},
-                    {key: "345", label: "crossOrigin"},
-                    {key: "346", label: "cssChunking"},
-                    {key: "347", label: "devIndicator"},
-                    {key: "348", label: "distDir"},
-                    {key: "349", label: "env"},
-                    {key: "3401", label: "eslint"},
-                    {key: "3402", label: "expireTime"},
-                    {key: "3403", label: "exportPathMap"},
-                    {key: "3404", label: "generateBuildId"},
-                    {key: "3405", label: "generateEtags"},
-                    {key: "3406", label: "headers"},
-                    {key: "3407", label: "httpAgentOptions"},
-                    {key: "3408", label: "images"},
-                    {key: "3409", label: "cacheHandler"},
-                    {key: "34001", label: "logging"},
-                    {key: "34002", label: "mdxRs"},
-                    {key: "34003", label: "onDemandEntries"},
-                    {key: "34004", label: "optimizePackageImports"},
-                    {key: "34005", label: "output"},
-                    {key: "34006", label: "pageExtensions"},
-                    {key: "34007", label: "poweredByHeader"},
-                    {key: "34008", label: "ppr"},
-                    {key: "34009", label: "productionBrowserSourceMaps"},
-                    {key: "340001", label: "reactCompiler"},
-                    {key: "340002", label: "reactMaxHeadersLength"},
-                    {key: "340003", label: "reactStrictMode"},
-                    {key: "340004", label: "redirects"},
-                    {key: "340005", label: "rewrites"},
-                    {key: "340006", label: "sassOptions"},
-                    {key: "340007", label: "serverActions"},
-                    {key: "340008", label: "serverComponentsHmrCache"},
-                    {key: "340009", label: "serverExternalPackages"},
-                    {key: "3400001", label: "staleTimes"},
-                    {key: "3400002", label: "staticGeneration"},
-                    {key: "3400003", label: "trailingSlash"},
-                    {key: "3400004", label: "transpilePackages"},
-                    {key: "3400005", label: "turbo"},
-                    {key: "3400006", label: "typedRoutes"},
-                    {key: "3400007", label: "typescript"},
-                    {key: "3400008", label: "urlImports"},
-                    {key: "3400009", label: "useLightningcss"},
-                    {key: "34000001", label: "webpack"},
-                    {key: "34000002", label: "webVitalsAttribution"},
+                key: "34",
+                label: <Link href={'/nextjs-docs/api-reference/next-config-options'}>next.config.js Options</Link>,
+                children: [
+                    {
+                        key: "341",
+                        label: <Link href={'/nextjs-docs/api-reference/next-config-options/appDir'}>appDir</Link>
+                    },
+                    {
+                        key: "342",
+                        label: <Link
+                            href={'/nextjs-docs/api-reference/next-config-options/assetPrefix'}>assetPrefix</Link>
+                    },
+                    {
+                        key: "343",
+                        label: <Link href={'/nextjs-docs/api-reference/next-config-options/basePath'}>basePath</Link>
+                    },
+                    {
+                        key: "344",
+                        label: <Link href={'/nextjs-docs/api-reference/next-config-options/compress'}>compress</Link>
+                    },
+                    {
+                        key: "345",
+                        label: <Link
+                            href={'/nextjs-docs/api-reference/next-config-options/crossOrigin'}>crossOrigin</Link>
+                    },
+                    {
+                        key: "346",
+                        label: <Link
+                            href={'/nextjs-docs/api-reference/next-config-options/cssChunking'}>cssChunking</Link>
+                    },
+                    {
+                        key: "347",
+                        label: <Link
+                            href={'/nextjs-docs/api-reference/next-config-options/devIndicator'}>devIndicator</Link>
+                    },
+                    {
+                        key: "348",
+                        label: <Link href={'/nextjs-docs/api-reference/next-config-options/distDir'}>distDir</Link>
+                    },
+                    {key: "349", label: <Link href={'/nextjs-docs/api-reference/next-config-options/env'}>env</Link>},
+                    {
+                        key: "3401",
+                        label: <Link href={'/nextjs-docs/api-reference/next-config-options/eslint'}>eslint</Link>
+                    },
+                    {
+                        key: "3402",
+                        label: <Link
+                            href={'/nextjs-docs/api-reference/next-config-options/expireTime'}>expireTime</Link>
+                    },
+                    {
+                        key: "3403",
+                        label: <Link
+                            href={'/nextjs-docs/api-reference/next-config-options/exportPathMap'}>exportPathMap</Link>
+                    },
+                    {
+                        key: "3404",
+                        label: <Link
+                            href={'/nextjs-docs/api-reference/next-config-options/generateBuildId'}>generateBuildId</Link>
+                    },
+                    {
+                        key: "3405",
+                        label: <Link
+                            href={'/nextjs-docs/api-reference/next-config-options/generateEtags'}>generateEtags</Link>
+                    },
+                    {
+                        key: "3406",
+                        label: <Link href={'/nextjs-docs/api-reference/next-config-options/headers'}>headers</Link>
+                    },
+                    {
+                        key: "3407",
+                        label: <Link
+                            href={'/nextjs-docs/api-reference/next-config-options/httpAgentOptions'}>httpAgentOptions</Link>
+                    },
+                    {
+                        key: "3408",
+                        label: <Link href={'/nextjs-docs/api-reference/next-config-options/images'}>images</Link>
+                    },
+                    {
+                        key: "3409",
+                        label: <Link
+                            href={'/nextjs-docs/api-reference/next-config-options/cacheHandler'}>cacheHandler</Link>
+                    },
+                    {
+                        key: "34001",
+                        label: <Link href={'/nextjs-docs/api-reference/next-config-options/logging'}>logging</Link>
+                    },
+                    {
+                        key: "34002",
+                        label: <Link href={'/nextjs-docs/api-reference/next-config-options/mdxRs'}>mdxRs</Link>
+                    },
+                    {
+                        key: "34003",
+                        label: <Link
+                            href={'/nextjs-docs/api-reference/next-config-options/onDemandEntries'}>onDemandEntries</Link>
+                    },
+                    {
+                        key: "34004",
+                        label: <Link
+                            href={'/nextjs-docs/api-reference/next-config-options/optimizePackageImports'}>optimizePackageImports</Link>
+                    },
+                    {
+                        key: "34005",
+                        label: <Link href={'/nextjs-docs/api-reference/next-config-options/output'}>output</Link>
+                    },
+                    {
+                        key: "34006",
+                        label: <Link
+                            href={'/nextjs-docs/api-reference/next-config-options/pageExtensions'}>pageExtensions</Link>
+                    },
+                    {
+                        key: "34007",
+                        label: <Link
+                            href={'/nextjs-docs/api-reference/next-config-options/poweredByHeader'}>poweredByHeader</Link>
+                    },
+                    {key: "34008", label: <Link href={'/nextjs-docs/api-reference/next-config-options/ppr'}>ppr</Link>},
+                    {
+                        key: "34009",
+                        label: <Link
+                            href={'/nextjs-docs/api-reference/next-config-options/productionBrowserSourceMaps'}>productionBrowserSourceMaps</Link>
+                    },
+                    {
+                        key: "340001",
+                        label: <Link
+                            href={'/nextjs-docs/api-reference/next-config-options/reactCompiler'}>reactCompiler</Link>
+                    },
+                    {
+                        key: "340002",
+                        label: <Link
+                            href={'/nextjs-docs/api-reference/next-config-options/reactMaxHeadersLength'}>reactMaxHeadersLength</Link>
+                    },
+                    {
+                        key: "340003",
+                        label: <Link
+                            href={'/nextjs-docs/api-reference/next-config-options/reactStrictMode'}>reactStrictMode</Link>
+                    },
+                    {
+                        key: "340004",
+                        label: <Link href={'/nextjs-docs/api-reference/next-config-options/redirects'}>redirects</Link>
+                    },
+                    {
+                        key: "340005",
+                        label: <Link href={'/nextjs-docs/api-reference/next-config-options/rewrites'}>rewrites</Link>
+                    },
+                    {
+                        key: "340006",
+                        label: <Link
+                            href={'/nextjs-docs/api-reference/next-config-options/sassOptions'}>sassOptions</Link>
+                    },
+                    {
+                        key: "340007",
+                        label: <Link
+                            href={'/nextjs-docs/api-reference/next-config-options/serverActions'}>serverActions</Link>
+                    },
+                    {
+                        key: "340008",
+                        label: <Link
+                            href={'/nextjs-docs/api-reference/next-config-options/serverComponentsHmrCache'}>serverComponentsHmrCache</Link>
+                    },
+                    {
+                        key: "340009",
+                        label: <Link
+                            href={'/nextjs-docs/api-reference/next-config-options/serverExternalPackages'}>serverExternalPackages</Link>
+                    },
+                    {
+                        key: "3400001",
+                        label: <Link
+                            href={'/nextjs-docs/api-reference/next-config-options/staleTimes'}>staleTimes</Link>
+                    },
+                    {
+                        key: "3400002",
+                        label: <Link
+                            href={'/nextjs-docs/api-reference/next-config-options/staticGeneration'}>staticGeneration</Link>
+                    },
+                    {
+                        key: "3400003",
+                        label: <Link
+                            href={'/nextjs-docs/api-reference/next-config-options/trailingSlash'}>trailingSlash</Link>
+                    },
+                    {
+                        key: "3400004",
+                        label: <Link
+                            href={'/nextjs-docs/api-reference/next-config-options/transpilePackages'}>transpilePackages</Link>
+                    },
+                    {
+                        key: "3400005",
+                        label: <Link href={'/nextjs-docs/api-reference/next-config-options/turbo'}>turbo</Link>
+                    },
+                    {
+                        key: "3400006",
+                        label: <Link
+                            href={'/nextjs-docs/api-reference/next-config-options/typedRoutes'}>typedRoutes</Link>
+                    },
+                    {
+                        key: "3400007",
+                        label: <Link
+                            href={'/nextjs-docs/api-reference/next-config-options/typescript'}>typescript</Link>
+                    },
+                    {
+                        key: "3400008",
+                        label: <Link
+                            href={'/nextjs-docs/api-reference/next-config-options/urlImports'}>urlImports</Link>
+                    },
+                    {
+                        key: "3400009",
+                        label: <Link
+                            href={'/nextjs-docs/api-reference/next-config-options/useLightningcss'}>useLightningcss</Link>
+                    },
+                    {
+                        key: "34000001",
+                        label: <Link href={'/nextjs-docs/api-reference/next-config-options/webpack'}>webpack</Link>
+                    },
+                    {
+                        key: "34000002",
+                        label: <Link
+                            href={'/nextjs-docs/api-reference/next-config-options/webVitalsAttribution'}>webVitalsAttribution</Link>
+                    },
                 ]
             },
             {
-                key: "35", label: "CLI", children: [
-                    {key: "351", label: "create-next-app"},
-                    {key: "352", label: "next CLI"},
+                key: "35", label: <Link href={'/nextjs-docs/api-reference/cli'}>CLI</Link>, children: [
+                    {
+                        key: "351",
+                        label: <Link href={'/nextjs-docs/api-reference/cli/create-next-app'}>create-next-app</Link>
+                    },
+                    {key: "352", label: <Link href={'/nextjs-docs/api-reference/cli/next-cli'}>next CLI</Link>},
                 ]
             },
-            {key: "36", label: "Edge Runtime"},
+            {key: "36", label: <Link href={'/nextjs-docs/api-reference/edge-runtime'}>Edge Runtime</Link>},
+            {key: "37", label: <Link href={'/nextjs-docs/architecture/turbopack'}>Turbopack</Link>},
         ]
     },
     {
-        key: '4', label: 'Architecture', children: [
-            {key: "41", label: "Accessibility"},
-            {key: "42", label: "Fast Refresh"},
-            {key: "43", label: "Next.js Compiler"},
-            {key: "44", label: "Supported Browsers"},
-            {key: "45", label: "Turbopack"},
+        key: '4', label: <Link href={'/nextjs-docs/architecture'}>Architecture</Link>, children: [
+            {key: "41", label: <Link href={'/nextjs-docs/architecture/accessibility'}>Accessibility</Link>},
+            {key: "42", label: <Link href={'/nextjs-docs/architecture/fast-refresh'}>Fast Refresh</Link>},
+            {key: "43", label: <Link href={'/nextjs-docs/architecture/nextjs-compiler'}>Next.js Compiler</Link>},
+            {key: "44", label: <Link href={'/nextjs-docs/architecture/supported-browsers'}>Supported Browsers</Link>},
         ]
     },
     {
-        key: '5', label: 'Community', children: [
-            {key: "51", label: "Contribution Guide"},
+        key: '5', label: <Link href={'/nextjs-docs/community'}>Community</Link>, children: [
+            {key: "51", label: <Link href={'/nextjs-docs/community/contribution-guide'}>Contribution Guide</Link>},
+            {key: "52", label: <Link href={'/nextjs-docs/community/rspack'}>Rspack</Link>},
         ]
     }
 

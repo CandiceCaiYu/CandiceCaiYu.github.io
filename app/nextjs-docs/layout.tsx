@@ -221,6 +221,7 @@ export default function NextJSLayout(prop: {
                     <Divider/>
                 </div>
                 {prop.children}
+                <Divider/>
                 <FooterNavigator previous={previous} next={next}/>
             </div>
             <div className={styles.right}>
