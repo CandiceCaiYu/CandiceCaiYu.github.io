@@ -14,7 +14,7 @@ yarn create playwright
 # or
 pnpm create playwright`
 
-export const manualSetupContent2 = '这将引导您完成一系列提示，为您的项目设置和配置 Playwright，包括添加 playwright.config.ts 文件。请参阅 (Playwright 安装指南)[https://playwright.dev/docs/intro#installation]，获取分步指南。'
+export const manualSetupContent2 = '这将引导您完成一系列提示，为您的项目设置和配置 Playwright，包括添加 playwright.config.ts 文件。请参阅 [Playwright 安装指南](https://playwright.dev/docs/intro#installation)，获取分步指南。'
 
 export const creatingYourFirstTestTitle = '## 创建您的第一个 Playwright E2E 测试'
 export const creatingYourFirstTestContent1 = '创建两个新的 Next.js 页面：'
