@@ -146,8 +146,8 @@ pnpm test`
 export const additionalResourcesTitle = '## 其他资源'
 export const additionalResourcesContent = '如需进一步阅读，您可能会发现以下资源很有帮助：'
 export const additionalResourcesList = [
-    '(Next.js with Jest example)[https://github.com/vercel/next.js/tree/canary/examples/with-jest]',
-    '(Jest Docs)[https://jestjs.io/docs/getting-started]',
-    '(React Testing Library Docs)[https://testing-library.com/docs/react-testing-library/intro/]',
-    '(Testing Playground)[https://testing-playground.com/] - use good testing practices to match elements.'
+    '[Next.js with Jest example](https://github.com/vercel/next.js/tree/canary/examples/with-jest)',
+    '[Jest Docs](https://jestjs.io/docs/getting-started)',
+    '[React Testing Library Docs](https://testing-library.com/docs/react-testing-library/intro/)',
+    '[Testing Playground](https://testing-playground.com/) - use good testing practices to match elements.'
 ];
