@@ -2,7 +2,8 @@ import CustomSection from "@/app/nextjs-docs/components/CustomSection";
 import {
     advancedRoutingPatternsContent1,
     advancedRoutingPatternsContent2,
-    advancedRoutingPatternsContent3, advancedRoutingPatternsContent4,
+    advancedRoutingPatternsContent3,
+    advancedRoutingPatternsContent4,
     advancedRoutingPatternsTitle,
     appRouterContent1,
     appRouterContent2,
@@ -100,7 +101,6 @@ const Page = () => {
                 <CustomList items={[advancedRoutingPatternsContent2, advancedRoutingPatternsContent3]}/>
             </CustomSection>
             <CustomSection texts={[advancedRoutingPatternsContent4]}/>
-            <Divider/>
         </>
     )
 };

@@ -111,7 +111,6 @@ const page = () => {
                     routingAndNavigationWorkContent22, routingAndNavigationWorkContent23, routingAndNavigationWorkContent24,
                     routingAndNavigationWorkContent25, routingAndNavigationWorkContent26, routingAndNavigationWorkContent27,
                 ]}/>
-            <Divider/>
         </>
     )
 };

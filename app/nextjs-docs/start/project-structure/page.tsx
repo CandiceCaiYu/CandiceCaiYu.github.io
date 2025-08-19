@@ -101,7 +101,6 @@ const Page = () => {
             <SectionWithTable
                 texts={[pageRoutingConventionsRoutesFileConventions]}
                 dataSource={pageRoutingConventionsRoutesDynamicFiles}/>
-            <Divider/>
         </div>
     )
 };

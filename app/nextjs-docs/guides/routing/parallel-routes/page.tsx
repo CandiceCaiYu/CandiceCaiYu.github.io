@@ -104,8 +104,6 @@ const Page = () => {
             <CustomSection
                 image={{height: 490}}
                 texts={[activeStateAndNavigationContent32, activeStateAndNavigationContent33, activeStateAndNavigationContent33Image, activeStateAndNavigationContent34,]}/>
-
-            <Divider/>
         </>
     )
 };

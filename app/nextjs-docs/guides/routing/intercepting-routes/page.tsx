@@ -43,7 +43,6 @@ const Page = () => {
             </CustomSection>
             <CustomSection image={{height: 380}} texts={[content11, content11Image, content12, content13,]}
                            goodToKnown={<GoodToKnown list={content13Tips}/>}/>
-            <Divider/>
         </>
     )
 };

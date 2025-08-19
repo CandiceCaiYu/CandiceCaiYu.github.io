@@ -53,8 +53,6 @@ const Page = () => {
             <CustomSection texts={[content17]}>
                 <CustomList items={content17List}/>
             </CustomSection>
-
-            <Divider/>
         </>
     )
 };

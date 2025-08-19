@@ -75,7 +75,6 @@ const Page = () => {
             <CustomSection texts={[templatesContentExampleMetadataContent3]}/>
             <CustomSection
                 texts={[activeNavLinkTitle, activeNavLinkContent1, activeNavLinkContent2, activeNavLinkContent2Code1, activeNavLinkContent2Code2]}/>
-            <Divider/>
 
 
         </>

@@ -41,7 +41,6 @@ const Page = () => {
             <Divider/>
 
             <CustomSection texts={[content12, content13]}/>
-            <Divider/>
         </>
     )
 };

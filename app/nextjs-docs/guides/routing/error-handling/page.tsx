@@ -58,7 +58,6 @@ const page = () => {
                     handleUncaughtExceptionsContent6, handleUncaughtExceptionsContent7, handleUncaughtExceptionsContent8, handleUncaughtExceptionsContent8Image,
                     handleUncaughtExceptionsContent9, handleUncaughtExceptionsContent10, handleUncaughtExceptionsContent10Code]}/>
 
-            <Divider/>
         </>
     )
 };

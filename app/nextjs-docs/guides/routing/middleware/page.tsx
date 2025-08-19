@@ -150,7 +150,6 @@ const Page = () => {
                 {title: 'Version', key: 'version', dataIndex: 'version'},
                 {title: 'Change', key: 'change', dataIndex: 'change'},
             ]}/>
-            <Divider/>
 
         </>
     )

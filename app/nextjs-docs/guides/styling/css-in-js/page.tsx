@@ -51,7 +51,6 @@ const Page = () => {
             <CustomSection
                 goodToKnown={<GoodToKnown list={content15TipList}/>}
                 texts={[content7, content8, content8Code, content9, content9Code, content10, content11, content12, content13, content13Code, content14, content14Code, content15]}/>
-            <Divider/>
         </>
     )
 };

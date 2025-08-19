@@ -59,7 +59,6 @@ const Page = () => {
                 texts={[routeGroupsContent16Image, routeGroupsContent17]}/>
             <Divider/>
             <CustomSection texts={[]} goodToKnown={<GoodToKnown list={routeGroupsContentTips}/>}/>
-            <Divider/>
         </>
     )
 };

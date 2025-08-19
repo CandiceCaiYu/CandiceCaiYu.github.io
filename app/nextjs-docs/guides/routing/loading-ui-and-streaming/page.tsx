@@ -88,7 +88,6 @@ const page = () => {
             </CustomSection>
             <CustomSection
                 texts={[streamingWithSuspenseContent17, streamingWithSuspenseContent18, streamingWithSuspenseContent19]}/>
-            <Divider/>
         </>
     )
 };

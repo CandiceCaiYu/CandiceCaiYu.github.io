@@ -69,7 +69,6 @@ export default function Page() {
             <CustomSection texts={[accessibilityTitle, accessibilityContent]}/>
             <Divider/>
             <CustomSection texts={[communityTitle, communityContent]}/>
-            <Divider/>
         </div>
     )
 }

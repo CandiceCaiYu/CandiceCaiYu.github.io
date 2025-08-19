@@ -125,9 +125,6 @@ const Page = () => {
                 goodToKnown={<GoodToKnown list={managementRedirectScaleContent11Tips}/>}
                 texts={[managementRedirectScaleContent9, managementRedirectScaleContent10, managementRedirectScaleContent10Code,
                     managementRedirectScaleContent11, managementRedirectScaleContent11Code]}/>
-            <CustomSection texts={[]}/>
-            <CustomSection texts={[]}/>
-
         </>
     )
 };
