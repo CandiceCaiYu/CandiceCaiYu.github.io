@@ -19,6 +19,11 @@ export const nextjsMenu: MenuItem[] = [
                 label: <Link href={'/nextjs-docs/start/layouts-and-pages'}>Layouts
                     and Pages</Link>
             },
+            {
+                key: "214",
+                label: <Link href={'/nextjs-docs/start/linking-and-navigating'}>Linking
+                    and Navigating</Link>
+            },
         ]
     },
     {
@@ -37,11 +42,6 @@ export const nextjsMenu: MenuItem[] = [
                     {
                         key: "212",
                         label: <Link href={'/nextjs-docs/guides/routing/pages'}>Pages</Link>
-                    },
-                    {
-                        key: "214",
-                        label: <Link href={'/nextjs-docs/guides/routing/linking-and-navigating'}>Linking
-                            and Navigating</Link>
                     },
                     {
                         key: "215",
