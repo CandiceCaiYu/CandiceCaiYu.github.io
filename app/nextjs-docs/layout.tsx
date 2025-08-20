@@ -218,7 +218,7 @@ export default function NextJSLayout(prop: {
             </div>
             <div className={styles.center}>
                 <div className={styles.centerHeader}>
-                    <h1>Next.js中文文档@v15.0.3</h1>
+                    <h1>Next.js中文文档@v15.5.0</h1>
                     <Divider/>
                 </div>
                 {prop.children}

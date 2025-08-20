@@ -76,7 +76,9 @@ const Page = () => {
             <CustomList items={nestedRouteContent2List}/>
             <CustomSection
                 image={{height: 260}}
-                texts={[nestedRouteContent3, nestedRouteContent3Image, nestedRouteContent3Code, nestedRouteContent4, nestedRouteContent4Image, nestedRouteContent4Code, nestedRouteContent5]}/>
+                texts={[nestedRouteContent3, nestedRouteContent3Image, nestedRouteContent3Code, nestedRouteContent4]}/>
+            <CustomSection image={{height: 340}}
+                           texts={[nestedRouteContent4Image, nestedRouteContent4Code, nestedRouteContent5]}/>
             <CustomSection
                 image={{height: 360}}
                 texts={[nestedLayoutTitle, nestedLayoutContent1, nestedLayoutContent2, nestedLayoutContent2Image,
