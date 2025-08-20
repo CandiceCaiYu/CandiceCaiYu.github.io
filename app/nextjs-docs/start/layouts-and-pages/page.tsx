@@ -1,5 +1,6 @@
 import CustomSection from "@/app/nextjs-docs/components/CustomSection";
 import {
+    APIReferences,
     creatingDynamicSegmentContent1,
     creatingDynamicSegmentContent2,
     creatingDynamicSegmentContent2Code,
@@ -54,6 +55,7 @@ import {
 import {Divider} from "antd";
 import CustomList from "@/app/nextjs-docs/components/CustomList";
 import GoodToKnown from "@/app/nextjs-docs/components/GoodToKnown";
+import FooterApiReferenceSection from "@/app/nextjs-docs/components/FooterApiReferenceSection";
 
 const Page = () => {
     return (
@@ -91,6 +93,8 @@ const Page = () => {
             <CustomSection
                 texts={[linkingBetweenPagesTitle, linkingBetweenPagesContent1, linkingBetweenPagesContent2, linkingBetweenPagesContent2Code]}/>
             <GoodToKnown text={linkingBetweenPagesContent2GoodToKnow}/>
+            <Divider/>
+            <FooterApiReferenceSection {...APIReferences}/>
         </>
     )
 };
