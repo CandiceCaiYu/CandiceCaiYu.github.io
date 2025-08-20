@@ -14,6 +14,11 @@ export const nextjsMenu: MenuItem[] = [
         children: [
             {key: "11", label: <Link href={'/nextjs-docs/start/installation'}>Installation</Link>},
             {key: "12", label: <Link href={'/nextjs-docs/start/project-structure'}>Project Structure</Link>},
+            {
+                key: "13",
+                label: <Link href={'/nextjs-docs/start/layouts-and-pages'}>Layouts
+                    and Pages</Link>
+            },
         ]
     },
     {
@@ -32,11 +37,6 @@ export const nextjsMenu: MenuItem[] = [
                     {
                         key: "212",
                         label: <Link href={'/nextjs-docs/guides/routing/pages'}>Pages</Link>
-                    },
-                    {
-                        key: "213",
-                        label: <Link href={'/nextjs-docs/guides/routing/layouts-and-templates'}>Layouts
-                            and Templates</Link>
                     },
                     {
                         key: "214",
