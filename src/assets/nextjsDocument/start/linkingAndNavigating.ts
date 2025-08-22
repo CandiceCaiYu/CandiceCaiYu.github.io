@@ -1,4 +1,4 @@
-import {FooterApiReferenceSectionProps} from "@/app/nextjs-docs/components/FooterApiReferenceSection";
+import {CustomApiReferenceCardProps} from "@/app/nextjs-docs/components/CustomApiReferenceCard";
 
 export const title = '# 链接和导航';
 export const description1 = '在 Next.js 中，路由默认在服务器上渲染。这通常意味着客户端必须等待服务器响应才能显示新的路由。Next.js 内置预取、流式传输和客户端转换功能，确保导航保持快速响应。';
@@ -242,24 +242,22 @@ export function LocaleSwitcher() {
   )
 }`
 
-export const APIReferences: FooterApiReferenceSectionProps = {
-    apis: [
-        {
-            title: 'Link Component',
-            content: '使用内置的“next/link”组件实现快速客户端导航。',
-            url: 'https://nextjs.org/docs/app/api-reference/components/link'
-        },
+export const APIReferences: CustomApiReferenceCardProps[] = [
+    {
+        title: 'Link Component',
+        content: '使用内置的“next/link”组件实现快速客户端导航。',
+        url: 'https://nextjs.org/docs/app/api-reference/components/link'
+    },
 
-        {
-            title: 'page.js',
-            content: 'page.js的 API 参考文档。',
-            url: 'https://nextjs.org/docs/app/api-reference/file-conventions/page'
-        },
-        {
-            title: 'Prefetching',
-            content: '了解如何在 Next.js 中配置预取。',
-            url: 'https://nextjs.org/docs/app/guides/prefetching'
-        },
+    {
+        title: 'page.js',
+        content: 'page.js的 API 参考文档。',
+        url: 'https://nextjs.org/docs/app/api-reference/file-conventions/page'
+    },
+    {
+        title: 'Prefetching',
+        content: '了解如何在 Next.js 中配置预取。',
+        url: 'https://nextjs.org/docs/app/guides/prefetching'
+    },
 
-    ]
-}
+]

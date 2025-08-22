@@ -1,3 +1,5 @@
+import {CustomApiReferenceCardProps} from "@/app/nextjs-docs/components/CustomApiReferenceCard";
+
 export const layoutsAndPagesTitle = "# Layouts and Pages";
 export const layoutsAndPagesDescription = "Next.js 使用基于文件系统的路由，这意味着您可以使用文件夹和文件来定义路由。本页面将指导您如何创建布局和页面，以及如何在它们之间建立链接。。";
 
@@ -151,33 +153,30 @@ export default async function Post({ post }) {
 }`;
 export const linkingBetweenPagesContent2GoodToKnow = '<Link> 是 Next.js 中路由导航的主要方式。你还可以使用 useRouter 钩子进行更高级的导航。';
 
-export const APIReferences = {
-    description: '通过阅读 API 参考，了解有关此页面中提到的功能的更多信息。',
-    apis: [
-        {
-            title: 'Linking and Navigating',
-            content: '了解内置导航优化的工作原理，包括预取、预渲染和客户端导航，以及如何针对动态路线和慢速网络优化导航。',
-            url: 'https://nextjs.org/docs/app/getting-started/linking-and-navigating'
-        },
-        {
-            title: 'layout.js',
-            content: 'layout.js 文件的 API 参考文档。',
-            url: 'https://nextjs.org/docs/app/api-reference/file-conventions/layout'
-        },
-        {
-            title: 'page.js',
-            content: 'page.js的 API 参考文档。',
-            url: 'https://nextjs.org/docs/app/api-reference/file-conventions/page'
-        },
-        {
-            title: 'Link Component',
-            content: '使用内置的“next/link”组件实现快速客户端导航。',
-            url: 'https://nextjs.org/docs/app/api-reference/components/link'
-        },
-        {
-            title: 'Dynamic Segments',
-            content: '动态路线段可用于以编程方式从动态数据生成路线段。',
-            url: 'https://nextjs.org/docs/app/api-reference/file-conventions/dynamic-routes'
-        }
-    ]
-}
+export const APIReferences: CustomApiReferenceCardProps[] = [
+    {
+        title: 'Linking and Navigating',
+        content: '了解内置导航优化的工作原理，包括预取、预渲染和客户端导航，以及如何针对动态路线和慢速网络优化导航。',
+        url: 'https://nextjs.org/docs/app/getting-started/linking-and-navigating'
+    },
+    {
+        title: 'layout.js',
+        content: 'layout.js 文件的 API 参考文档。',
+        url: 'https://nextjs.org/docs/app/api-reference/file-conventions/layout'
+    },
+    {
+        title: 'page.js',
+        content: 'page.js的 API 参考文档。',
+        url: 'https://nextjs.org/docs/app/api-reference/file-conventions/page'
+    },
+    {
+        title: 'Link Component',
+        content: '使用内置的“next/link”组件实现快速客户端导航。',
+        url: 'https://nextjs.org/docs/app/api-reference/components/link'
+    },
+    {
+        title: 'Dynamic Segments',
+        content: '动态路线段可用于以编程方式从动态数据生成路线段。',
+        url: 'https://nextjs.org/docs/app/api-reference/file-conventions/dynamic-routes'
+    }
+]

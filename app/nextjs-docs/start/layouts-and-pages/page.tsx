@@ -96,7 +96,7 @@ const Page = () => {
                 texts={[linkingBetweenPagesTitle, linkingBetweenPagesContent1, linkingBetweenPagesContent2, linkingBetweenPagesContent2Code]}/>
             <GoodToKnown text={linkingBetweenPagesContent2GoodToKnow}/>
             <Divider/>
-            <FooterApiReferenceSection {...APIReferences}/>
+            <FooterApiReferenceSection apis={APIReferences}/>
         </>
     )
 };

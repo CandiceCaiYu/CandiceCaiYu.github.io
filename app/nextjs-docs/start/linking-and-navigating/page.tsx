@@ -130,7 +130,7 @@ const page = () => {
             <Divider/>
             <CustomSection
                 texts={[example1, example2, example3, example4, example5, example6, example6Code, example7, example8, example8Code]}/>
-            <FooterApiReferenceSection {...APIReferences}/>
+            <FooterApiReferenceSection apis={APIReferences}/>
         </>
     )
 };
