@@ -1,6 +1,6 @@
 import {CustomApiReferenceCardProps} from "@/app/nextjs-docs/components/CustomApiReferenceCard";
 
-export const title = '## 获取数据'
+export const title = '# 获取数据'
 export const introduction = '本页将引导您了解如何在服务器组件和客户端组件中获取数据，以及如何流式传输依赖于数据的组件。'
 
 export const fetchingDataTitle = '### 获取数据'
