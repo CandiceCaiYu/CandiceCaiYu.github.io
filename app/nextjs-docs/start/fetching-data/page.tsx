@@ -67,8 +67,8 @@ import {
     streamingContent3List,
     streamingContent4,
     streamingContent5,
-    streamingContent6,
     streamingContent6Code,
+    streamingContent6Img,
     streamingContent7,
     streamingContent7Img,
     streamingContent8,
@@ -107,14 +107,20 @@ const Page = () => {
 
             <CustomSection texts={[streamingTitle]}/>
             <GoodToKnown title={'警告'} text={streamingContentWarning}/>
-            <CustomSection texts={[streamingContent1, streamingContent2, streamingContent2Img, streamingContent3]}/>
+            <CustomSection image={{height: 380}}
+                           texts={[streamingContent1, streamingContent2, streamingContent2Img, streamingContent3]}/>
             <CustomList items={streamingContent3List}/>
             <CustomSection
-                texts={[streamingContent4, streamingContent5, streamingContent6, streamingContent6Code, streamingContent7, streamingContent7Img]}/>
-
+                image={{height: 270}}
+                texts={[streamingContent4, streamingContent5, streamingContent6Img]}/>
             <CustomSection
+                image={{height: 320}}
+                texts={[streamingContent6Code, streamingContent7, streamingContent7Img]}/>
+            <CustomSection
+                image={{height: 380}}
                 texts={[streamingContent8, streamingContent8Img, streamingContent9, streamingContent10, streamingContent11, streamingContent12Code, streamingContent13, streamingContent14, streamingContent15]}/>
-            <CustomSection texts={[exampleTitle, exampleContent1, exampleContent2, exampleContent3Img]}/>
+            <CustomSection image={{height: 380, width: 1200}}
+                           texts={[exampleTitle, exampleContent1, exampleContent2, exampleContent3Img]}/>
             <CustomSection
                 texts={[exampleContent4, exampleContent5, exampleContent5Code, exampleContent6, exampleContent7, exampleContent8, exampleContent9, exampleContent10, exampleContent10Code, exampleContent11, exampleContent11Code]}/>
             <GoodToKnown text={exampleContent11GTK}/>

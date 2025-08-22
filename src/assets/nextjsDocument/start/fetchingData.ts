@@ -141,7 +141,7 @@ export const streamingContent3List = [
 ];
 export const streamingContent4 = '### 使用loading.js';
 export const streamingContent5 = '您可以在页面所在的文件夹中创建一个loading.js文件，以便在数据获取过程中流式传输整个页面。例如，要流式传输app/blog/page.js，请将loading.js文件添加到app/blog文件夹中。';
-export const streamingContent6 = '![loading-file](/nextjsDoc/fetchingData/loading-file.avif)';
+export const streamingContent6Img = '![loading-file](/nextjsDoc/fetchingData/loading-file.avif)';
 export const streamingContent6Code = `~~~app/blog/loading.js~~~
 export default function Loading() {
   // Define the Loading UI here
