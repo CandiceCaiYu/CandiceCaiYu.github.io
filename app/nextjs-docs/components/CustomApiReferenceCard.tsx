@@ -14,7 +14,7 @@ const CustomApiReferenceCard = ({url, title, content}: CustomApiReferenceCardPro
 
     return (
         <Card
-            style={{width: '300px', height: '160px', overflow: 'hidden',}}
+            style={{width: '350px', height: '160px', overflow: 'hidden',}}
             hoverable
             onClick={() => push(url)}
         >

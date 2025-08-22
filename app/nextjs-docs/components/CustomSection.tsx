@@ -23,13 +23,12 @@ const CustomSection = ({
                                              style={{
                                                  marginBottom: '24px',
                                                  color: '#171717',
-                                                 fontSize: isTopTitle ? '16px' : '14px'
+                                                 fontSize: isTopTitle ? '18px' : '16px'
                                              }}>
                 <CustomMarkdown text={item} image={image}/>
             </div>)}
             {children}
             {goodToKnown}
-            {/*<div style={{height: '1px', width: '100%', marginTop: '48px', background: "#eee"}}></div>*/}
         </div>
     )
 };
