@@ -77,7 +77,7 @@ import {
     whatCanMakeTransitionsSlowContent8,
     whatCanMakeTransitionsSlowContent9,
     whatCanMakeTransitionsSlowTitle
-} from "@/src/assets/nextjsDocument/routing/linkingAndNavigating";
+} from "@/src/assets/nextjsDocument/start/linkingAndNavigating";
 import {Divider} from "antd";
 import CustomList from "@/app/nextjs-docs/components/CustomList";
 import GoodToKnown from "@/app/nextjs-docs/components/GoodToKnown";

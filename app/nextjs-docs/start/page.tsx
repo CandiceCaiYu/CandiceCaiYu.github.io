@@ -29,7 +29,7 @@ import {
     routerTitle,
     title,
     welcome
-} from "@/src/assets/nextjsDocument/routing/introduction";
+} from "@/src/assets/nextjsDocument/start/introduction";
 import CustomSection from "@/app/nextjs-docs/components/CustomSection";
 import {Divider, Table} from "antd";
 import CustomList from "@/app/nextjs-docs/components/CustomList";

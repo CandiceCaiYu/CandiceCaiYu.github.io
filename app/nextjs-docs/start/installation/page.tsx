@@ -23,7 +23,8 @@ import {
     createDirectoriesContent17,
     createDirectoriesContent18,
     createDirectoriesContent19,
-    createDirectoriesContent2, createDirectoriesContent20,
+    createDirectoriesContent2,
+    createDirectoriesContent20,
     createDirectoriesContent3,
     createDirectoriesContent4,
     createDirectoriesContent4_image,
@@ -51,7 +52,7 @@ import {
     systemRequirementsContent1,
     systemRequirementsContent2,
     title
-} from "@/src/assets/nextjsDocument/routing/installation";
+} from "@/src/assets/nextjsDocument/start/installation";
 import CustomList from "@/app/nextjs-docs/components/CustomList";
 import GoodToKnown from "@/app/nextjs-docs/components/GoodToKnown";
 import {Divider} from "antd";

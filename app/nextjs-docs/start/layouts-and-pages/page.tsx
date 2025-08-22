@@ -51,7 +51,7 @@ import {
     renderingWithSearchParamsContent5,
     renderingWithSearchParamsContent5List,
     renderingWithSearchParamsTitle
-} from "@/src/assets/nextjsDocument/routing/layoutsAndPages";
+} from "@/src/assets/nextjsDocument/start/layoutsAndPages";
 import {Divider} from "antd";
 import CustomList from "@/app/nextjs-docs/components/CustomList";
 import GoodToKnown from "@/app/nextjs-docs/components/GoodToKnown";

@@ -20,9 +20,18 @@ export const nextjsMenu: MenuItem[] = [
                     and Pages</Link>
             },
             {
-                key: "214",
+                key: "14",
                 label: <Link href={'/nextjs-docs/start/linking-and-navigating'}>Linking
                     and Navigating</Link>
+            },
+            {
+                key: "15",
+                label: <Link href={'/nextjs-docs/start/server-and-client-components'}>Server and Client
+                    Components</Link>
+            },
+            {
+                key: "17",
+                label: <Link href={'/nextjs-docs/start/fetching-data'}>Fetching Data</Link>
             },
         ]
     },
