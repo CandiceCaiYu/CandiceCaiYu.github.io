@@ -33,6 +33,14 @@ export const nextjsMenu: MenuItem[] = [
                 key: "17",
                 label: <Link href={'/nextjs-docs/start/fetching-data'}>Fetching Data</Link>
             },
+            {
+                key: "18",
+                label: <Link href={'/nextjs-docs/start/updating-data'}>Updating Data</Link>
+            },
+            {
+                key: "19",
+                label: <Link href={'/nextjs-docs/start/caching-and-revalidating'}>Caching and Revalidating</Link>
+            },
         ]
     },
     {
