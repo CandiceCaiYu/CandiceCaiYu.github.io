@@ -1,4 +1,3 @@
-'use client';
 import React from 'react';
 import ReactECharts from 'echarts-for-react';
 import {EChartsOption} from "echarts";
@@ -6,7 +5,7 @@ import {EChartsOption} from "echarts";
 export default function SelectedWorksOfMaoZedong1() {
     const option: EChartsOption = {
         title: {
-            text: '毛泽东选集1',
+            text: '《毛泽东选集1》',
             textAlign: 'left'
         },
         xAxis: {

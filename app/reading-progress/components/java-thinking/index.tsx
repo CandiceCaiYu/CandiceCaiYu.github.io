@@ -1,13 +1,11 @@
-
-'use client';
 import React from 'react';
 import ReactECharts from 'echarts-for-react';
 import {EChartsOption} from "echarts";
 
 export default function JavaThinking() {
-    const option:EChartsOption = {
+    const option: EChartsOption = {
         title: {
-            text: 'Java编程思想',
+            text: '《Java编程思想》',
             textAlign: 'left'
         },
         xAxis: {
@@ -20,7 +18,7 @@ export default function JavaThinking() {
         },
         series: [
             {
-                data: [20, 28, 36, 41, 47 ],
+                data: [20, 28, 36, 41, 47],
                 type: 'line'
             }
         ]

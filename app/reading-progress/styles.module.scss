@@ -1,7 +1,30 @@
 .readingProcess {
   margin: 48px 72px;
+
   h1 {
     font-size: 64px;
     text-align: center;
+    margin-bottom: 48px;
+  }
+
+  .legend {
+    margin-bottom: 24px;
+  }
+
+  .done, .inProgress {
+    width: 12px;
+    height: 12px;
+    border-radius: 4px;
+    margin-right: 4px;
+  }
+
+  .inProgress {
+    background-color: #0074de;
+  }
+
+  .done {
+    background-color: #19d95f;
+    margin-left: 12px;
+
   }
 }
