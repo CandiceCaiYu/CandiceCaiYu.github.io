@@ -21,8 +21,7 @@ export const nextjsMenu: MenuItem[] = [
             },
             {
                 key: "14",
-                label: <Link href={'/nextjs-docs/start/linking-and-navigating'}>Linking
-                    and Navigating</Link>
+                label: <Link href={'/nextjs-docs/start/linking-and-navigating'}>Linking and Navigating</Link>
             },
             {
                 key: "15",
