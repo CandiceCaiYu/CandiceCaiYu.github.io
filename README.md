@@ -16,8 +16,10 @@
 
     - Directives
     - Components
-    - File-system conventions ✍️
-        - default.js
+   <details>
+      <summary>File-system conventions ✍️</summary>
+
+        - default.js ✍️
         - error.js
         - instrumentation.js
         - layout.js
@@ -43,6 +45,9 @@
         - public
         - src
         - unauthorized.js
+
+   </details>
+
     - Functions
     - Configuration
     - CLI
