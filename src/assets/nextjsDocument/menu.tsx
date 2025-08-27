@@ -341,129 +341,138 @@ export const nextjsMenu: MenuItem[] = [
             },
             {
                 key: "32",
-                label: <Link href={'/nextjs-docs/api-reference/file-conventions'}>File Conventions</Link>,
+                label: <Link href={'/nextjs-docs/api-reference/file-system-conventions'}>File-system Conventions</Link>,
                 children: [
                     {
                         key: "321",
-                        label: <Link href={'/nextjs-docs/api-reference/file-conventions/default-js'}>default.js</Link>
+                        label: <Link
+                            href={'/nextjs-docs/api-reference/file-system-conventions/default-js'}>default.js</Link>
                     },
                     {
                         key: "322",
-                        label: <Link href={'/nextjs-docs/api-reference/file-conventions/error-js'}>error.js</Link>
+                        label: <Link
+                            href={'/nextjs-docs/api-reference/file-system-conventions/error-js'}>error.js</Link>
                     },
                     {
                         key: "323",
                         label: <Link
-                            href={'/nextjs-docs/api-reference/file-conventions/instrumentation-js'}>instrumentation.js</Link>
+                            href={'/nextjs-docs/api-reference/file-system-conventions/instrumentation-js'}>instrumentation.js</Link>
                     },
                     {
                         key: "324",
-                        label: <Link href={'/nextjs-docs/api-reference/file-conventions/layout-js'}>layout.js</Link>
+                        label: <Link
+                            href={'/nextjs-docs/api-reference/file-system-conventions/layout-js'}>layout.js</Link>
                     },
                     {
                         key: "325",
-                        label: <Link href={'/nextjs-docs/api-reference/file-conventions/loading-js'}>loading.js</Link>
+                        label: <Link
+                            href={'/nextjs-docs/api-reference/file-system-conventions/loading-js'}>loading.js</Link>
                     },
                     {
                         key: "326",
                         label: <Link
-                            href={'/nextjs-docs/api-reference/file-conventions/mdx-components-js'}>mdx-components.js</Link>
+                            href={'/nextjs-docs/api-reference/file-system-conventions/mdx-components-js'}>mdx-components.js</Link>
                     },
                     {
                         key: "327",
                         label: <Link
-                            href={'/nextjs-docs/api-reference/file-conventions/middleware-js'}>middleware.js</Link>
+                            href={'/nextjs-docs/api-reference/file-system-conventions/middleware-js'}>middleware.js</Link>
                     },
                     {
                         key: "328",
                         label: <Link
-                            href={'/nextjs-docs/api-reference/file-conventions/not-found-js'}>not-found.js</Link>
+                            href={'/nextjs-docs/api-reference/file-system-conventions/not-found-js'}>not-found.js</Link>
                     },
                     {
                         key: "329",
-                        label: <Link href={'/nextjs-docs/api-reference/file-conventions/page-js'}>page.js</Link>
+                        label: <Link href={'/nextjs-docs/api-reference/file-system-conventions/page-js'}>page.js</Link>
                     },
                     {
                         key: "3201",
-                        label: <Link href={'/nextjs-docs/api-reference/file-conventions/route-js'}>route.js</Link>
+                        label: <Link
+                            href={'/nextjs-docs/api-reference/file-system-conventions/route-js'}>route.js</Link>
                     },
                     {
                         key: "3202",
-                        label: <Link href={'/nextjs-docs/api-reference/file-conventions/route-segment-config'}>Route
+                        label: <Link href={'/nextjs-docs/api-reference/file-system-conventions/route-segment-config'}>Route
                             Segment Config</Link>
                     },
                     {
                         key: "3203",
-                        label: <Link href={'/nextjs-docs/api-reference/file-conventions/template-js'}>template.js</Link>
+                        label: <Link
+                            href={'/nextjs-docs/api-reference/file-system-conventions/template-js'}>template.js</Link>
                     },
                     {
                         key: "3204",
-                        label: <Link href={'/nextjs-docs/api-reference/file-conventions/metadata-files'}>Metadata
+                        label: <Link href={'/nextjs-docs/api-reference/file-system-conventions/metadata-files'}>Metadata
                             Files</Link>,
                         children: [
                             {
                                 key: "32041",
                                 label: <Link
-                                    href={'/nextjs-docs/api-reference/file-conventions/metadata-files/favicon-icon-apple-icon'}>favicon,
+                                    href={'/nextjs-docs/api-reference/file-system-conventions/metadata-files/favicon-icon-apple-icon'}>favicon,
                                     icon, and apple-icon</Link>
                             },
                             {
                                 key: "32042",
                                 label: <Link
-                                    href={'/nextjs-docs/api-reference/file-conventions/metadata-files/manifest-json'}>manifest.json</Link>
+                                    href={'/nextjs-docs/api-reference/file-system-conventions/metadata-files/manifest-json'}>manifest.json</Link>
                             },
                             {
                                 key: "32043",
                                 label: <Link
-                                    href={'/nextjs-docs/api-reference/file-conventions/metadata-files/opengraph-image-twitter-image'}>opengraph-image
+                                    href={'/nextjs-docs/api-reference/file-system-conventions/metadata-files/opengraph-image-twitter-image'}>opengraph-image
                                     and twitter-image</Link>
                             },
                             {
                                 key: "32044",
                                 label: <Link
-                                    href={'/nextjs-docs/api-reference/file-conventions/metadata-files/robots-txt'}>robots.txt</Link>
+                                    href={'/nextjs-docs/api-reference/file-system-conventions/metadata-files/robots-txt'}>robots.txt</Link>
                             },
                             {
                                 key: "32045",
                                 label: <Link
-                                    href={'/nextjs-docs/api-reference/file-conventions/metadata-files/sitemap-xml'}>sitemap.xml</Link>
+                                    href={'/nextjs-docs/api-reference/file-system-conventions/metadata-files/sitemap-xml'}>sitemap.xml</Link>
                             },
                         ]
                     },
                     {
                         key: "3205",
-                        label: <Link href={'/nextjs-docs/api-reference/file-conventions/dynamic-segments'}>Dynamic
+                        label: <Link href={'/nextjs-docs/api-reference/file-system-conventions/dynamic-segments'}>Dynamic
                             Segments</Link>
                     },
                     {
                         key: "3206",
                         label: <Link
-                            href={'/nextjs-docs/api-reference/file-conventions/forbidden-js'}>forbidden.js</Link>
+                            href={'/nextjs-docs/api-reference/file-system-conventions/forbidden-js'}>forbidden.js</Link>
                     },
                     {
                         key: "3207",
                         label: <Link
-                            href={'/nextjs-docs/api-reference/file-conventions/instrumentation-client-js'}>instrumentation-client.js</Link>
+                            href={'/nextjs-docs/api-reference/file-system-conventions/instrumentation-client-js'}>instrumentation-client.js</Link>
                     },
                     {
                         key: "3208",
-                        label: <Link href={'/nextjs-docs/api-reference/file-conventions/intercepting-routes'}>Intercepting
+                        label: <Link href={'/nextjs-docs/api-reference/file-system-conventions/intercepting-routes'}>Intercepting
                             Routes</Link>
                     },
                     {
                         key: "3209",
-                        label: <Link href={'/nextjs-docs/api-reference/file-conventions/parallel-routes'}>Parallel
+                        label: <Link href={'/nextjs-docs/api-reference/file-system-conventions/parallel-routes'}>Parallel
                             Routes</Link>
                     },
                     {
                         key: "32001",
-                        label: <Link href={'/nextjs-docs/api-reference/file-conventions/public'}>public</Link>
+                        label: <Link href={'/nextjs-docs/api-reference/file-system-conventions/public'}>public</Link>
                     },
-                    {key: "32002", label: <Link href={'/nextjs-docs/api-reference/file-conventions/src'}>src</Link>},
+                    {
+                        key: "32002",
+                        label: <Link href={'/nextjs-docs/api-reference/file-system-conventions/src'}>src</Link>
+                    },
                     {
                         key: "32003",
                         label: <Link
-                            href={'/nextjs-docs/api-reference/file-conventions/unauthorized-js'}>unauthorized.js</Link>
+                            href={'/nextjs-docs/api-reference/file-system-conventions/unauthorized-js'}>unauthorized.js</Link>
                     },
                 ]
             },
