@@ -3,7 +3,7 @@
 1. Getting Start (@15.0.3)
 
     - Installation (@15.0.3)
-    - Project Structure (@15.0.3)
+    - Project Structure ✅
     - Layouts and Pages ✅
     - Linking and Navigating ✅
     - Server and Client Components ✅
