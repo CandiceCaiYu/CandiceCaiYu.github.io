@@ -1,10 +1,12 @@
 import {Table} from "antd";
 
-const CustomTable = ({dataSource, columns, showHeader}: {
+export interface CustomTableProps {
     dataSource: Array<Record<string, string>>
     columns?: Array<Record<string, string>>
     showHeader?: boolean
-}) => {
+}
+
+const CustomTable = ({dataSource, columns, showHeader}: CustomTableProps) => {
     return (
         <Table
             columns={columns ||
