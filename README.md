@@ -41,7 +41,7 @@
         - forbidden.js
         - instrumentation-client.js
         - intercepting routes
-        - parallel routes ✍️
+        - parallel routes ✅
         - public
         - src
         - unauthorized.js
