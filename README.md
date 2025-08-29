@@ -10,6 +10,14 @@
     - Fetching Data ✅
     - Updating Data ✅
     - Caching and Revalidating ✅
+    - Error Handling ✅
+    - CSS
+    - Image Optimization
+    - Font Optimization
+    - Metadata and OG images
+    - Route handlers and Middleware
+    - Deploying
+    - Upgrading
 
 
 2. API Reference ✍️

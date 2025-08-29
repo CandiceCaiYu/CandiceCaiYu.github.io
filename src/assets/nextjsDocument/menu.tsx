@@ -40,6 +40,10 @@ export const nextjsMenu: MenuItem[] = [
                 key: "19",
                 label: <Link href={'/nextjs-docs/start/caching-and-revalidating'}>Caching and Revalidating</Link>
             },
+            {
+                key: "111",
+                label: <Link href={'/nextjs-docs/start/error-handling'}>Error Handling</Link>
+            },
         ]
     },
     {
