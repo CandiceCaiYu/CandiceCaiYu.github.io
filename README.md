@@ -45,7 +45,7 @@
             - opengraph-image and twitter-image
             - robots.txt
             - sitemap.xml
-        - Dynamic Segments
+        - Dynamic Segments ✅
         - forbidden.js
         - instrumentation-client.js
         - intercepting routes
