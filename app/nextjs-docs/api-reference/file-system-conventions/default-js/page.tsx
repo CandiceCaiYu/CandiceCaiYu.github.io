@@ -23,7 +23,7 @@ import FooterApiReferenceSection from "@/app/nextjs-docs/components/FooterApiRef
 const Page = () => {
     return (<>
         <CustomSection
-            image={{height: 380}}
+            image={{height: 460}}
             texts={[title, defaultJsContent1, defaultJsContent2, defaultJsContent3, defaultJsContent3Img]}/>
         <CustomSection
             texts={[defaultJsContent4, defaultJsContent5, defaultJsContent6, defaultJsContent7, defaultJsContent8, defaultJsContent9, defaultJsContent9Code]}/>
