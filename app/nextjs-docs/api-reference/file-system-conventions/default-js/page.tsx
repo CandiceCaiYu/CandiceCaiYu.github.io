@@ -15,7 +15,7 @@ import {
     defaultJsContent9List,
     defaultJsContent9Table,
     title
-} from "@/src/assets/nextjsDocument/apiReferences/defaultJs";
+} from "@/src/assets/nextjsDocument/apiReferences/fileSystems/defaultJs";
 import CustomTable from "@/app/nextjs-docs/components/SectionWithTable";
 import CustomList from "@/app/nextjs-docs/components/CustomList";
 import FooterApiReferenceSection from "@/app/nextjs-docs/components/FooterApiReferenceSection";

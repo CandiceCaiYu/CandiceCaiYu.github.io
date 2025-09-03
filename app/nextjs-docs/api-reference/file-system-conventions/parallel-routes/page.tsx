@@ -70,7 +70,7 @@ import {
     parallelRoutesExamplesContent9Code,
     parallelRoutesExamplesTitle,
     title
-} from "@/src/assets/nextjsDocument/apiReferences/parallelRoutes";
+} from "@/src/assets/nextjsDocument/apiReferences/fileSystems/parallelRoutes";
 import {Divider} from "antd";
 import GoodToKnown from "@/app/nextjs-docs/components/GoodToKnown";
 import CustomList from "@/app/nextjs-docs/components/CustomList";
