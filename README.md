@@ -28,7 +28,7 @@
       <summary>File-system conventions ✍️</summary>
 
         - default.js ✅
-        - error.js
+        - error.js ✅
         - instrumentation.js
         - layout.js
         - loading.js
