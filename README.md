@@ -30,7 +30,7 @@
         - default.js ✅
         - error.js ✅
         - instrumentation.js
-        - layout.js
+        - layout.js ✅
         - loading.js
         - mdx-components.js
         - middleware.js
