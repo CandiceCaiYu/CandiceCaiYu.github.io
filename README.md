@@ -56,9 +56,42 @@
 
    </details>
 
-    - Functions
-    - Configuration
-    - CLI
-    - Edge Runtime
-    - TurboPack
+   <details>
+       <summary>Functions ✍️</summary>
+
+         - connection
+         - cookies
+         - draftMode
+         - fetch
+         - generateImageMetadata
+         - generateMetadata
+         - generateSitemaps
+         - generateStaticParams ✅
+         - generateViewport
+         - headers
+         - ImageResponse
+         - NextRequest
+         - NextResponse
+         - notFound
+         - permanentRedirect
+         - redirect
+         - revalidatePath
+         - unstable_after
+         - unstable_cache
+         - unstable_notStore
+         - unstable_rethrow
+         - unstable_redirect
+         - useParams
+         - usePathname
+         - useReportWebVitals
+         - useRouter
+         - useSearchParams
+         - useSelectedLayoutSegment
+         - useSelectedLayoutSegments
+         - userAgent
+      </details>
+       - Configuration
+       - CLI
+       - Edge Runtime
+       - TurboPack
      
