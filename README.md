@@ -35,7 +35,7 @@
         - mdx-components.js
         - middleware.js
         - not-found.js ✅
-        - page.js
+        - page.js ✅
         - route.js
         - Route Segment Config
         - template.js
