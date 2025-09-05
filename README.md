@@ -50,7 +50,7 @@
         - instrumentation-client.js
         - intercepting routes
         - parallel routes ✅
-        - public
+        - public ✅
         - src
         - unauthorized.js
 
