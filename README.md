@@ -39,7 +39,7 @@
         - route.js ✅
         - Route Segment Config
         - Route Groups ✅
-        - template.js
+        - template.js ✅
         - Metadata Files
             - favicon, icon, and apple-icon
             - manifest.json
