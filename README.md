@@ -38,6 +38,7 @@
         - page.js ✅
         - route.js ✅
         - Route Segment Config
+        - Route Groups ✅
         - template.js
         - Metadata Files
             - favicon, icon, and apple-icon

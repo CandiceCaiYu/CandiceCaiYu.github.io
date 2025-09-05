@@ -478,6 +478,11 @@ export const nextjsMenu: MenuItem[] = [
                         label: <Link
                             href={'/nextjs-docs/api-reference/file-system-conventions/unauthorized-js'}>unauthorized.js</Link>
                     },
+                    {
+                        key: "32004",
+                        label: <Link
+                            href={'/nextjs-docs/api-reference/file-system-conventions/route-groups'}>Route Groups</Link>
+                    },
                 ]
             },
             {
