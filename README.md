@@ -51,7 +51,7 @@
         - intercepting routes
         - parallel routes ✅
         - public ✅
-        - src
+        - src ✅
         - unauthorized.js
 
    </details>
