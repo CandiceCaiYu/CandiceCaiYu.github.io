@@ -31,7 +31,7 @@
         - error.js ✅
         - instrumentation.js
         - layout.js ✅
-        - loading.js
+        - loading.js ✅
         - mdx-components.js
         - middleware.js
         - not-found.js ✅
