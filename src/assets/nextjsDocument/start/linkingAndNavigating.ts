@@ -49,7 +49,7 @@ export const howNavigationWorksContentPrefetch4List = [
 ];
 export const howNavigationWorksContentPrefetch5 = '通过跳过或部分预提取动态路由，Next.js 避免了服务器对用户可能永远不会访问的路由进行不必要的处理。但是，在导航之前等待服务器响应可能会给用户留下应用没有响应的印象。';
 export const howNavigationWorksContentPrefetch5Image = '![server-rendering-without-streaming](/nextjsDoc/linkingAndNavigating/server-rendering-without-streaming.avif)';
-export const howNavigationWorksContentPrefetch6 = '为了改善动态路线的导航体验，您可以使用[流式传输](https://nextjs.org/docs/app/getting-started/linking-and-navigating#streaming)。';
+export const howNavigationWorksContentPrefetch6 = '为了改善动态路由的导航体验，您可以使用[流式传输](https://nextjs.org/docs/app/getting-started/linking-and-navigating#streaming)。';
 export const howNavigationWorksContentStream1 = '### 流式传输';
 export const howNavigationWorksContentStream2 = '流式传输允许服务器在动态路由的部分内容准备就绪后,立即将其发送到客户端，而无需等待整个路由内容渲染完成。这意味着即使页面的部分内容仍在加载，用户也能更快地看到内容。';
 export const howNavigationWorksContentStream3 = '对于动态路由，这意味着它们可以部分预取。也就是说，可以提前请求共享布局和加载骨架（skeletons）。';

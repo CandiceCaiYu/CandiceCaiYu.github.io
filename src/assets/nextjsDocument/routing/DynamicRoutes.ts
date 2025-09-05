@@ -4,7 +4,7 @@ export const DynamicRoutesContent2 = "## 约定";
 export const DynamicRoutesContent3 = "可以通过将文件夹名称括在方括号中来创建动态段：[folderName]。例如，[id] 或 [slug]。";
 export const DynamicRoutesContent4 = "动态段作为 params 属性传递给布局、页面、路由和 generateMetadata 函数。";
 export const DynamicRoutesContent5 = "## 示例";
-export const DynamicRoutesContent6 = "例如，博客可以包含以下路线 app/blog/[slug]/page.js，其中 [slug] 是博客文章的动态段。";
+export const DynamicRoutesContent6 = "例如，博客可以包含以下路由 app/blog/[slug]/page.js，其中 [slug] 是博客文章的动态段。";
 export const DynamicRoutesContent6Code = `~~~app/blog/[slug]/page.tsx~~~
 
 export default async function Page({

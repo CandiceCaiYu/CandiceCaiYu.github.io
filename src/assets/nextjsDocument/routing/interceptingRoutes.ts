@@ -6,7 +6,7 @@ export const content3 = '但是，当通过单击可共享 URL 或刷新页面�
 export const content3Image = '![intercepting-routes-hard-navigate](/nextjsDoc/buildingYourApplication/routing/intercepting-routes-hard-navigate.avif)';
 
 export const content4 = '## 约定';
-export const content5 = '拦截路线可以用 (..) 约定来定义，它类似于相对路径约定 ../，但针对的是段。';
+export const content5 = '拦截路由可以用 (..) 约定来定义，它类似于相对路径约定 ../，但针对的是段。';
 export const content6 = '您可以使用：';
 export const content6List = [
     '(.) 匹配同一级别的段',
@@ -15,7 +15,7 @@ export const content6List = [
     '(...) 匹配来自根应用目录的段'];
 export const content7 = '例如，您可以通过创建 (..)photo 目录来从 feed 片段中拦截照片片段。';
 export const content7Image = "![intercepted-routes-files](/nextjsDoc/buildingYourApplication/routing/intercepted-routes-files.avif)";
-export const content7Tips = '请注意，(..) 约定基于路线段，而不是文件系统。';
+export const content7Tips = '请注意，(..) 约定基于路由段，而不是文件系统。';
 export const content8 = '## 示例';
 export const content9 = '### 模态框';
 export const content10 = '拦截路由可以与并行路由一起使用来创建模态框。这可让您解决构建模态框时遇到的常见挑战，例如：';

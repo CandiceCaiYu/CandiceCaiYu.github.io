@@ -43,7 +43,7 @@ export const parallelRoutesBehaviorContent1List = [
     '软导航：在客户端导航期间，Next.js 将执行部分渲染，更改插槽内的子页面，同时保留其他插槽的活动子页面，即使它们与当前 URL 不匹配。',
     '硬导航：在完整页面加载（浏览器刷新）后，Next.js 无法确定与当前 URL 不匹配的插槽的活动状态。相反，它将为不匹配的插槽渲染 default.js 文件，如果 default.js 不存在，则返回 404 错误。'
 ]
-export const parallelRoutesBehaviorContent1GTK = '不匹配的路由的 404 有助于确保您不会意外地在非预期的页面上呈现并行路线。'
+export const parallelRoutesBehaviorContent1GTK = '不匹配的路由的 404 有助于确保您不会意外地在非预期的页面上呈现并行路由。'
 
 export const parallelRoutesExamplesTitle = '## 示例'
 export const parallelRoutesExamplesContent1 = '### 使用 useSelectedLayoutSegment'
@@ -207,7 +207,7 @@ export const parallelRoutesExamplesContent24GTK = [
     '查看使用拦截路由和并行路由的模态框示例。'
 ]
 export const parallelRoutesExamplesContent25 = '### Loading and Error UI'
-export const parallelRoutesExamplesContent26 = '并行路线可以独立流式传输，允许您为每条路由定义独立的错误和加载状态：'
+export const parallelRoutesExamplesContent26 = '并行路由可以独立流式传输，允许您为每条路由定义独立的错误和加载状态：'
 export const parallelRoutesExamplesContent26Img = '![parallel-routes-cinematic-universe](/nextjsDoc/fileSystemConventions/parallel-routes-cinematic-universe.avif)'
 export const parallelRoutesExamplesContent27 = '请参阅[Loading UI](https://nextjs.org/docs/app/api-reference/file-conventions/loading) 和 [Error Handling](https://nextjs.org/docs/app/getting-started/error-handling)文档以了解更多信息。'
 export const apiReferences: CustomApiReferenceCardProps[] = [

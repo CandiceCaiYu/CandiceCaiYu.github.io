@@ -1,4 +1,4 @@
-export const title = '# 平行路线';
+export const title = '# 平行路由';
 export const content1 = '并行路由允许您同时或有条件地在同一布局中呈现一个或多个页面。它们对于应用程序中高度动态的部分非常有用，例如仪表板和社交网站上的提要。';
 export const content2 = '例如，考虑仪表板，您可以使用并行路由同时呈现团队和分析页面：';
 export const content2Image = '![parallel-routes](/nextjsDoc/buildingYourApplication/routing/parallel-routes.avif)';
@@ -34,7 +34,7 @@ export const activeStateAndNavigationContent1 = '默认情况下，Next.js 会�
 export const activeStateAndNavigationContent1List = [
     '软导航：在客户端导航期间，Next.js 将执行部分渲染，更改插槽内的子页面，同时保留其他插槽的活动子页面，即使它们与当前 URL 不匹配。',
     '硬导航：在完整页面加载（浏览器刷新）后，Next.js 无法确定与当前 URL 不匹配的插槽的活动状态。相反，它将为不匹配的插槽呈现 default.js 文件，如果 default.js 不存在，则显示 404。'];
-export const activeStateAndNavigationContent1Tips = ['不匹配路线的 404 有助于确保您不会在非预期的页面上意外呈现并行路由。'];
+export const activeStateAndNavigationContent1Tips = ['不匹配路由的 404 有助于确保您不会在非预期的页面上意外呈现并行路由。'];
 export const activeStateAndNavigationContent2 = '### default.js';
 export const activeStateAndNavigationContent3 = '您可以定义一个 default.js 文件，在初始加载或整页重新加载期间作为不匹配插槽的后备进行渲染。';
 export const activeStateAndNavigationContent4 = '考虑以下文件夹结构。@team 插槽有一个 /settings 页面，但 @analytics 没有。';
@@ -43,7 +43,7 @@ export const activeStateAndNavigationContent5 = '导航到 /settings 时，@team
 export const activeStateAndNavigationContent6 = '刷新时，Next.js 将为 @analytics 呈现 default.js。如果 default.js 不存在，则会呈现 404。';
 export const activeStateAndNavigationContent7 = '此外，由于 children 是隐式插槽，因此当 Next.js 无法恢复父页面的活动状态时，您还需要创建一个 default.js 文件来为子级呈现后备。';
 export const activeStateAndNavigationContent8 = '### useSelectedLayoutSegment(s)';
-export const activeStateAndNavigationContent9 = 'useSelectedLayoutSegment 和 useSelectedLayoutSegments 都接受 parallelRoutesKey 参数，该参数允许您读取插槽内的活动路线段。';
+export const activeStateAndNavigationContent9 = 'useSelectedLayoutSegment 和 useSelectedLayoutSegments 都接受 parallelRoutesKey 参数，该参数允许您读取插槽内的活动路由段。';
 export const activeStateAndNavigationContent9Code = `~~~app/layout.tsx~~~
 
 'use client'
@@ -56,7 +56,7 @@ export default function Layout({ auth }: { auth: React.ReactNode }) {
 }`;
 export const activeStateAndNavigationContent10 = '当用户导航到 app/@auth/login（或 URL 栏中的 /login）时，loginSegment 将等于字符串“login”。';
 export const activeStateAndNavigationContent11 = '## 示例';
-export const activeStateAndNavigationContent12 = '### 条件路线';
+export const activeStateAndNavigationContent12 = '### 条件路由';
 export const activeStateAndNavigationContent13 = '您可以使用并行路由根据特定条件（例如用户角色）有条件地呈现路由。例如，要为 /admin 或 /user 角色呈现不同的仪表板页面：';
 export const activeStateAndNavigationContent13Image = '![conditional-routes-ui](/nextjsDoc/buildingYourApplication/routing/conditional-routes-ui.avif)';
 export const activeStateAndNavigationContent13Code = `~~~app/dashboard/layout.tsx~~~
@@ -213,6 +213,6 @@ export const activeStateAndNavigationContent31Tips = [
     "查看具有拦截和并行路由的模式示例。"
 ];
 export const activeStateAndNavigationContent32 = '## 加载和错误 UI';
-export const activeStateAndNavigationContent33 = '并行路线可以独立流式传输，允许您为每条路线定义独立的错误和加载状态：';
+export const activeStateAndNavigationContent33 = '并行路由可以独立流式传输，允许您为每条路由定义独立的错误和加载状态：';
 export const activeStateAndNavigationContent33Image = '![parallel-routes-cinematic-universe](/nextjsDoc/buildingYourApplication/routing/parallel-routes-cinematic-universe.avif)';
 export const activeStateAndNavigationContent34 = '请参阅加载 UI 和错误处理文档以了解更多信息。';

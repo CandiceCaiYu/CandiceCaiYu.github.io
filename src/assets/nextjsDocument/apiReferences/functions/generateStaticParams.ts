@@ -156,7 +156,7 @@ export const generateStaticParamsContent25List = [
     'app/products/[category]/[product]/page.js 可以为 [category] 和 [product] 生成参数。',
     'app/products/[category]/layout.js 只能为 [category] 生成参数。'
 ]
-export const generateStaticParamsContent26 = '有两种方法可以为具有多个动态段的路线生成参数：'
+export const generateStaticParamsContent26 = '有两种方法可以为具有多个动态段的路由生成参数：'
 export const generateStaticParamsContent27 = '#### 自下而上生成参数'
 export const generateStaticParamsContent28 = '从子路由段生成多个动态段。'
 export const generateStaticParamsContent28Code = `~~~app/products/[category]/[product]/page.tsx~~~

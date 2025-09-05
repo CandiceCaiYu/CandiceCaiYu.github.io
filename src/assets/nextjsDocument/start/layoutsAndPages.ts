@@ -156,7 +156,7 @@ export const linkingBetweenPagesContent2GoodToKnow = '<Link> 是 Next.js 中路�
 export const APIReferences: CustomApiReferenceCardProps[] = [
     {
         title: 'Linking and Navigating',
-        content: '了解内置导航优化的工作原理，包括预取、预渲染和客户端导航，以及如何针对动态路线和慢速网络优化导航。',
+        content: '了解内置导航优化的工作原理，包括预取、预渲染和客户端导航，以及如何针对动态路由和慢速网络优化导航。',
         url: 'https://nextjs.org/docs/app/getting-started/linking-and-navigating'
     },
     {
@@ -176,7 +176,7 @@ export const APIReferences: CustomApiReferenceCardProps[] = [
     },
     {
         title: 'Dynamic Segments',
-        content: '动态路线段可用于以编程方式从动态数据生成路线段。',
+        content: '动态路由段可用于以编程方式从动态数据生成路由段。',
         url: 'https://nextjs.org/docs/app/api-reference/file-conventions/dynamic-routes'
     }
 ]

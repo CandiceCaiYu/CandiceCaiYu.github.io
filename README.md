@@ -36,7 +36,7 @@
         - middleware.js
         - not-found.js ✅
         - page.js ✅
-        - route.js
+        - route.js ✅
         - Route Segment Config
         - template.js
         - Metadata Files

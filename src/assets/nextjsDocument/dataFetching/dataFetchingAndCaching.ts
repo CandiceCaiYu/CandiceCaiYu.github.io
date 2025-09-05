@@ -226,8 +226,8 @@ async function Playlists({ artistID }: { artistID: string }) {
     </ul>
   )
 }`;
-export const exampleContent29 = "您可以使用 loading.js (用于路线段) 或 React <Suspense> (用于嵌套组件) 来显示即时加载状态，同时 React 在结果中流式传输。";
-export const exampleContent30 = "这样可以避免整个路线被数据请求阻塞，用户将能够与页面中已经准备好的部分进行交互。";
+export const exampleContent29 = "您可以使用 loading.js (用于路由段) 或 React <Suspense> (用于嵌套组件) 来显示即时加载状态，同时 React 在结果中流式传输。";
+export const exampleContent30 = "这样可以避免整个路由被数据请求阻塞，用户将能够与页面中已经准备好的部分进行交互。";
 export const exampleContent31 = "#### 并行数据获取";
 export const exampleContent32 = "默认情况下，布局和页面片段是并行渲染的。这意味着请求将并行发起。";
 export const exampleContent33 = "但是，由于 async/await 的性质，同一个段或组件内等待的请求将阻止其下方的任何请求。";
