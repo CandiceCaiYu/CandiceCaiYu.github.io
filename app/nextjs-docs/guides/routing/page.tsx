@@ -79,9 +79,10 @@ const Page = () => {
                 <CustomList items={nestedRoutesContent3}/>
             </CustomSection>
             <SectionWithTable
-                goodToKnown={<GoodToKnown text={filesConventionsContent3}/>}
                 dataSource={filesConventionsContent2}
-                texts={[filesConventionsTitle, filesConventionsContent1]}/>
+            />
+            <CustomSection goodToKnown={<GoodToKnown text={filesConventionsContent3}/>}
+                           texts={[filesConventionsTitle, filesConventionsContent1]}/>
             <Divider/>
             <CustomSection texts={[componentHierarchyTitle, componentHierarchyContent1]}>
                 <CustomList items={componentHierarchyContent2}/>

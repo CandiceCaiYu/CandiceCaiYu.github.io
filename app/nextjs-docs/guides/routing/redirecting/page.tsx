@@ -63,7 +63,8 @@ import CustomList from "@/app/nextjs-docs/components/CustomList";
 const Page = () => {
     return (
         <>
-            <SectionWithTable texts={[title, content1]} showHeader columns={[
+            <CustomSection texts={[title, content1]}/>
+            <SectionWithTable showHeader columns={[
                 {
                     title: 'name',
                     dataIndex: 'name',

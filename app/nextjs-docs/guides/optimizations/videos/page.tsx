@@ -94,19 +94,23 @@ const Page = () => {
         <>
             <CustomSection texts={[videoOptimizationTitle, videoOptimizationContent1]}/>
             <Divider/>
+            <CustomSection texts={[]} goodToKnown={<GoodToKnown text={videoOptimizationContent6TipText}/>}/>
+            <CustomSection
+                texts={[videoOptimizationContent2, videoOptimizationContent3, videoOptimizationContent4, videoOptimizationContent5, videoOptimizationContent5Code, videoOptimizationContent6]}/>
 
             <SectionWithTable
-                goodToKnown={<GoodToKnown text={videoOptimizationContent6TipText}/>}
+
                 dataSource={videoOptimizationContent6Table}
-                columns={tableColumns}
-                texts={[videoOptimizationContent2, videoOptimizationContent3, videoOptimizationContent4, videoOptimizationContent5, videoOptimizationContent5Code, videoOptimizationContent6]}/>
+                columns={tableColumns}/>
             <CustomSection texts={[videoOptimizationContent7, videoOptimizationContent8]}>
                 <CustomList items={videoOptimizationContent8List}/>
             </CustomSection>
+            <CustomSection
+                texts={[videoOptimizationContent9, videoOptimizationContent10, videoOptimizationContent10Code, videoOptimizationContent10Text]}/>
             <SectionWithTable
                 dataSource={videoOptimizationContent10Table}
                 columns={tableColumns}
-                texts={[videoOptimizationContent9, videoOptimizationContent10, videoOptimizationContent10Code, videoOptimizationContent10Text]}/>
+            />
             <CustomSection
                 texts={[videoOptimizationContent11, videoOptimizationContent12, videoOptimizationContent12Text]}>
                 <CustomList items={videoOptimizationContent12List}/>
@@ -127,7 +131,7 @@ const Page = () => {
             <CustomSection
                 texts={[videoOptimizationContent24, videoOptimizationContent25, videoOptimizationContent26, videoOptimizationContent27, videoOptimizationContent28, videoOptimizationContent29, videoOptimizationContent30, videoOptimizationContent30Code, videoOptimizationContent31, videoOptimizationContent32, videoOptimizationContent33, videoOptimizationContent33Code, videoOptimizationContent34]}/>
             <Divider/>
-            
+
             <CustomSection
                 texts={[videoOptimizationContent35, videoOptimizationContent36]}>
                 <CustomList items={videoOptimizationContent36List}/>

@@ -146,7 +146,8 @@ const Page = () => {
             <Divider/>
             <CustomSection texts={[content41, content42]}/>
             <Divider/>
-            <SectionWithTable texts={[content43]} dataSource={content43Table} columns={[
+            <CustomSection texts={[content43]}/>
+            <SectionWithTable dataSource={content43Table} columns={[
                 {title: 'Version', key: 'version', dataIndex: 'version'},
                 {title: 'Change', key: 'change', dataIndex: 'change'},
             ]}/>

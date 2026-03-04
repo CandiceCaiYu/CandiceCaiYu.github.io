@@ -98,7 +98,7 @@ const Page = () => {
             <CustomSection texts={[content12, content13, content14, content15]}>
                 <CustomList items={content15List}/>
             </CustomSection>
-            <SectionWithTable texts={[]} dataSource={content15Table} columns={[
+            <SectionWithTable dataSource={content15Table} columns={[
                 {title: 'Page', key: 'page', dataIndex: 'page'},
                 {title: 'Route', key: 'route', dataIndex: 'route'},
                 {title: 'Result', key: 'result', dataIndex: 'result'},
@@ -110,7 +110,8 @@ const Page = () => {
                 texts={[content17, content18, content19, content20, content20Code, content21, content22,
                     content23, content23Code, content24, content24Code, content25, content26, content27, content27Code, content28,
                     content28Code, content29, content29Code, content30]}/>
-            <SectionWithTable texts={[content31, content31Code]} dataSource={content31Table} columns={[
+            <CustomSection texts={[content31, content31Code]}/>
+            <SectionWithTable dataSource={content31Table} columns={[
                 {title: 'Route', key: 'route', dataIndex: 'route'},
                 {title: 'Example URL', key: 'example', dataIndex: 'example'},
                 {title: 'Params', key: 'params', dataIndex: 'params'}
