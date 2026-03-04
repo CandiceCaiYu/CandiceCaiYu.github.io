@@ -198,15 +198,16 @@ const Page = () => {
         <>
             <CustomSection texts={[title, content]} goodToKnown={<GoodToKnown text={contentTips}/>}/>
             <Divider/>
-            <SectionWithTable texts={[overviewTitle, overviewContent1]}
-                              dataSource={overviewContent1Table}
-                              columns={[
-                                  {title: 'Mechanism', key: 'mechanism', dataIndex: 'mechanism'},
-                                  {title: 'What', key: 'what', dataIndex: 'what'},
-                                  {title: 'Where', key: 'where', dataIndex: 'where'},
-                                  {title: 'Purpose', key: 'purpose', dataIndex: 'purpose'},
-                                  {title: 'Duration', key: 'duration', dataIndex: 'duration'},
-                              ]}
+            <CustomSection texts={[overviewTitle, overviewContent1]}/>
+            <SectionWithTable
+                dataSource={overviewContent1Table}
+                columns={[
+                    {title: 'Mechanism', key: 'mechanism', dataIndex: 'mechanism'},
+                    {title: 'What', key: 'what', dataIndex: 'what'},
+                    {title: 'Where', key: 'where', dataIndex: 'where'},
+                    {title: 'Purpose', key: 'purpose', dataIndex: 'purpose'},
+                    {title: 'Duration', key: 'duration', dataIndex: 'duration'},
+                ]}
             />
             <CustomSection
                 image={{height: 500}}
@@ -302,8 +303,8 @@ const Page = () => {
                 <CustomList items={cacheInteractionsContent3List}/>
             </CustomSection>
             <Divider/>
-
-            <SectionWithTable texts={[apisTitle, apisContent1]} dataSource={apisContent1Table} columns={[
+            <CustomSection texts={[apisTitle, apisContent1]}/>
+            <SectionWithTable dataSource={apisContent1Table} columns={[
                 {title: 'API', key: 'api', dataIndex: 'api'},
                 {title: 'Router Cache', key: 'routerCache', dataIndex: 'routerCache'},
                 {title: 'FullRoute Cache', key: 'fullRouteCache', dataIndex: 'fullRouteCache'},
