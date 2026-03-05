@@ -49,6 +49,10 @@ export const nextjsMenu: MenuItem[] = [
                 key: "112",
                 label: <Link href={'/nextjs-docs/start/css'}>CSS</Link>
             },
+            {
+                key: "113",
+                label: <Link href={'/nextjs-docs/start/image-optimization'}>Image Optimization</Link>
+            },
         ]
     },
     // {

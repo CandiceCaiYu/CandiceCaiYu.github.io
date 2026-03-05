@@ -12,7 +12,7 @@
     - Caching and Revalidating ✅
     - Error Handling ✅
     - CSS ✅ -Mar 5 2026
-    - Image Optimization
+    - Image Optimization ✅ -Mar 5 2026
     - Font Optimization
     - Metadata and OG images
     - Route handlers and Middleware
