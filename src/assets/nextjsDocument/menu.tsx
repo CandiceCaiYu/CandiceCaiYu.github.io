@@ -1,7 +1,8 @@
 import Link from "next/link";
 import {ReactElement} from "react";
+import type {MenuProps} from "antd";
 
-export interface MenuItem {
+export type MenuItem = NonNullable<MenuProps['items']>[number] & {
     key: string;
     label: ReactElement;
     children?: MenuItem[];
