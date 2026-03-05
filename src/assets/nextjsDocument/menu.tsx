@@ -45,6 +45,10 @@ export const nextjsMenu: MenuItem[] = [
                 key: "111",
                 label: <Link href={'/nextjs-docs/start/error-handling'}>Error Handling</Link>
             },
+            {
+                key: "112",
+                label: <Link href={'/nextjs-docs/start/css'}>CSS</Link>
+            },
         ]
     },
     // {
