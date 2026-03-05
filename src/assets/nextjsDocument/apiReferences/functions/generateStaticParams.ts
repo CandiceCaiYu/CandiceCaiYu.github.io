@@ -1,5 +1,3 @@
-import category from "@antv/component/src/legend/category";
-
 export const generateStaticParamsContent1 = '# generateStaticParams'
 export const generateStaticParamsContent2 = 'generateStaticParams 函数可以与动态路由段结合使用，在构建时静态生成路由，而不是在请求时按需生成。'
 export const generateStaticParamsContent2Code = `~~~app/blog/[slug]/page.tsx~~~
@@ -207,7 +205,7 @@ export async function generateStaticParams({
   params: { category: string }
 }) {
   const products = await fetch(
-    \`https://.../products?category=${category}\`
+    \`https://.../products?category=\${category}\`
   ).then((res) => res.json())
  
   return products.map((product) => ({

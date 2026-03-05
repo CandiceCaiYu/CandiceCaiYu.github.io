@@ -5,7 +5,7 @@ import {MenuItem, nextjsMenu} from "@/src/assets/nextjsDocument/menu";
 import styles from './styles.module.scss'
 import {UpCircleFilled} from "@ant-design/icons";
 import {ReactNode, useEffect, useState} from "react";
-import {useLocation} from "react-use";
+import {usePathname} from "next/navigation";
 import {find, findIndex, flatMap, isNil} from "lodash";
 import FooterNavigator, {FooterNavigatorLink} from "@/app/nextjs-docs/components/FooterNavigator";
 import HeaderBackToHome from "@/app/dashboard/components/head/headerBackToHome";
@@ -19,7 +19,7 @@ export default function NextJSLayout(prop: {
     const [openKeys, setOpenKeys] = useState<string[]>([]);
     const [previous, setPrevious] = useState<FooterNavigatorLink>();
     const [next, setNext] = useState<FooterNavigatorLink>();
-    const {pathname} = useLocation();
+    const pathname = usePathname();
     useEffect(() => {
         window.addEventListener('scroll', handleScroll);
         return () => {
