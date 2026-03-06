@@ -14,7 +14,7 @@
     - CSS ✅ -Mar 5 2026
     - Image Optimization ✅ -Mar 5 2026
     - Font Optimization ✅ -Mar 5 2026
-    - Metadata and OG images
+    - Metadata and OG images ✅ -Mar 6 2026
     - Route handlers and Middleware
     - Deploying
     - Upgrading
